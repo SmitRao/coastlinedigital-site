@@ -1137,7 +1137,8 @@ p:last-child {
 
 .footer__links {
   display: flex;
-  gap: var(--space-lg);
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-lg);
 }
 
 .footer__link {
