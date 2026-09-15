@@ -755,6 +755,26 @@ p:last-child {
   font-size: 0.9375rem;
 }
 
+.offer__sample-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+  padding: 0.5rem 0.875rem;
+  background: rgba(212, 196, 168, 0.15);
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-sand);
+  transition: all var(--transition-fast);
+}
+
+.offer__sample-link:hover {
+  background: rgba(212, 196, 168, 0.25);
+  color: var(--color-cream);
+  transform: translateX(4px);
+}
+
 @media (min-width: 768px) {
   .offers__grid {
     grid-template-columns: repeat(3, 1fr);
