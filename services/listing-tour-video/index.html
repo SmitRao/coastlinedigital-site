@@ -206,71 +206,6 @@
       color: var(--color-cream);
     }
     
-    .service__sample {
-      margin-bottom: var(--space-xl);
-      padding: var(--space-lg);
-      background: var(--color-white);
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-sm);
-    }
-    
-    .service__sample-title {
-      font-family: var(--font-body);
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: var(--color-navy);
-      margin-bottom: var(--space-md);
-    }
-    
-    .service__video-container {
-      position: relative;
-      border-radius: var(--radius-sm);
-      overflow: hidden;
-      background: var(--color-cream-dark);
-      margin-bottom: var(--space-md);
-    }
-    
-    .service__video {
-      display: block;
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      aspect-ratio: 16 / 9;
-      background: var(--color-navy);
-    }
-    
-    .service__video-caption {
-      font-size: 0.9375rem;
-      color: var(--color-slate);
-      line-height: 1.6;
-      margin-bottom: var(--space-md);
-    }
-    
-    .service__video-note {
-      font-size: 0.8125rem;
-      color: rgba(28, 36, 48, 0.6);
-      font-style: italic;
-    }
-    
-    .service__sample-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: var(--space-xs);
-      margin-top: var(--space-md);
-      padding: 0.625rem 1rem;
-      background: var(--color-cream);
-      border-radius: var(--radius-sm);
-      font-size: 0.9375rem;
-      font-weight: 500;
-      color: var(--color-navy);
-      transition: all var(--transition-fast);
-    }
-    
-    .service__sample-cta:hover {
-      background: var(--color-cream-dark);
-      color: var(--color-navy);
-      transform: translateX(4px);
-    }
   </style>
 </head>
 <body>
@@ -298,28 +233,6 @@
           <h1 class="service__title">Finished listing and apartment tour video</h1>
           
           <p class="service__intro">Send photos or footage you already have. We deliver a finished tour-style video you can use on listings and social, without hiring a film crew.</p>
-          
-          <div class="service__sample animate-on-scroll">
-            <h2 class="service__sample-title">Sample</h2>
-            <div class="service__video-container">
-              <video 
-                class="service__video"
-                src="/media/sample-listing-tour.mp4"
-                controls
-                playsinline
-                preload="metadata"
-                aria-describedby="video-caption"
-              >
-                Your browser does not support the video element.
-              </video>
-            </div>
-            <p class="service__video-caption" id="video-caption">Sample listing tour from photos · Poway, CA</p>
-            <p class="service__video-note">Demo made from listing photos.</p>
-            <a href="/#contact" class="service__sample-cta">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-              Ask about your listing
-            </a>
-          </div>
           
           <div class="service__section animate-on-scroll">
             <h2 class="service__section-title">What it is for</h2>
