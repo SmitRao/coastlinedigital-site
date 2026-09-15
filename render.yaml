@@ -1,0 +1,33 @@
+# Render Static Site configuration
+# https://render.com/docs/yaml-spec
+
+services:
+  - type: web
+    name: coastline-digital
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: "*.css"
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+      - path: "*.js"
+        name: Cache-Control
+        value: public, max-age=31536000, immutable
+    routes:
+      # Trailing slash redirects (optional - configure in Render dashboard)
+      # Render handles trailing slashes automatically for static sites
+      # These routes ensure /privacy works as /privacy/
+      - type: rewrite
+        source: /privacy
+        destination: /privacy/index.html

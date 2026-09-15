@@ -1,0 +1,8 @@
+# Coastline Digital - robots.txt
+# https://coastlinedigital.net
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://coastlinedigital.net/sitemap.xml
