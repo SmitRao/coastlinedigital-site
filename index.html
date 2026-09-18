@@ -30,7 +30,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/tokens.css?v=20260918">
+  <link rel="stylesheet" href="/styles.css?v=20260918">
+  <script>document.documentElement.classList.add('has-js');</script>
   
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -134,8 +136,11 @@
         <a href="/services/google-business/" class="nav__link">Google Business</a>
         <a href="/services/listing-tour-video/" class="nav__link">Listing Video</a>
         <a href="/faq/" class="nav__link">FAQ</a>
-        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#contact" class="btn btn--primary nav__cta" data-spotlight>Contact</a>
       </nav>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-scroll-progress>
+      <div class="progress__bar"></div>
     </div>
   </header>
 
@@ -143,19 +148,9 @@
     <!-- Hero -->
     <section class="hero" id="hero">
       <div class="hero__visual" aria-hidden="true">
-        <!-- Gradient orb -->
         <div class="hero__orb"></div>
+        <div class="hero__orb hero__orb--alt"></div>
         
-        <!-- Floating particles -->
-        <div class="hero__particles">
-          <div class="hero__particle"></div>
-          <div class="hero__particle"></div>
-          <div class="hero__particle"></div>
-          <div class="hero__particle"></div>
-          <div class="hero__particle"></div>
-        </div>
-        
-        <!-- Wave shapes -->
         <div class="hero__wave hero__wave--back">
           <svg viewBox="0 0 1440 320" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#D4C4A8"/>
@@ -176,51 +171,95 @@
               <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
               <path d="M2 12h20"/>
             </svg>
-            Southern California
+            <span class="shimmer">Southern California</span>
           </span>
-          <h1 class="hero__title">SoCal local sites and listing video</h1>
+          <h1 class="hero__title" data-text-effect>SoCal local sites and listing video</h1>
           <p class="hero__subtitle">Websites and Google Business cleanup for SoCal shops. Finished listing and apartment tour videos for agents who already have photos.</p>
-          <a href="#contact" class="btn btn--primary">Get in touch</a>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary" data-spotlight data-magnetic>Get in touch</a>
+            <a href="#services" class="btn btn--secondary" data-spotlight>See services</a>
+          </div>
+          <p class="hero__note">Prefer email? <a href="mailto:hello@coastlinedigital.net" class="link-underline">hello@coastlinedigital.net</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do not do -->
+    <section class="proof" aria-labelledby="proof-heading">
+      <div class="container">
+        <p class="eyebrow" id="proof-heading">What we do not do</p>
+        <div class="proof__grid">
+          <div class="proof__item" data-reveal>
+            <p class="proof__label">
+              <svg class="proof__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Southern California
+            </p>
+            <p class="proof__text">SoCal is the focus.</p>
+          </div>
+          <div class="proof__item" data-reveal>
+            <p class="proof__label">
+              <svg class="proof__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              Listing details
+            </p>
+            <p class="proof__text">We do not invent square footage, pricing, or property details.</p>
+          </div>
+          <div class="proof__item" data-reveal>
+            <p class="proof__label">
+              <svg class="proof__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Google Business
+            </p>
+            <p class="proof__text">We do not invent reviews or fake rankings.</p>
+          </div>
+          <div class="proof__item" data-reveal>
+            <p class="proof__label">
+              <svg class="proof__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+              Paid ads
+            </p>
+            <p class="proof__text">Paid ads are separate. Only if you ask.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Services -->
-    <section class="services" id="services">
+    <section class="section services" id="services">
       <div class="container">
-        <h2 class="section__title">Services</h2>
+        <div class="section__head">
+          <p class="eyebrow">Scope</p>
+          <h2 class="section__title">Services</h2>
+        </div>
         <ul class="services__list">
-          <li class="services__item animate-on-scroll">
+          <li class="services__item" data-reveal>
             <span class="services__icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
             </span>
             <span class="services__text">Clean websites for local shops that look dated or thin online</span>
           </li>
-          <li class="services__item animate-on-scroll">
+          <li class="services__item" data-reveal>
             <span class="services__icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8z"/></svg>
             </span>
             <span class="services__text">Google Business cleanup so nearby searches turn into calls</span>
           </li>
-          <li class="services__item animate-on-scroll">
+          <li class="services__item" data-reveal>
             <span class="services__icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </span>
             <span class="services__text">Light email and after-hours chat so evening questions get a reply</span>
           </li>
-          <li class="services__item animate-on-scroll">
+          <li class="services__item" data-reveal>
             <span class="services__icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
             </span>
             <span class="services__text">Finished listing and apartment tour videos from your photos or footage</span>
           </li>
-          <li class="services__item animate-on-scroll">
+          <li class="services__item" data-reveal>
             <span class="services__icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </span>
             <span class="services__text">Clear contact paths on the site so people know what to do next</span>
           </li>
-          <li class="services__item animate-on-scroll">
+          <li class="services__item" data-reveal>
             <span class="services__icon" aria-hidden="true">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
             </span>
@@ -231,24 +270,36 @@
     </section>
 
     <!-- Offer Blurbs -->
-    <section class="offers" id="offers">
+    <section class="section section--lg offers" id="offers">
       <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Focus</p>
+          <h2 class="section__title">What we do</h2>
+        </div>
         <div class="offers__grid">
-          <article class="offer animate-on-scroll">
+          <article class="offer spotlight-surface" data-reveal data-spotlight>
             <div class="offer__icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
             <h3 class="offer__title">Local sites and Google Business</h3>
             <p class="offer__text">If the homepage still has placeholder numbers, typos, or thin copy, people notice. We help San Diego and SoCal shops get a cleaner site and a tighter Google Business profile.</p>
+            <a href="/services/local-websites/" class="offer__link">
+              Local Websites
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
           </article>
-          <article class="offer animate-on-scroll">
+          <article class="offer spotlight-surface" data-reveal data-spotlight>
             <div class="offer__icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
             </div>
             <h3 class="offer__title">Listing and apartment tour video</h3>
             <p class="offer__text">You send photos, floor plans, or footage plus the listing facts. We return a finished tour video you can post or send. We do not invent square footage, pricing, or property details.</p>
+            <a href="/services/listing-tour-video/" class="offer__link">
+              Listing Video
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
           </article>
-          <article class="offer animate-on-scroll">
+          <article class="offer spotlight-surface" data-reveal data-spotlight>
             <div class="offer__icon" aria-hidden="true">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
@@ -260,17 +311,20 @@
     </section>
 
     <!-- Who it is for -->
-    <section class="who" id="who">
+    <section class="section who" id="who">
       <div class="container">
-        <h2 class="section__title">Who it is for</h2>
+        <div class="section__head">
+          <p class="eyebrow">Fit</p>
+          <h2 class="section__title">Who it is for</h2>
+        </div>
         <div class="who__grid">
-          <div class="who__card animate-on-scroll">
+          <div class="who__card card" data-reveal>
             <div class="who__icon" aria-hidden="true">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
             <p class="who__text">Local shops that need a credible site and Google presence before spending on ads.</p>
           </div>
-          <div class="who__card animate-on-scroll">
+          <div class="who__card card" data-reveal>
             <div class="who__icon" aria-hidden="true">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
@@ -281,23 +335,26 @@
     </section>
 
     <!-- How we work -->
-    <section class="how" id="how">
+    <section class="section how" id="how">
       <div class="container">
-        <h2 class="section__title">How we work</h2>
+        <div class="section__head">
+          <p class="eyebrow">Process</p>
+          <h2 class="section__title">How we work</h2>
+        </div>
         <ol class="how__steps">
-          <li class="how__step animate-on-scroll">
+          <li class="how__step" data-reveal>
             <span class="how__number" aria-hidden="true">1</span>
             <div class="how__step-content">
               <p class="how__text">Tell us what is broken or missing (site, Google Business, listing video, or follow-up).</p>
             </div>
           </li>
-          <li class="how__step animate-on-scroll">
+          <li class="how__step" data-reveal>
             <span class="how__number" aria-hidden="true">2</span>
             <div class="how__step-content">
               <p class="how__text">We send back a short fix list.</p>
             </div>
           </li>
-          <li class="how__step animate-on-scroll">
+          <li class="how__step" data-reveal>
             <span class="how__number" aria-hidden="true">3</span>
             <div class="how__step-content">
               <p class="how__text">We build or polish the work and hand it over ready to use.</p>
@@ -308,11 +365,68 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
+    <!-- Common questions -->
+    <section class="section qa" id="questions">
       <div class="container">
-        <h2 class="section__title">Tell us what you need</h2>
-        
+        <div class="section__head">
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section__title">Common questions</h2>
+          <p class="section__lede">Short answers for Southern California shops and agents comparing local websites, Google Business cleanup, and finished listing or apartment tour video.</p>
+        </div>
+        <div class="qa__list">
+          <details class="qa__item" data-reveal>
+            <summary class="qa__summary">
+              What does Coastline Digital do?
+              <span class="qa__marker" aria-hidden="true"></span>
+            </summary>
+            <div class="qa__answer">
+              <p>We build and clean up websites for local SoCal businesses, polish Google Business profiles, and deliver finished listing or apartment tour videos from photos or footage you already have.</p>
+            </div>
+          </details>
+          <details class="qa__item" data-reveal>
+            <summary class="qa__summary">
+              Who is this for?
+              <span class="qa__marker" aria-hidden="true"></span>
+            </summary>
+            <div class="qa__answer">
+              <p>Local shops and service businesses that need a clear site and Google presence, and agents or property teams that want a finished tour video without hiring a film crew.</p>
+            </div>
+          </details>
+          <details class="qa__item" data-reveal>
+            <summary class="qa__summary">
+              How do listing or apartment tour videos work?
+              <span class="qa__marker" aria-hidden="true"></span>
+            </summary>
+            <div class="qa__answer">
+              <p>You send photos or footage you already have. We turn that into a finished tour-style video you can use on listings and social. Turnaround depends on what you send.</p>
+            </div>
+          </details>
+          <details class="qa__item" data-reveal>
+            <summary class="qa__summary">
+              Do you run paid ads?
+              <span class="qa__marker" aria-hidden="true"></span>
+            </summary>
+            <div class="qa__answer">
+              <p>We focus on the site and Google Business first. Paid ads are separate and only if you ask.</p>
+            </div>
+          </details>
+          <details class="qa__item" data-reveal>
+            <summary class="qa__summary">
+              How much does it cost?
+              <span class="qa__marker" aria-hidden="true"></span>
+            </summary>
+            <div class="qa__answer">
+              <p>We do not publish fixed prices here. Tell us what you need and we will talk through options.</p>
+            </div>
+          </details>
+        </div>
+        <p class="qa__more">More answers on the <a href="/faq/" class="link-underline">FAQ page</a>.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--lg contact" id="contact">
+      <div class="container">
         <!-- Success message (shown when ?sent=1) -->
         <div class="contact__success" id="success-message" hidden>
           <p>
@@ -321,7 +435,29 @@
           </p>
         </div>
         
-        <div class="contact__wrapper">
+        <div class="contact__layout">
+          <div class="contact__pitch">
+            <div class="section__head section__head--start">
+              <p class="eyebrow">Contact</p>
+              <h2 class="section__title">Tell us what you need</h2>
+            </div>
+            <p class="contact__lede">Tell us what is broken or missing (site, Google Business, listing video, or follow-up).</p>
+            <ul class="contact__points">
+              <li class="contact__point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                We do not publish personal phone numbers or home addresses on this site.
+              </li>
+              <li class="contact__point">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                We do not collect information automatically through cookies or tracking scripts at this time. <a href="/privacy/" class="link-underline">Privacy</a>
+              </li>
+            </ul>
+            <div class="contact__direct">
+              <p class="contact__direct-label">Direct</p>
+              <p class="contact__email-note">Prefer email? <a href="mailto:hello@coastlinedigital.net" class="link-underline">hello@coastlinedigital.net</a></p>
+            </div>
+          </div>
+          
           <form 
             class="contact__form" 
             action="https://formsubmit.co/hello@coastlinedigital.net" 
@@ -334,24 +470,28 @@
             <input type="hidden" name="_captcha" value="true">
             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
             
-            <div class="form__group">
-              <label for="name" class="form__label">Name</label>
-              <input type="text" id="name" name="name" class="form__input" required autocomplete="name">
+            <div class="form__row form__row--2">
+              <div class="form__group">
+                <label for="name" class="form__label">Name</label>
+                <input type="text" id="name" name="name" class="form__input" required autocomplete="name">
+              </div>
+              
+              <div class="form__group">
+                <label for="business" class="form__label">Business or brokerage</label>
+                <input type="text" id="business" name="business" class="form__input" autocomplete="organization">
+              </div>
             </div>
             
-            <div class="form__group">
-              <label for="business" class="form__label">Business or brokerage</label>
-              <input type="text" id="business" name="business" class="form__input" autocomplete="organization">
-            </div>
-            
-            <div class="form__group">
-              <label for="email" class="form__label">Email</label>
-              <input type="email" id="email" name="email" class="form__input" required autocomplete="email">
-            </div>
-            
-            <div class="form__group">
-              <label for="city" class="form__label">City / area</label>
-              <input type="text" id="city" name="city" class="form__input" autocomplete="address-level2">
+            <div class="form__row form__row--2">
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" name="email" class="form__input" required autocomplete="email">
+              </div>
+              
+              <div class="form__group">
+                <label for="city" class="form__label">City / area</label>
+                <input type="text" id="city" name="city" class="form__input" autocomplete="address-level2">
+              </div>
             </div>
             
             <div class="form__group">
@@ -364,12 +504,8 @@
               <input type="tel" id="phone" name="phone" class="form__input" autocomplete="tel">
             </div>
             
-            <button type="submit" class="btn btn--primary btn--full">Send message</button>
+            <button type="submit" class="btn btn--primary btn--full" data-spotlight>Send message</button>
           </form>
-          
-          <div class="contact__alt">
-            <p class="contact__email-note">Prefer email? <a href="mailto:hello@coastlinedigital.net">hello@coastlinedigital.net</a></p>
-          </div>
         </div>
       </div>
     </section>
@@ -406,6 +542,7 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="/main.js?v=20260918"></script>
+  <script src="/motion.js?v=20260918"></script>
 </body>
 </html>

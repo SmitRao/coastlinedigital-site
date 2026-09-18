@@ -30,7 +30,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="/tokens.css?v=20260918">
+  <link rel="stylesheet" href="/styles.css?v=20260918">
+  <script>document.documentElement.classList.add('has-js');</script>
   
   <!-- FAQPage JSON-LD -->
   <script type="application/ld+json">
@@ -129,129 +131,6 @@
     ]
   }
   </script>
-  
-  <style>
-    .faq {
-      padding: calc(64px + var(--space-3xl)) 0 var(--space-4xl);
-      min-height: 100vh;
-    }
-    
-    @media (min-width: 768px) {
-      .faq {
-        padding: calc(72px + var(--space-4xl)) 0 var(--space-4xl);
-      }
-    }
-    
-    .faq__content {
-      max-width: var(--container-narrow);
-      margin: 0 auto;
-    }
-    
-    .faq__title {
-      margin-bottom: var(--space-md);
-      position: relative;
-    }
-    
-    .faq__title::after {
-      content: '';
-      display: block;
-      width: 48px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--color-sand), var(--color-sand-light));
-      margin-top: var(--space-md);
-      border-radius: 2px;
-    }
-    
-    .faq__intro {
-      font-size: 1.0625rem;
-      line-height: 1.75;
-      color: var(--color-slate);
-      margin-bottom: var(--space-xl);
-    }
-    
-    .faq__list {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-lg);
-    }
-    
-    .faq__item {
-      padding: var(--space-lg);
-      background: var(--color-white);
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-sm);
-      border: 1px solid transparent;
-      transition: all var(--transition-base);
-    }
-    
-    .faq__item:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-md);
-      border-color: rgba(212, 196, 168, 0.3);
-    }
-    
-    .faq__question {
-      font-family: var(--font-body);
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: var(--color-navy);
-      margin-bottom: var(--space-sm);
-      line-height: 1.4;
-    }
-    
-    .faq__answer {
-      font-size: 1rem;
-      line-height: 1.75;
-      color: var(--color-slate);
-    }
-    
-    .faq__answer a {
-      color: var(--color-navy);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-color: var(--color-sand);
-      text-decoration-thickness: 2px;
-      transition: all var(--transition-fast);
-    }
-    
-    .faq__answer a:hover {
-      color: var(--color-sand);
-      text-decoration-color: var(--color-navy);
-    }
-    
-    .faq__cta {
-      margin-top: var(--space-2xl);
-      padding: var(--space-xl);
-      background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-cream-dark) 100%);
-      border-radius: var(--radius-lg);
-      text-align: center;
-    }
-    
-    .faq__cta-text {
-      font-size: 1rem;
-      color: var(--color-slate);
-      margin-bottom: var(--space-md);
-    }
-    
-    .faq__cta-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: var(--space-md);
-    }
-    
-    .faq__cta-link {
-      display: inline-flex;
-      align-items: center;
-      gap: var(--space-xs);
-      font-weight: 500;
-      color: var(--color-navy);
-    }
-    
-    .faq__cta-link:hover {
-      color: var(--color-sand);
-    }
-  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -265,93 +144,105 @@
       </button>
       <nav class="nav__menu" id="nav-menu" role="navigation" aria-label="Main navigation">
         <a href="/#services" class="nav__link">Services</a>
-        <a href="/#who" class="nav__link">Who it is for</a>
-        <a href="/#contact" class="nav__link">Contact</a>
+        <a href="/services/local-websites/" class="nav__link">Local Websites</a>
+        <a href="/services/google-business/" class="nav__link">Google Business</a>
+        <a href="/services/listing-tour-video/" class="nav__link">Listing Video</a>
+        <a href="/faq/" class="nav__link" aria-current="page">FAQ</a>
+        <a href="/#contact" class="btn btn--primary nav__cta" data-spotlight>Contact</a>
       </nav>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-scroll-progress>
+      <div class="progress__bar"></div>
     </div>
   </header>
 
   <main>
-    <section class="faq">
+    <article class="page">
       <div class="container">
-        <div class="faq__content">
-          <h1 class="faq__title">Coastline Digital FAQ</h1>
+        <div class="page__inner">
+          <nav class="page__breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>FAQ</span>
+          </nav>
           
-          <p class="faq__intro">Short answers for Southern California shops and agents comparing local websites, Google Business cleanup, and finished listing or apartment tour video.</p>
+          <h1 class="page__title" data-text-effect>Coastline Digital FAQ</h1>
           
-          <div class="faq__list">
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">What does Coastline Digital do?</h2>
-              <p class="faq__answer">We build and clean up websites for local SoCal businesses, polish Google Business profiles, and deliver finished listing or apartment tour videos from photos or footage you already have.</p>
-            </article>
+          <p class="page__lede">Short answers for Southern California shops and agents comparing local websites, Google Business cleanup, and finished listing or apartment tour video.</p>
+          
+          <div class="qa-list">
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">What does Coastline Digital do?</h2>
+              <p class="qa-list__answer">We build and clean up websites for local SoCal businesses, polish Google Business profiles, and deliver finished listing or apartment tour videos from photos or footage you already have.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">Who is this for?</h2>
-              <p class="faq__answer">Local shops and service businesses that need a clear site and Google presence, and agents or property teams that want a finished tour video without hiring a film crew.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">Who is this for?</h2>
+              <p class="qa-list__answer">Local shops and service businesses that need a clear site and Google presence, and agents or property teams that want a finished tour video without hiring a film crew.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">Do you only work in Southern California?</h2>
-              <p class="faq__answer">SoCal is the focus. If you are nearby and unsure, email <a href="mailto:hello@coastlinedigital.net">hello@coastlinedigital.net</a> and we will say honestly whether we can help.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">Do you only work in Southern California?</h2>
+              <p class="qa-list__answer">SoCal is the focus. If you are nearby and unsure, email <a href="mailto:hello@coastlinedigital.net">hello@coastlinedigital.net</a> and we will say honestly whether we can help.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">What is Google Business polish?</h2>
-              <p class="faq__answer">Cleanup and clarity on your Google Business Profile so the basics look trustworthy: categories, services, photos, hours, and how people contact you. We do not invent reviews or fake rankings.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">What is Google Business polish?</h2>
+              <p class="qa-list__answer">Cleanup and clarity on your Google Business Profile so the basics look trustworthy: categories, services, photos, hours, and how people contact you. We do not invent reviews or fake rankings.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">How do listing or apartment tour videos work?</h2>
-              <p class="faq__answer">You send photos or footage you already have. We turn that into a finished tour-style video you can use on listings and social. Turnaround depends on what you send.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">How do listing or apartment tour videos work?</h2>
+              <p class="qa-list__answer">You send photos or footage you already have. We turn that into a finished tour-style video you can use on listings and social. Turnaround depends on what you send.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">Do you run paid ads?</h2>
-              <p class="faq__answer">We focus on the site and Google Business first. Paid ads are separate and only if you ask.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">Do you run paid ads?</h2>
+              <p class="qa-list__answer">We focus on the site and Google Business first. Paid ads are separate and only if you ask.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">How do I contact you?</h2>
-              <p class="faq__answer">Use the form on <a href="/#contact">coastlinedigital.net</a> or email <a href="mailto:hello@coastlinedigital.net">hello@coastlinedigital.net</a>. We do not publish a personal phone number on the site.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">How do I contact you?</h2>
+              <p class="qa-list__answer">Use the form on <a href="/#contact">coastlinedigital.net</a> or email <a href="mailto:hello@coastlinedigital.net">hello@coastlinedigital.net</a>. We do not publish a personal phone number on the site.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">How much does it cost?</h2>
-              <p class="faq__answer">We do not publish fixed prices here. Tell us what you need and we will talk through options.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">How much does it cost?</h2>
+              <p class="qa-list__answer">We do not publish fixed prices here. Tell us what you need and we will talk through options.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">Should I fix my website, Google Business, or listing video first?</h2>
-              <p class="faq__answer">If people cannot find or trust you nearby, start with Google Business polish and a clear contact path on a simple site. If you already get listing traffic and need a tour video, start with video from the photos or footage you have. We will recommend an order after you tell us the goal.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">Should I fix my website, Google Business, or listing video first?</h2>
+              <p class="qa-list__answer">If people cannot find or trust you nearby, start with Google Business polish and a clear contact path on a simple site. If you already get listing traffic and need a tour video, start with video from the photos or footage you have. We will recommend an order after you tell us the goal.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">Do you invent listing details in tour videos?</h2>
-              <p class="faq__answer">No. We edit from the photos or footage you provide and do not invent square footage, price, or property facts.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">Do you invent listing details in tour videos?</h2>
+              <p class="qa-list__answer">No. We edit from the photos or footage you provide and do not invent square footage, price, or property facts.</p>
+            </section>
             
-            <article class="faq__item animate-on-scroll">
-              <h2 class="faq__question">Is Coastline the same company as Clearline Home Filters?</h2>
-              <p class="faq__answer">No. Coastline Digital is for SoCal local sites, Google Business polish, and listing or apartment tour video. Clearline Home Filters is a separate water filtration brand.</p>
-            </article>
+            <section class="qa-list__item" data-reveal>
+              <h2 class="qa-list__question">Is Coastline the same company as Clearline Home Filters?</h2>
+              <p class="qa-list__answer">No. Coastline Digital is for SoCal local sites, Google Business polish, and listing or apartment tour video. Clearline Home Filters is a separate water filtration brand.</p>
+            </section>
           </div>
           
-          <div class="faq__cta">
-            <p class="faq__cta-text">Use the contact form on coastlinedigital.net or email hello@coastlinedigital.net.</p>
-            <div class="faq__cta-links">
-              <a href="/#contact" class="faq__cta-link">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <section class="page-cta spotlight-surface" data-reveal data-spotlight>
+            <p class="page-cta__title">Use the contact form on coastlinedigital.net or email hello@coastlinedigital.net.</p>
+            <div class="page-cta__actions">
+              <a href="/#contact" class="btn btn--on-inverse">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 Contact form
               </a>
-              <a href="mailto:hello@coastlinedigital.net" class="faq__cta-link">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:hello@coastlinedigital.net" class="btn btn--on-inverse">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 hello@coastlinedigital.net
               </a>
             </div>
-          </div>
+          </section>
         </div>
       </div>
-    </section>
+    </article>
   </main>
 
   <!-- Footer -->
@@ -384,67 +275,7 @@
     </div>
   </footer>
 
-  <script>
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav__toggle');
-    const navMenu = document.querySelector('.nav__menu');
-    
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', function() {
-        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', !isExpanded);
-        navMenu.classList.toggle('nav__menu--open');
-      });
-      
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && navMenu.classList.contains('nav__menu--open')) {
-          navToggle.setAttribute('aria-expanded', 'false');
-          navMenu.classList.remove('nav__menu--open');
-          navToggle.focus();
-        }
-      });
-    }
-    
-    // Nav scroll shadow
-    const nav = document.querySelector('.nav');
-    if (nav) {
-      function updateNav() {
-        if (window.scrollY > 20) {
-          nav.classList.add('nav--scrolled');
-        } else {
-          nav.classList.remove('nav--scrolled');
-        }
-      }
-      window.addEventListener('scroll', updateNav, { passive: true });
-      updateNav();
-    }
-    
-    // Scroll animations
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if ('IntersectionObserver' in window && !prefersReducedMotion) {
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px 0px -60px 0px',
-        threshold: 0.1
-      };
-      
-      const animateObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            animateObserver.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-      
-      document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
-        animateObserver.observe(el);
-      });
-    } else {
-      document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
-        el.classList.add('is-visible');
-      });
-    }
-  </script>
+  <script src="/main.js?v=20260918"></script>
+  <script src="/motion.js?v=20260918"></script>
 </body>
 </html>

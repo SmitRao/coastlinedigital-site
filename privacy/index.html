@@ -24,97 +24,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="../styles.css">
-  
-  <style>
-    .privacy {
-      padding: calc(64px + var(--space-3xl)) 0 var(--space-4xl);
-      min-height: 100vh;
-    }
-    
-    @media (min-width: 768px) {
-      .privacy {
-        padding: calc(72px + var(--space-4xl)) 0 var(--space-4xl);
-      }
-    }
-    
-    .privacy__content {
-      max-width: var(--container-narrow);
-      margin: 0 auto;
-    }
-    
-    .privacy__title {
-      margin-bottom: var(--space-xl);
-      position: relative;
-    }
-    
-    .privacy__title::after {
-      content: '';
-      display: block;
-      width: 48px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--color-sand), var(--color-sand-light));
-      margin-top: var(--space-md);
-      border-radius: 2px;
-    }
-    
-    .privacy__section {
-      margin-bottom: var(--space-xl);
-      padding-bottom: var(--space-lg);
-      border-bottom: 1px solid rgba(15, 39, 68, 0.06);
-    }
-    
-    .privacy__section:last-of-type {
-      border-bottom: none;
-    }
-    
-    .privacy__section h2 {
-      font-size: 1.375rem;
-      margin-bottom: var(--space-md);
-    }
-    
-    .privacy__section p,
-    .privacy__section ul {
-      margin-bottom: var(--space-sm);
-      line-height: 1.75;
-      color: var(--color-slate);
-    }
-    
-    .privacy__section ul {
-      padding-left: var(--space-lg);
-    }
-    
-    .privacy__section li {
-      margin-bottom: var(--space-xs);
-      position: relative;
-    }
-    
-    .privacy__section li::marker {
-      color: var(--color-sand);
-    }
-    
-    .privacy__section a {
-      color: var(--color-navy);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-color: var(--color-sand);
-      text-decoration-thickness: 2px;
-      transition: all var(--transition-fast);
-    }
-    
-    .privacy__section a:hover {
-      color: var(--color-sand);
-      text-decoration-color: var(--color-navy);
-    }
-    
-    .privacy__updated {
-      font-size: 0.875rem;
-      color: rgba(28, 36, 48, 0.5);
-      margin-top: var(--space-xl);
-      padding-top: var(--space-lg);
-      border-top: 1px solid rgba(15, 39, 68, 0.08);
-    }
-  </style>
+  <link rel="stylesheet" href="/tokens.css?v=20260918">
+  <link rel="stylesheet" href="/styles.css?v=20260918">
+  <script>document.documentElement.classList.add('has-js');</script>
 </head>
 <body>
   <!-- Navigation -->
@@ -128,25 +40,35 @@
       </button>
       <nav class="nav__menu" id="nav-menu" role="navigation" aria-label="Main navigation">
         <a href="/#services" class="nav__link">Services</a>
-        <a href="/#who" class="nav__link">Who it is for</a>
-        <a href="/#contact" class="nav__link">Contact</a>
+        <a href="/services/local-websites/" class="nav__link">Local Websites</a>
+        <a href="/services/google-business/" class="nav__link">Google Business</a>
+        <a href="/services/listing-tour-video/" class="nav__link">Listing Video</a>
+        <a href="/faq/" class="nav__link">FAQ</a>
+        <a href="/#contact" class="btn btn--primary nav__cta" data-spotlight>Contact</a>
       </nav>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-scroll-progress>
+      <div class="progress__bar"></div>
     </div>
   </header>
 
   <main>
-    <section class="privacy">
+    <article class="page">
       <div class="container">
-        <div class="privacy__content">
-          <h1 class="privacy__title">Privacy Policy</h1>
+        <div class="page__inner">
+          <nav class="page__breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>Privacy</span>
+          </nav>
           
-          <div class="privacy__section">
+          <h1 class="page__title">Privacy Policy</h1>
+          
+          <div class="prose">
             <h2>Who we are</h2>
             <p>Coastline Digital is a SoCal marketing studio focused on local sites, Google Business polish, simple email and after-hours paths, and finished listing tour video.</p>
             <p>Contact: <a href="mailto:hello@coastlinedigital.net">hello@coastlinedigital.net</a></p>
-          </div>
-          
-          <div class="privacy__section">
+            
             <h2>Information we collect</h2>
             <p>When you use our contact form, we collect the information you provide:</p>
             <ul>
@@ -158,9 +80,7 @@
               <li>Phone number (if you choose to provide it)</li>
             </ul>
             <p>We do not collect information automatically through cookies or tracking scripts at this time.</p>
-          </div>
-          
-          <div class="privacy__section">
+            
             <h2>How we use your information</h2>
             <p>We use the information you provide to:</p>
             <ul>
@@ -169,19 +89,13 @@
               <li>Provide the services you request</li>
             </ul>
             <p>We do not sell your information to third parties.</p>
-          </div>
-          
-          <div class="privacy__section">
+            
             <h2>Form submission</h2>
             <p>Our contact form is processed through FormSubmit, a third-party form handling service. When you submit the form, your information is transmitted to FormSubmit and then forwarded to us via email. FormSubmit has its own privacy policy governing how they handle data.</p>
-          </div>
-          
-          <div class="privacy__section">
+            
             <h2>Data retention</h2>
             <p>We retain your contact information for as long as necessary to respond to your inquiry and provide services. If you would like us to delete your information, please contact us at <a href="mailto:hello@coastlinedigital.net">hello@coastlinedigital.net</a>.</p>
-          </div>
-          
-          <div class="privacy__section">
+            
             <h2>Your rights</h2>
             <p>You may:</p>
             <ul>
@@ -190,22 +104,18 @@
               <li>Request deletion of your information</li>
             </ul>
             <p>To exercise these rights, contact us at <a href="mailto:hello@coastlinedigital.net">hello@coastlinedigital.net</a>.</p>
-          </div>
-          
-          <div class="privacy__section">
+            
             <h2>Changes to this policy</h2>
             <p>We may update this privacy policy from time to time. Any changes will be posted on this page.</p>
-          </div>
-          
-          <div class="privacy__section">
+            
             <h2>Contact</h2>
             <p>If you have questions about this privacy policy, contact us at <a href="mailto:hello@coastlinedigital.net">hello@coastlinedigital.net</a>.</p>
           </div>
           
-          <p class="privacy__updated">Last updated: September 2026</p>
+          <p class="prose__meta">Last updated: September 2026</p>
         </div>
       </div>
-    </section>
+    </article>
   </main>
 
   <!-- Footer -->
@@ -238,40 +148,7 @@
     </div>
   </footer>
 
-  <script>
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav__toggle');
-    const navMenu = document.querySelector('.nav__menu');
-    
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', function() {
-        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', !isExpanded);
-        navMenu.classList.toggle('nav__menu--open');
-      });
-      
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && navMenu.classList.contains('nav__menu--open')) {
-          navToggle.setAttribute('aria-expanded', 'false');
-          navMenu.classList.remove('nav__menu--open');
-          navToggle.focus();
-        }
-      });
-    }
-    
-    // Nav scroll shadow
-    const nav = document.querySelector('.nav');
-    if (nav) {
-      function updateNav() {
-        if (window.scrollY > 20) {
-          nav.classList.add('nav--scrolled');
-        } else {
-          nav.classList.remove('nav--scrolled');
-        }
-      }
-      window.addEventListener('scroll', updateNav, { passive: true });
-      updateNav();
-    }
-  </script>
+  <script src="/main.js?v=20260918"></script>
+  <script src="/motion.js?v=20260918"></script>
 </body>
 </html>
