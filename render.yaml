@@ -25,9 +25,25 @@ services:
         name: Cache-Control
         value: public, max-age=31536000, immutable
     routes:
-      # Trailing slash redirects (optional - configure in Render dashboard)
-      # Render handles trailing slashes automatically for static sites
-      # These routes ensure /privacy works as /privacy/
-      - type: rewrite
+      # 301 redirects: bare paths to trailing-slash for SEO signal consolidation
+      # Same pattern as Clearline render.yaml. Slash URLs stay the canonical routes.
+      - type: redirect
+        source: /faq
+        destination: /faq/
+        status: 301
+      - type: redirect
+        source: /services/local-websites
+        destination: /services/local-websites/
+        status: 301
+      - type: redirect
+        source: /services/google-business
+        destination: /services/google-business/
+        status: 301
+      - type: redirect
+        source: /services/listing-tour-video
+        destination: /services/listing-tour-video/
+        status: 301
+      - type: redirect
         source: /privacy
-        destination: /privacy/index.html
+        destination: /privacy/
+        status: 301
