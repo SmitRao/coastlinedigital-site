@@ -9,12 +9,21 @@ Static marketing site for Coastline Digital, a SoCal marketing studio focused on
 ```
 /
 ├── index.html          # Homepage (one-pager with all sections)
-├── styles.css          # Main stylesheet
-├── main.js             # JavaScript (nav toggle, animations, form handling)
+├── tokens.css          # Design tokens (colour, type, space, motion)
+├── styles.css          # Design system and page components
+├── main.js             # Navigation, anchor scrolling, contact form
+├── motion.js           # Motion primitives (reveals, text effect, pointer)
+├── faq/
+│   └── index.html      # FAQ page
+├── services/
+│   ├── local-websites/
+│   ├── google-business/
+│   └── listing-tour-video/
 ├── privacy/
 │   └── index.html      # Privacy policy page
 ├── robots.txt          # Search engine directives
 ├── sitemap.xml         # XML sitemap with trailing-slash URLs
+├── llms.txt, ai.txt    # LLM/AEO discoverability
 ├── render.yaml         # Render Static Site configuration
 └── README.md           # This file
 ```
@@ -24,7 +33,61 @@ Static marketing site for Coastline Digital, a SoCal marketing studio focused on
 - Static HTML, CSS, and vanilla JavaScript
 - Google Fonts: Playfair Display (display) + DM Sans (body)
 - FormSubmit for contact form handling
-- No build step required
+- No build step, no framework, no third-party runtime dependencies
+
+## Design system
+
+`tokens.css` is the single source of truth for colour, the fluid type scale,
+the 4px space scale, radii, elevation, motion durations/easings and layout
+widths. Component CSS should only reference tokens, never raw values. The
+variable names used before the token layer existed (`--color-navy`,
+`--space-md`, `--shadow-sm`, `--transition-base`, …) are kept at the bottom of
+the file as aliases onto the new scale.
+
+`styles.css` builds on those tokens: base and primitives, then motion
+classes, then chrome (nav, footer), then the homepage sections, then the
+inner-page shell (`.page`, `.panel`, `.checklist`, `.steps`, `.prose`,
+`.qa-list`, `.page-cta`) that every subpage shares.
+
+One gotcha worth knowing: headings default to the dark ink colour, so any
+section on a dark background needs `section--inverse` or its title will
+disappear into the background.
+
+## Motion primitives
+
+`motion.js` implements the site's motion with no dependencies. Each primitive
+is opt-in through a data attribute:
+
+| Primitive | Attribute | Behaviour |
+|---|---|---|
+| In view | `data-reveal` | IntersectionObserver reveal with a per-sibling stagger |
+| Text effect | `data-text-effect` | Splits a heading into words and floats them up |
+| Shimmer | `.shimmer` | CSS highlight sweep for small accent text |
+| Spotlight | `data-spotlight` | Pointer-tracked highlight on buttons and cards |
+| Magnetic | `data-magnetic` | Element leans up to 6px toward the pointer |
+| Scroll progress | `data-scroll-progress` | Rail on the bottom edge of the header |
+
+Rules these primitives follow, and that new ones should too:
+
+- `prefers-reduced-motion: reduce` disables everything. CSS neutralises the
+  animations and reveal offsets, and `motion.js` refuses to attach listeners
+  and settles any applied state if the preference changes mid-session.
+- Spotlight and magnetic also require `(hover: hover) and (pointer: fine)`, so
+  touch devices never attach those listeners.
+- Reveal targets are hidden only under the `.has-js` class, which a tiny inline
+  script in each `<head>` adds. If a script fails or is blocked, the page stays
+  fully readable rather than invisible.
+- `data-text-effect` sets `aria-label` to the original string so assistive tech
+  reads one phrase rather than a list of words.
+
+## Cache busting
+
+`render.yaml` serves `*.css` and `*.js` with
+`Cache-Control: public, max-age=31536000, immutable`. Filenames are not
+fingerprinted, so asset links carry a `?v=YYYYMMDD` query string. **Bump that
+value in every HTML file whenever you edit a CSS or JS file**, otherwise
+returning visitors keep the old asset. Alternatively, lower the `max-age` in
+`render.yaml` and drop the query strings.
 
 ## Deploying to Render
 
@@ -102,6 +165,9 @@ GA4 and Meta Pixel code blocks are included in `index.html` as commented-out pla
 3. For Meta Pixel, uncomment and add your Pixel ID
 
 ## Brand Colors
+
+Defined as primitives in `tokens.css` and consumed through the semantic
+aliases (`--surface-page`, `--text-strong`, `--accent`, …).
 
 | Name   | Hex       | Usage                    |
 |--------|-----------|--------------------------|
