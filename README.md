@@ -11,11 +11,15 @@ Static marketing site for Coastline Digital, a SoCal marketing studio focused on
 ├── index.html          # Homepage (one-pager with all sections)
 ├── styles.css          # Main stylesheet
 ├── main.js             # JavaScript (nav toggle, animations, form handling)
+├── img/
+│   └── og-share-1200x630.png  # Social share card (1200×630)
 ├── privacy/
 │   └── index.html      # Privacy policy page
 ├── robots.txt          # Search engine directives
 ├── sitemap.xml         # XML sitemap with trailing-slash URLs
 ├── render.yaml         # Render Static Site configuration
+├── tools/
+│   └── make-og-image.py  # Regenerates the share card (dev-only)
 └── README.md           # This file
 ```
 
@@ -47,11 +51,7 @@ Static marketing site for Coastline Digital, a SoCal marketing studio focused on
 
 ### Trailing Slash Handling
 
-Render static sites handle trailing slashes automatically. The `/privacy` path will serve `/privacy/index.html`. If you need explicit redirects from non-trailing to trailing slash URLs:
-
-1. Go to your site settings in Render Dashboard
-2. Navigate to Redirects/Rewrites
-3. Add redirect rules as needed (e.g., `/privacy` -> `/privacy/`)
+Canonical routes use a trailing slash (`/faq/`, `/privacy/`, `/services/.../`). `render.yaml` 301s the matching bare paths to those slash URLs so search engines consolidate signals. The sitemap `<loc>` values already use trailing slashes.
 
 ## DNS Configuration for coastlinedigital.net
 
@@ -92,6 +92,21 @@ php -S localhost:8000
 The contact form uses FormSubmit (formsubmit.co) to handle submissions. Form data is sent to the configured email address. On successful submission, users are redirected to `/?sent=1` which displays a success message.
 
 **Note:** The first form submission will require email verification through FormSubmit. After verification, submissions will be delivered normally.
+
+## Social share image
+
+`og:image` and `twitter:image` on every page that already had Open Graph tags point at `https://coastlinedigital.net/img/og-share-1200x630.png`. The card uses the existing navy/sand palette, the favicon wave mark, and on-site copy only (brand name, hero/footer tagline, nav labels, domain). No personal name or phone.
+
+Regenerate after a brand change:
+
+```bash
+pip install pillow
+python3 tools/make-og-image.py
+```
+
+## Google Search Console
+
+Do not invent a `google-site-verification` meta string. Add it only after Smit provides the verify token from Search Console.
 
 ## Analytics Placeholders
 
