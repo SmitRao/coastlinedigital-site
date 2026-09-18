@@ -30,7 +30,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="/tokens.css?v=20260918">
+  <link rel="stylesheet" href="/styles.css?v=20260918">
+  <script>document.documentElement.classList.add('has-js');</script>
   
   <!-- Service JSON-LD -->
   <script type="application/ld+json">
@@ -45,168 +47,6 @@
     "description": "Finished listing and apartment tour videos for agents, made from photos or footage the client already has."
   }
   </script>
-  
-  <style>
-    .service {
-      padding: calc(64px + var(--space-3xl)) 0 var(--space-4xl);
-      min-height: 100vh;
-    }
-    
-    @media (min-width: 768px) {
-      .service {
-        padding: calc(72px + var(--space-4xl)) 0 var(--space-4xl);
-      }
-    }
-    
-    .service__content {
-      max-width: var(--container-narrow);
-      margin: 0 auto;
-    }
-    
-    .service__title {
-      margin-bottom: var(--space-md);
-      position: relative;
-    }
-    
-    .service__title::after {
-      content: '';
-      display: block;
-      width: 48px;
-      height: 3px;
-      background: linear-gradient(90deg, var(--color-sand), var(--color-sand-light));
-      margin-top: var(--space-md);
-      border-radius: 2px;
-    }
-    
-    .service__intro {
-      font-size: 1.0625rem;
-      line-height: 1.75;
-      color: var(--color-slate);
-      margin-bottom: var(--space-xl);
-    }
-    
-    .service__section {
-      margin-bottom: var(--space-xl);
-      padding: var(--space-lg);
-      background: var(--color-white);
-      border-radius: var(--radius-md);
-      box-shadow: var(--shadow-sm);
-    }
-    
-    .service__section-title {
-      font-family: var(--font-body);
-      font-size: 1.125rem;
-      font-weight: 600;
-      color: var(--color-navy);
-      margin-bottom: var(--space-md);
-    }
-    
-    .service__list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-sm);
-    }
-    
-    .service__list li {
-      display: flex;
-      align-items: flex-start;
-      gap: var(--space-sm);
-      font-size: 1rem;
-      line-height: 1.65;
-      color: var(--color-slate);
-    }
-    
-    .service__list li::before {
-      content: '';
-      flex-shrink: 0;
-      width: 8px;
-      height: 8px;
-      margin-top: 0.5em;
-      background: var(--color-sand);
-      border-radius: 50%;
-    }
-    
-    .service__steps {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-md);
-    }
-    
-    .service__step {
-      display: flex;
-      align-items: flex-start;
-      gap: var(--space-md);
-    }
-    
-    .service__step-number {
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 32px;
-      height: 32px;
-      background: var(--color-navy);
-      color: var(--color-cream);
-      font-family: var(--font-display);
-      font-size: 0.875rem;
-      font-weight: 600;
-      border-radius: 50%;
-    }
-    
-    .service__step-text {
-      padding-top: 0.25rem;
-      font-size: 1rem;
-      line-height: 1.65;
-      color: var(--color-slate);
-    }
-    
-    .service__cta {
-      margin-top: var(--space-2xl);
-      padding: var(--space-xl);
-      background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
-      border-radius: var(--radius-lg);
-      text-align: center;
-    }
-    
-    .service__cta-title {
-      font-family: var(--font-display);
-      font-size: 1.25rem;
-      font-weight: 500;
-      color: var(--color-cream);
-      margin-bottom: var(--space-md);
-    }
-    
-    .service__cta-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: var(--space-md);
-    }
-    
-    .service__cta-link {
-      display: inline-flex;
-      align-items: center;
-      gap: var(--space-xs);
-      padding: 0.75rem 1.25rem;
-      background: rgba(247, 243, 236, 0.1);
-      border-radius: var(--radius-sm);
-      font-weight: 500;
-      color: var(--color-sand);
-      transition: all var(--transition-fast);
-    }
-    
-    .service__cta-link:hover {
-      background: rgba(247, 243, 236, 0.2);
-      color: var(--color-cream);
-    }
-    
-  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -220,63 +60,75 @@
       </button>
       <nav class="nav__menu" id="nav-menu" role="navigation" aria-label="Main navigation">
         <a href="/#services" class="nav__link">Services</a>
-        <a href="/#who" class="nav__link">Who it is for</a>
-        <a href="/#contact" class="nav__link">Contact</a>
+        <a href="/services/local-websites/" class="nav__link">Local Websites</a>
+        <a href="/services/google-business/" class="nav__link">Google Business</a>
+        <a href="/services/listing-tour-video/" class="nav__link" aria-current="page">Listing Video</a>
+        <a href="/faq/" class="nav__link">FAQ</a>
+        <a href="/#contact" class="btn btn--primary nav__cta" data-spotlight>Contact</a>
       </nav>
+    </div>
+    <div class="progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-scroll-progress>
+      <div class="progress__bar"></div>
     </div>
   </header>
 
   <main>
-    <section class="service">
+    <article class="page">
       <div class="container">
-        <div class="service__content">
-          <h1 class="service__title">Finished listing and apartment tour video</h1>
+        <div class="page__inner">
+          <nav class="page__breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>Listing Video</span>
+          </nav>
           
-          <p class="service__intro">Send photos or footage you already have. We deliver a finished tour-style video you can use on listings and social, without hiring a film crew.</p>
+          <h1 class="page__title" data-text-effect>Finished listing and apartment tour video</h1>
           
-          <div class="service__section animate-on-scroll">
-            <h2 class="service__section-title">What it is for</h2>
-            <ul class="service__list">
+          <p class="page__lede">Send photos or footage you already have. We deliver a finished tour-style video you can use on listings and social, without hiring a film crew.</p>
+          
+          <section class="panel" data-reveal>
+            <h2 class="panel__title">What it is for</h2>
+            <ul class="checklist">
               <li>Agents and property teams who need a clean tour video fast</li>
               <li>Listings where you already have stills or walkthrough clips</li>
               <li>Pairing video with a simple brokerage or team web presence when needed</li>
             </ul>
-          </div>
+          </section>
           
-          <div class="service__section animate-on-scroll">
-            <h2 class="service__section-title">How it works</h2>
-            <ol class="service__steps">
-              <li class="service__step">
-                <span class="service__step-number">1</span>
-                <span class="service__step-text">You send the photos or footage and the property basics</span>
+          <section class="panel" data-reveal>
+            <h2 class="panel__title">How it works</h2>
+            <ol class="steps">
+              <li>
+                <span class="steps__number">1</span>
+                <span class="steps__text">You send the photos or footage and the property basics</span>
               </li>
-              <li class="service__step">
-                <span class="service__step-number">2</span>
-                <span class="service__step-text">We edit a finished tour-style piece</span>
+              <li>
+                <span class="steps__number">2</span>
+                <span class="steps__text">We edit a finished tour-style piece</span>
               </li>
-              <li class="service__step">
-                <span class="service__step-number">3</span>
-                <span class="service__step-text">You get a file ready to post</span>
+              <li>
+                <span class="steps__number">3</span>
+                <span class="steps__text">You get a file ready to post</span>
               </li>
             </ol>
-          </div>
+          </section>
           
-          <div class="service__cta animate-on-scroll">
-            <p class="service__cta-title">Ask about listing or apartment tour video. Form or hello@coastlinedigital.net.</p>
-            <div class="service__cta-links">
-              <a href="/#contact" class="service__cta-link">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <section class="page-cta spotlight-surface" data-reveal data-spotlight>
+            <p class="page-cta__title">Ask about listing or apartment tour video. Form or hello@coastlinedigital.net.</p>
+            <div class="page-cta__actions">
+              <a href="/#contact" class="btn btn--on-inverse">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                 Contact form
               </a>
-              <a href="mailto:hello@coastlinedigital.net" class="service__cta-link">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:hello@coastlinedigital.net" class="btn btn--on-inverse">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 hello@coastlinedigital.net
               </a>
             </div>
-          </div>
+          </section>
         </div>
       </div>
-    </section>
+    </article>
   </main>
 
   <!-- Footer -->
@@ -309,67 +161,7 @@
     </div>
   </footer>
 
-  <script>
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav__toggle');
-    const navMenu = document.querySelector('.nav__menu');
-    
-    if (navToggle && navMenu) {
-      navToggle.addEventListener('click', function() {
-        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-        navToggle.setAttribute('aria-expanded', !isExpanded);
-        navMenu.classList.toggle('nav__menu--open');
-      });
-      
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && navMenu.classList.contains('nav__menu--open')) {
-          navToggle.setAttribute('aria-expanded', 'false');
-          navMenu.classList.remove('nav__menu--open');
-          navToggle.focus();
-        }
-      });
-    }
-    
-    // Nav scroll shadow
-    const nav = document.querySelector('.nav');
-    if (nav) {
-      function updateNav() {
-        if (window.scrollY > 20) {
-          nav.classList.add('nav--scrolled');
-        } else {
-          nav.classList.remove('nav--scrolled');
-        }
-      }
-      window.addEventListener('scroll', updateNav, { passive: true });
-      updateNav();
-    }
-    
-    // Scroll animations
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if ('IntersectionObserver' in window && !prefersReducedMotion) {
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px 0px -60px 0px',
-        threshold: 0.1
-      };
-      
-      const animateObserver = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            animateObserver.unobserve(entry.target);
-          }
-        });
-      }, observerOptions);
-      
-      document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
-        animateObserver.observe(el);
-      });
-    } else {
-      document.querySelectorAll('.animate-on-scroll').forEach(function(el) {
-        el.classList.add('is-visible');
-      });
-    }
-  </script>
+  <script src="/main.js?v=20260918"></script>
+  <script src="/motion.js?v=20260918"></script>
 </body>
 </html>

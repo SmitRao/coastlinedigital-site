@@ -1,0 +1,179 @@
+/* ==========================================================================
+   Coastline Digital - design tokens
+   Single source of truth for colour, type, space, radius, elevation, motion.
+   Loaded before styles.css. Component CSS should only reference tokens.
+   ========================================================================== */
+
+:root {
+  /* ----- Palette primitives ------------------------------------------- */
+  --cd-navy-900: #0A1B30;
+  --cd-navy-800: #0F2744;
+  --cd-navy-700: #163455;
+  --cd-navy-600: #1A3A5C;
+  --cd-navy-500: #24507C;
+
+  --cd-sand-500: #C3AE85;
+  --cd-sand-400: #D4C4A8;
+  --cd-sand-300: #E2D6C2;
+  --cd-sand-200: #EFE7D9;
+
+  --cd-cream-50: #FDFBF7;
+  --cd-cream-100: #F7F3EC;
+  --cd-cream-200: #EBE5DA;
+  --cd-cream-300: #DED6C7;
+
+  --cd-slate-900: #1C2430;
+  --cd-slate-700: #384252;
+  --cd-slate-500: #5B6574;
+  --cd-white: #FFFFFF;
+
+  /* ----- Semantic surfaces -------------------------------------------- */
+  --surface-page: var(--cd-cream-100);
+  --surface-page-soft: var(--cd-cream-50);
+  --surface-raised: var(--cd-white);
+  --surface-sunken: var(--cd-cream-200);
+  --surface-inverse: var(--cd-navy-800);
+  --surface-inverse-deep: var(--cd-navy-900);
+  --surface-inverse-raised: rgba(255, 255, 255, 0.045);
+
+  /* ----- Semantic text ------------------------------------------------ */
+  --text-strong: var(--cd-navy-800);
+  --text-body: var(--cd-slate-900);
+  --text-muted: var(--cd-slate-500);
+  --text-on-inverse: var(--cd-cream-100);
+  --text-on-inverse-muted: rgba(247, 243, 236, 0.72);
+  --text-on-inverse-faint: rgba(247, 243, 236, 0.46);
+
+  /* ----- Accent & lines ----------------------------------------------- */
+  --accent: var(--cd-sand-400);
+  --accent-strong: var(--cd-sand-500);
+  --accent-soft: var(--cd-sand-200);
+
+  --line-subtle: rgba(15, 39, 68, 0.08);
+  --line-strong: rgba(15, 39, 68, 0.16);
+  --line-on-inverse: rgba(212, 196, 168, 0.16);
+
+  --focus-ring: var(--cd-navy-800);
+
+  /* ----- Type families ------------------------------------------------ */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* ----- Type scale (fluid, mobile-first) ----------------------------- */
+  --text-2xs: 0.75rem;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.0625rem;
+  --text-lg: clamp(1.0625rem, 0.35vw + 1rem, 1.1875rem);
+
+  --title-xs: clamp(1rem, 0.3vw + 0.95rem, 1.125rem);
+  --title-sm: clamp(1.1875rem, 0.6vw + 1.05rem, 1.375rem);
+  --title-md: clamp(1.375rem, 1.1vw + 1.05rem, 1.75rem);
+  --title-lg: clamp(1.75rem, 2.4vw + 1rem, 2.5rem);
+  --display: clamp(2.375rem, 4.6vw + 1rem, 4rem);
+
+  --leading-tight: 1.08;
+  --leading-snug: 1.25;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.7;
+
+  --tracking-tight: -0.03em;
+  --tracking-snug: -0.015em;
+  --tracking-wide: 0.09em;
+
+  /* ----- Space scale (4px base) --------------------------------------- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.25rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-10: 2.5rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-20: 5rem;
+  --s-24: 6rem;
+  --s-32: 8rem;
+
+  /* Section rhythm: generous but mobile-first */
+  --section-y: clamp(3.5rem, 7vw, 6.5rem);
+  --section-y-lg: clamp(4.5rem, 9vw, 8.5rem);
+
+  /* ----- Radius ------------------------------------------------------- */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* ----- Elevation ---------------------------------------------------- */
+  --elev-1: 0 1px 2px rgba(10, 27, 48, 0.04), 0 2px 8px rgba(10, 27, 48, 0.05);
+  --elev-2: 0 2px 4px rgba(10, 27, 48, 0.04), 0 10px 28px rgba(10, 27, 48, 0.07);
+  --elev-3: 0 4px 10px rgba(10, 27, 48, 0.05), 0 22px 56px rgba(10, 27, 48, 0.1);
+  --elev-glow: 0 0 48px rgba(212, 196, 168, 0.22);
+
+  /* ----- Motion ------------------------------------------------------- */
+  --dur-1: 140ms;
+  --dur-2: 240ms;
+  --dur-3: 420ms;
+  --dur-4: 680ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+
+  /* Per-item stagger step used by reveal primitives */
+  --stagger: 70ms;
+
+  /* ----- Layout ------------------------------------------------------- */
+  --container: 1160px;
+  --container-narrow: 720px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --nav-h: 62px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --nav-h: 74px;
+  }
+}
+
+/* ==========================================================================
+   Legacy aliases
+   Older page-level CSS referenced these names directly. Keeping them mapped
+   means any stylesheet not yet migrated still resolves to the new scale.
+   ========================================================================== */
+
+:root {
+  --color-navy: var(--cd-navy-800);
+  --color-navy-light: var(--cd-navy-600);
+  --color-sand: var(--cd-sand-400);
+  --color-sand-light: var(--cd-sand-300);
+  --color-cream: var(--cd-cream-100);
+  --color-cream-dark: var(--cd-cream-200);
+  --color-slate: var(--cd-slate-900);
+  --color-white: var(--cd-white);
+
+  --space-xs: var(--s-2);
+  --space-sm: var(--s-4);
+  --space-md: var(--s-6);
+  --space-lg: var(--s-8);
+  --space-xl: var(--s-12);
+  --space-2xl: var(--s-16);
+  --space-3xl: var(--s-24);
+  --space-4xl: var(--s-32);
+
+  --transition-fast: var(--dur-1) var(--ease-in-out);
+  --transition-base: var(--dur-2) var(--ease-in-out);
+  --transition-slow: var(--dur-3) var(--ease-in-out);
+  --transition-bounce: var(--dur-3) var(--ease-spring);
+
+  --shadow-sm: var(--elev-1);
+  --shadow-md: var(--elev-2);
+  --shadow-lg: var(--elev-3);
+  --shadow-glow: var(--elev-glow);
+
+  --container-max: var(--container);
+}
