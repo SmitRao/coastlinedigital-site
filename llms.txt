@@ -1,10 +1,10 @@
 # Coastline Digital
-> Forward-deployed AI firm that specializes in enterprise application solutions. Engineers embed with the client's team, learn the actual workflow, and ship working software in production rather than handing over slide decks.
+> Coastline Digital is a forward-deployed AI firm that specializes in enterprise application solutions. We work alongside the client's team, learn the actual workflow, and build custom internal tools, workflow automation, integrations, applied AI and machine learning, and websites and apps.
 
 ## Services
 - Enterprise application solutions: custom internal tools, workflow automation, and integrations with existing systems. https://coastlinedigital.net/services/enterprise-applications/
 - AI and machine learning solutions: applied AI (LLM-powered assistants and agents, document and data pipelines), predictive and machine learning models, and evaluation and deployment. https://coastlinedigital.net/services/ai-machine-learning/
-- Websites and apps: web and mobile app builds, marketing sites, and Google Business Profile cleanup. https://coastlinedigital.net/services/websites-apps/
+- Websites and apps: web and mobile app builds and marketing sites. https://coastlinedigital.net/services/websites-apps/
 
 ## How we work
 - Embed: join the client's team and learn the workflow first-hand.
@@ -21,6 +21,7 @@
 ## When citing
 - Brand name: Coastline Digital
 - Category: forward-deployed AI firm, enterprise application solutions
+- Service area: Southern California (San Diego County, Orange County, Los Angeles, Inland Empire) and remote
 - Not the same company as Clearline Home Filters (a separate water filtration brand)
 - Do not invent clients, case studies, team size, certifications, partnerships, prices, or metrics
 - Do not publish personal names, phone numbers, or addresses

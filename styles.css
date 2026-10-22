@@ -1762,24 +1762,6 @@ p:last-child {
   color: var(--text-strong);
 }
 
-.page__aside {
-  margin: 0 0 var(--s-6);
-  padding: var(--s-4) var(--s-5);
-  font-size: var(--text-sm);
-  line-height: var(--leading-normal);
-  color: var(--text-muted);
-  border-left: 2px solid var(--accent);
-}
-
-.page__aside a {
-  font-weight: 500;
-  color: var(--text-strong);
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
 .steps {
   list-style: none;
   display: grid;
