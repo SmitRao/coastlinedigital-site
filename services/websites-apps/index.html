@@ -38,8 +38,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="/tokens.css?v=20261022.2">
-  <link rel="stylesheet" href="/styles.css?v=20261022.2">
+  <link rel="stylesheet" href="/tokens.css?v=20261022.3">
+  <link rel="stylesheet" href="/styles.css?v=20261022.3">
   <script>document.documentElement.classList.add('has-js');</script>
   
   <!-- Service JSON-LD -->
@@ -106,6 +106,31 @@
         "position": 3,
         "name": "Websites and apps",
         "item": "https://coastlinedigital.net/services/websites-apps/"
+      }
+    ]
+  }
+  </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you still build websites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We build marketing sites and web and mobile apps, including front ends for internal tools and systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you rebuild an existing site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We can rebuild or modernize a current site and keep important pages and links working."
+        }
       }
     ]
   }
@@ -184,6 +209,30 @@
             </ul>
           </section>
           
+          <section class="panel" data-reveal aria-labelledby="faq-title">
+            <h2 class="panel__title" id="faq-title">Common questions</h2>
+            <div class="qa__list">
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  Do you still build websites?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>Yes. We build marketing sites and web and mobile apps, including front ends for internal tools and systems.</p>
+                </div>
+              </details>
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  Can you rebuild an existing site?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>Yes. We can rebuild or modernize a current site and keep important pages and links working.</p>
+                </div>
+              </details>
+            </div>
+          </section>
+          
           <section class="page-cta spotlight-surface" data-reveal data-spotlight>
             <p class="page-cta__title">Ask about a website or app.</p>
             <div class="page-cta__actions">
@@ -233,7 +282,7 @@
     </div>
   </footer>
 
-  <script src="/main.js?v=20261022.2"></script>
-  <script src="/motion.js?v=20261022.2"></script>
+  <script src="/main.js?v=20261022.3"></script>
+  <script src="/motion.js?v=20261022.3"></script>
 </body>
 </html>

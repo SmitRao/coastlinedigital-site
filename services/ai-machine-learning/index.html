@@ -38,8 +38,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="/tokens.css?v=20261022.2">
-  <link rel="stylesheet" href="/styles.css?v=20261022.2">
+  <link rel="stylesheet" href="/tokens.css?v=20261022.3">
+  <link rel="stylesheet" href="/styles.css?v=20261022.3">
   <script>document.documentElement.classList.add('has-js');</script>
   
   <!-- Service JSON-LD -->
@@ -106,6 +106,39 @@
         "position": 3,
         "name": "AI and machine learning solutions",
         "item": "https://coastlinedigital.net/services/ai-machine-learning/"
+      }
+    ]
+  }
+  </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What AI work do you take on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assistants and agents built on large language models, document and data processing pipelines, and predictive models, each tested against real examples from your work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you know the AI is working well enough?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We set up evaluations with examples from your workflow and review results with your team before and after launch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the AI run on our own infrastructure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "That depends on the model and your setup. We review the options with you and follow your data and hosting requirements."
+        }
       }
     ]
   }
@@ -187,6 +220,39 @@
             </ul>
           </section>
           
+          <section class="panel" data-reveal aria-labelledby="faq-title">
+            <h2 class="panel__title" id="faq-title">Common questions</h2>
+            <div class="qa__list">
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  What AI work do you take on?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>Assistants and agents built on large language models, document and data processing pipelines, and predictive models, each tested against real examples from your work.</p>
+                </div>
+              </details>
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  How do you know the AI is working well enough?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>We set up evaluations with examples from your workflow and review results with your team before and after launch.</p>
+                </div>
+              </details>
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  Can the AI run on our own infrastructure?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>That depends on the model and your setup. We review the options with you and follow your data and hosting requirements.</p>
+                </div>
+              </details>
+            </div>
+          </section>
+          
           <section class="page-cta spotlight-surface" data-reveal data-spotlight>
             <p class="page-cta__title">Tell us the task you want AI to help with.</p>
             <div class="page-cta__actions">
@@ -236,7 +302,7 @@
     </div>
   </footer>
 
-  <script src="/main.js?v=20261022.2"></script>
-  <script src="/motion.js?v=20261022.2"></script>
+  <script src="/main.js?v=20261022.3"></script>
+  <script src="/motion.js?v=20261022.3"></script>
 </body>
 </html>
