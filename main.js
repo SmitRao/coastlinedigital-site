@@ -162,7 +162,7 @@
       'color: #0F2744; font-family: Georgia, serif; font-size: 14px;'
     );
     console.log(
-      '%cCoastline Digital - SoCal local sites and listing video',
+      '%cCoastline Digital - forward-deployed AI for enterprise applications',
       'color: #D4C4A8; font-size: 12px;'
     );
   });
