@@ -31,3 +31,16 @@ services:
       - type: rewrite
         source: /privacy
         destination: /privacy/index.html
+      # Old service URLs from before the October 2026 repositioning
+      - type: redirect
+        source: /services/local-websites
+        destination: /services/websites-apps/
+      - type: redirect
+        source: /services/local-websites/*
+        destination: /services/websites-apps/
+      - type: redirect
+        source: /services/google-business
+        destination: /services/websites-apps/
+      - type: redirect
+        source: /services/google-business/*
+        destination: /services/websites-apps/

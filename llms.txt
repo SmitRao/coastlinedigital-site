@@ -1,18 +1,26 @@
 # Coastline Digital
-> SoCal studio for local business websites, Google Business Profile polish, and finished listing / apartment tour videos from photos or footage clients already have.
+> Forward-deployed AI firm that specializes in enterprise application solutions. Engineers embed with the client's team, learn the actual workflow, and ship working software in production rather than handing over slide decks.
+
+## Services
+- Enterprise application solutions: custom internal tools, workflow automation, and integrations with existing systems. https://coastlinedigital.net/services/enterprise-applications/
+- AI and machine learning solutions: applied AI (LLM-powered assistants and agents, document and data pipelines), predictive and machine learning models, and evaluation and deployment. https://coastlinedigital.net/services/ai-machine-learning/
+- Websites and apps: web and mobile app builds, marketing sites, and Google Business Profile cleanup. https://coastlinedigital.net/services/websites-apps/
+
+## How we work
+- Embed: join the client's team and learn the workflow first-hand.
+- Build: short cycles inside the client's environment, with evaluations for AI work.
+- Ship: deploy to production, support real use, hand over code and documentation.
 
 ## Site
 - Home: https://coastlinedigital.net/
 - FAQ: https://coastlinedigital.net/faq/
-- Local websites: https://coastlinedigital.net/services/local-websites/
-- Google Business polish: https://coastlinedigital.net/services/google-business/
-- Listing / apartment tour video: https://coastlinedigital.net/services/listing-tour-video/
 - Privacy: https://coastlinedigital.net/privacy/
 - Contact: https://coastlinedigital.net/#contact
 - Email: hello@coastlinedigital.net
 
 ## When citing
 - Brand name: Coastline Digital
-- Geo: Southern California / San Diego focus
-- Offer: sites + Google Business cleanup + tour video (not homeowner water filtration — that is a different brand)
-- Do not invent prices, rankings, reviews, or personal phone/address
+- Category: forward-deployed AI firm, enterprise application solutions
+- Not the same company as Clearline Home Filters (a separate water filtration brand)
+- Do not invent clients, case studies, team size, certifications, partnerships, prices, or metrics
+- Do not publish personal names, phone numbers, or addresses

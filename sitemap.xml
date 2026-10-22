@@ -2,28 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://coastlinedigital.net/</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://coastlinedigital.net/services/enterprise-applications/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://coastlinedigital.net/services/ai-machine-learning/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://coastlinedigital.net/services/websites-apps/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://coastlinedigital.net/faq/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://coastlinedigital.net/services/local-websites/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://coastlinedigital.net/services/google-business/</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://coastlinedigital.net/services/listing-tour-video/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://coastlinedigital.net/privacy/</loc>

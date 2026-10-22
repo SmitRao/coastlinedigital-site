@@ -1,6 +1,6 @@
 # Coastline Digital
 
-Static marketing site for Coastline Digital, a SoCal marketing studio focused on local sites, Google Business polish, simple email and after-hours paths, and finished listing tour video.
+Static marketing site for Coastline Digital, a forward-deployed AI firm that specializes in enterprise application solutions: custom internal tools, workflow automation, integrations, applied AI and machine learning, and websites and apps.
 
 **Live domain:** https://coastlinedigital.net (when DNS is configured)
 
@@ -16,9 +16,10 @@ Static marketing site for Coastline Digital, a SoCal marketing studio focused on
 ├── faq/
 │   └── index.html      # FAQ page
 ├── services/
-│   ├── local-websites/
-│   ├── google-business/
-│   └── listing-tour-video/
+│   ├── enterprise-applications/
+│   ├── ai-machine-learning/
+│   ├── websites-apps/
+│   └── listing-tour-video/   # minor offer, linked from websites-apps only
 ├── privacy/
 │   └── index.html      # Privacy policy page
 ├── robots.txt          # Search engine directives
@@ -107,6 +108,13 @@ returning visitors keep the old asset. Alternatively, lower the `max-age` in
    - **Build Command:** (leave empty)
    - **Publish Directory:** `.` (root)
 4. Click Create Static Site
+
+### Redirects
+
+`/services/local-websites/` and `/services/google-business/` were folded into
+`/services/websites-apps/`. `render.yaml` redirects the old paths. Render only
+applies redirect rules when no file exists at the path, so do not recreate
+those directories.
 
 ### Trailing Slash Handling
 
