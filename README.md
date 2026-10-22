@@ -18,8 +18,7 @@ Static marketing site for Coastline Digital, a forward-deployed AI firm that spe
 ├── services/
 │   ├── enterprise-applications/
 │   ├── ai-machine-learning/
-│   ├── websites-apps/
-│   └── listing-tour-video/   # minor offer, linked from websites-apps only
+│   └── websites-apps/
 ├── privacy/
 │   └── index.html      # Privacy policy page
 ├── robots.txt          # Search engine directives
@@ -112,7 +111,8 @@ returning visitors keep the old asset. Alternatively, lower the `max-age` in
 ### Redirects
 
 `/services/local-websites/` and `/services/google-business/` were folded into
-`/services/websites-apps/`. `render.yaml` redirects the old paths. Render only
+`/services/websites-apps/`, and `/services/listing-tour-video/` redirects to
+`/`. `render.yaml` redirects the old paths. Render only
 applies redirect rules when no file exists at the path, so do not recreate
 those directories.
 

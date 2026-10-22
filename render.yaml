@@ -44,3 +44,10 @@ services:
       - type: redirect
         source: /services/google-business/*
         destination: /services/websites-apps/
+      # Listing video offer retired; send old links to the home page
+      - type: redirect
+        source: /services/listing-tour-video
+        destination: /
+      - type: redirect
+        source: /services/listing-tour-video/*
+        destination: /
