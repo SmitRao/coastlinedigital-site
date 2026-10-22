@@ -110,6 +110,31 @@
     ]
   }
   </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do you still build websites?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We build marketing sites and web and mobile apps, including front ends for internal tools and systems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you rebuild an existing site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We can rebuild or modernize a current site and keep important pages and links working."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Navigation -->
@@ -182,6 +207,30 @@
               <li>Invent reviews, rankings, or traffic claims</li>
               <li>Put personal home addresses or personal phone numbers on public assets</li>
             </ul>
+          </section>
+          
+          <section class="panel" data-reveal aria-labelledby="faq-title">
+            <h2 class="panel__title" id="faq-title">Common questions</h2>
+            <div class="qa__list">
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  Do you still build websites?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>Yes. We build marketing sites and web and mobile apps, including front ends for internal tools and systems.</p>
+                </div>
+              </details>
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  Can you rebuild an existing site?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>Yes. We can rebuild or modernize a current site and keep important pages and links working.</p>
+                </div>
+              </details>
+            </div>
           </section>
           
           <section class="page-cta spotlight-surface" data-reveal data-spotlight>

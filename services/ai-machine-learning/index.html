@@ -110,6 +110,39 @@
     ]
   }
   </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What AI work do you take on?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assistants and agents built on large language models, document and data processing pipelines, and predictive models, each tested against real examples from your work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you know the AI is working well enough?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We set up evaluations with examples from your workflow and review results with your team before and after launch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can the AI run on our own infrastructure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "That depends on the model and your setup. We review the options with you and follow your data and hosting requirements."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Navigation -->
@@ -185,6 +218,39 @@
               <li>Ship a model without an evaluation</li>
               <li>Use AI where a simple rule or a better form would do the job</li>
             </ul>
+          </section>
+          
+          <section class="panel" data-reveal aria-labelledby="faq-title">
+            <h2 class="panel__title" id="faq-title">Common questions</h2>
+            <div class="qa__list">
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  What AI work do you take on?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>Assistants and agents built on large language models, document and data processing pipelines, and predictive models, each tested against real examples from your work.</p>
+                </div>
+              </details>
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  How do you know the AI is working well enough?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>We set up evaluations with examples from your workflow and review results with your team before and after launch.</p>
+                </div>
+              </details>
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  Can the AI run on our own infrastructure?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>That depends on the model and your setup. We review the options with you and follow your data and hosting requirements.</p>
+                </div>
+              </details>
+            </div>
           </section>
           
           <section class="page-cta spotlight-surface" data-reveal data-spotlight>

@@ -110,6 +110,39 @@
     ]
   }
   </script>
+  <!-- FAQPage JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What kinds of internal tools do you build?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tools your team uses every day, such as dashboards, approval flows, intake forms, and admin panels, connected to the systems you already run."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you connect to our existing software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most cases. We integrate through the APIs, databases, or exports your systems support, and we confirm access before we commit to a plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do we have to replace our current software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Our work is designed to sit alongside what you already use and remove manual steps between systems."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Navigation -->
@@ -184,6 +217,39 @@
               <li>Hand over a requirements document and leave</li>
               <li>Promise savings figures before the work is live</li>
             </ul>
+          </section>
+          
+          <section class="panel" data-reveal aria-labelledby="faq-title">
+            <h2 class="panel__title" id="faq-title">Common questions</h2>
+            <div class="qa__list">
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  What kinds of internal tools do you build?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>Tools your team uses every day, such as dashboards, approval flows, intake forms, and admin panels, connected to the systems you already run.</p>
+                </div>
+              </details>
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  Can you connect to our existing software?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>In most cases. We integrate through the APIs, databases, or exports your systems support, and we confirm access before we commit to a plan.</p>
+                </div>
+              </details>
+              <details class="qa__item">
+                <summary class="qa__summary">
+                  Do we have to replace our current software?
+                  <span class="qa__marker" aria-hidden="true"></span>
+                </summary>
+                <div class="qa__answer">
+                  <p>No. Our work is designed to sit alongside what you already use and remove manual steps between systems.</p>
+                </div>
+              </details>
+            </div>
           </section>
           
           <section class="page-cta spotlight-surface" data-reveal data-spotlight>
