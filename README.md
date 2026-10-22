@@ -23,6 +23,9 @@ Static marketing site for Coastline Digital, a forward-deployed AI firm that spe
 │   └── index.html      # Privacy policy page
 ├── robots.txt          # Search engine directives
 ├── sitemap.xml         # XML sitemap with trailing-slash URLs
+├── og-image.png        # 1200x630 Open Graph / Twitter image
+├── favicon.svg, favicon-32.png, apple-touch-icon.png
+├── assets/brand/       # Mark (1024) and header lockup
 ├── llms.txt, ai.txt    # LLM/AEO discoverability
 ├── render.yaml         # Render Static Site configuration
 └── README.md           # This file
@@ -85,7 +88,8 @@ Rules these primitives follow, and that new ones should too:
 `render.yaml` serves `*.css` and `*.js` with
 `Cache-Control: public, max-age=31536000, immutable`. Filenames are not
 fingerprinted, so asset links carry a `?v=YYYYMMDD` query string. **Bump that
-value in every HTML file whenever you edit a CSS or JS file**, otherwise
+value in every HTML file whenever you edit a CSS or JS file** (add a `.2`,
+`.3` suffix for a second change on the same day), otherwise
 returning visitors keep the old asset. Alternatively, lower the `max-age` in
 `render.yaml` and drop the query strings.
 
@@ -187,3 +191,14 @@ aliases (`--surface-page`, `--text-strong`, `--accent`, …).
 ## License
 
 Private. All rights reserved by Coastline Digital.
+
+## Brand assets
+
+- `assets/brand/coastline-lockup-dark.svg` is the lockup as delivered (dark ink
+  for light backgrounds). `coastline-lockup-dark-header.svg` is the same
+  artwork with the `viewBox` cropped to the artwork, so the header can size it
+  by height without the built-in padding.
+- `assets/brand/coastline-mark-1024.png` is the Organization `logo` in the
+  home page JSON-LD. `apple-touch-icon.png` is the same mark resized to 180.
+- Every page sets `og:image` and `twitter:image` to the absolute URL of
+  `og-image.png`, with `twitter:card` set to `summary_large_image`.
