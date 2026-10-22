@@ -524,6 +524,17 @@ p:last-child {
   opacity: 0.72;
 }
 
+.nav__logo-img {
+  width: auto;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .nav__logo-img {
+    height: 28px;
+  }
+}
+
 .nav__toggle {
   display: flex;
   flex-direction: column;
