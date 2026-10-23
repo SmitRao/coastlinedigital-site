@@ -25,7 +25,7 @@ Based in San Diego, working with teams across Southern California and remotely.
 ## Careers
 - Senior AI/ML Engineer: fully remote, worldwide contract role designing, building, and deploying production AI/ML systems for enterprise clients. Senior AI/ML engineers only.
 - Send a proposal to one of evan@coastlinedigital.net, derek@coastlinedigital.net, or jack@coastlinedigital.net.
-- Full role description and qualifications: https://coastlinedigital.net/careers/
+- Full role description and qualifications: https://coastlinedigital.net/careers/senior-ai-ml-engineer/
 
 ## Company information
 - Brand name: Coastline Digital

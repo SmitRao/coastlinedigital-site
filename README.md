@@ -17,15 +17,16 @@ Static marketing site for Coastline Digital, a forward-deployed AI and software 
 ├── motion.js           # Reveals, animation pause control, scroll progress
 ├── faq/index.html
 ├── careers/
-│   ├── index.html       # Senior AI/ML Engineer job posting
-│   └── careers.css      # Careers page layout and responsive styling
+│   ├── index.html       # Open roles listing
+│   ├── careers.css      # Shared careers layout and responsive styling
+│   └── senior-ai-ml-engineer/index.html # Full job description
 ├── services/
 │   ├── enterprise-applications/index.html
 │   ├── ai-machine-learning/index.html
 │   └── websites-apps/index.html
 ├── privacy/index.html
 ├── assets/
-│   ├── brand/          # Existing logo and mark assets
+│   ├── brand/          # Supplied logos, optimized header logo, and mark assets
 │   └── images/
 │       └── coastline-hero.webp
 ├── robots.txt
@@ -48,7 +49,7 @@ The site uses static HTML, CSS, and vanilla JavaScript, with no framework or bui
 | Ocean | `#123d3a` | Deep coastal green and primary accents |
 | Cream | `#f9faf7` | Main page background |
 | Sage | `#6c8171` | Supporting colour and softer accents |
-| Gold | Existing logo artwork | Brand detail and warm highlights |
+| Gold | `#c9962f` | Warm interface highlights |
 
 The homepage combines a responsive coastal hero image, CSS and SVG service illustrations, an interactive workflow example, and clear contact calls to action. The service illustrations are built directly in the page and do not require an external graphics library.
 
@@ -60,9 +61,11 @@ The homepage combines a responsive coastal hero image, CSS and SVG service illus
 
 The image provides coastal atmosphere and is not presented as a photograph of a specific location or project.
 
-- `assets/brand/coastline-lockup-dark.svg` is the supplied logo for light backgrounds. `coastline-lockup-dark-header.svg` uses a cropped viewBox so the header can size the artwork without its original padding.
-- `assets/brand/coastline-mark-1024.png` is the organization logo in the homepage JSON-LD. `apple-touch-icon.png` uses the same mark at 180 pixels.
-- Every page links to the absolute URL of `og-image.png` for Open Graph and Twitter previews, with `summary_large_image` cards.
+- `assets/brand/NewLogos/coastline-header-logo.png` and `assets/brand/NewLogos/coastline-mark.png` are the supplied original brand assets.
+- Headers and image-based footers use `assets/brand/coastline-header-logo.webp`, an optimized 660 × 220 derivative that preserves the original header logo's aspect ratio and transparency.
+- The homepage hero uses the new mark through an optimized 256 × 256 `assets/brand/coastline-mark.webp` derivative.
+- Organization and job-posting JSON-LD use the original new mark. `favicon-32.png` and `apple-touch-icon.png` use the same mark at 32 and 180 pixels; `favicon.svg` embeds a 64-pixel PNG derived from it.
+- `og-image.png` is a 1200 × 630 sharing card refreshed with the supplied header logo. Every page links to its absolute URL for Open Graph and Twitter previews, with `summary_large_image` cards.
 
 ## Interactive workflow examples
 
@@ -91,7 +94,7 @@ The configured return URL is `https://coastlinedigital.net/?sent=1#contact`. On 
 
 ## Careers
 
-`/careers/index.html` publishes the Senior AI/ML Engineer contract role, with its page-specific styling in `/careers/careers.css`. The position is fully remote and open worldwide; only senior AI/ML engineers are considered. The page includes the company description, responsibilities, qualifications, and application instructions, and is linked from the navigation, footer, and sitemap.
+`/careers/index.html` lists open roles and is linked from the navigation and footer. Selecting the Senior AI/ML Engineer role opens `/careers/senior-ai-ml-engineer/`, where `/careers/senior-ai-ml-engineer/index.html` publishes the full company description, responsibilities, qualifications, and application instructions. The contract position is fully remote and open worldwide; only senior AI/ML engineers are considered. Both pages share `/careers/careers.css` and are included in the sitemap.
 
 Applicants send a proposal to one of `evan@coastlinedigital.net`, `derek@coastlinedigital.net`, or `jack@coastlinedigital.net` using the page's email links. These `mailto:` links open the applicant's email client; there is no application form or submission backend.
 
@@ -107,9 +110,9 @@ Open `http://localhost:8000`. No package installation or build command is requir
 
 ## Cache busting
 
-The current shared CSS and JavaScript asset version is **`20261022.4`**. Every HTML page loads `tokens.css`, `styles.css`, `main.js`, and `motion.js` with that `?v=` suffix.
+Every HTML page loads `styles.css` with **`?v=20261023.1`**. The unchanged shared assets `tokens.css`, `main.js`, and `motion.js` retain **`?v=20261022.4`**. Both careers pages load `careers/careers.css` with **`?v=20261023.2`**.
 
-`render.yaml` serves CSS and JavaScript with `Cache-Control: public, max-age=31536000, immutable`. Whenever a shared stylesheet or script changes, bump the version in every HTML file. Use a date-based value with an incrementing suffix for multiple updates on one day, so returning visitors receive the new assets.
+`render.yaml` serves CSS and JavaScript with `Cache-Control: public, max-age=31536000, immutable`. Whenever a stylesheet or script changes, bump that asset's version in every HTML file that loads it. Use a date-based value with an incrementing suffix for multiple updates on one day, so returning visitors receive the new assets.
 
 ## Deploying to Render
 

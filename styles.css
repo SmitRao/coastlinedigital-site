@@ -434,16 +434,9 @@ button {
   border-color: #ffffff73;
 }
 .orbit-core {
-  font-size: 61px;
-  font-weight: 550;
-  line-height: 1;
-  color: #fff;
-  letter-spacing: -5px;
-  transform: translateY(-5px);
-}
-.orbit-core > span {
-  color: #eed7a2;
-  letter-spacing: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
 }
 .orbit-satellite {
   position: absolute;
@@ -1645,6 +1638,10 @@ button {
 .footer__brand-link {
   display: block;
   width: 190px;
+}
+.footer__brand-link img {
+  width: 100%;
+  height: auto;
 }
 .footer__tagline {
   font-size: 12px;
