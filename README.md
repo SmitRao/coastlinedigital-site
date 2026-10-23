@@ -1,204 +1,130 @@
 # Coastline Digital
 
-Static marketing site for Coastline Digital, a forward-deployed AI firm that specializes in enterprise application solutions: custom internal tools, workflow automation, integrations, applied AI and machine learning, and websites and apps.
+Static marketing site for Coastline Digital, a forward-deployed AI and software firm focused on enterprise applications. The site presents custom internal tools, workflow automation, integrations, AI and machine learning, and websites and apps. Coastline Digital is based in San Diego and works with teams across Southern California and remotely.
 
-**Live domain:** https://coastlinedigital.net (when DNS is configured)
+**Domain:** https://coastlinedigital.net
+
+**Contact:** hello@coastlinedigital.net
 
 ## Structure
 
-```
+```text
 /
-├── index.html          # Homepage (one-pager with all sections)
-├── tokens.css          # Design tokens (colour, type, space, motion)
-├── styles.css          # Design system and page components
-├── main.js             # Navigation, anchor scrolling, contact form
-├── motion.js           # Motion primitives (reveals, text effect, pointer)
-├── faq/
-│   └── index.html      # FAQ page
+├── index.html          # Homepage, service overview, workflow examples, contact
+├── tokens.css          # Shared colour, typography, spacing, and layout tokens
+├── styles.css          # Responsive layouts, components, and CSS animation
+├── main.js             # Navigation, illustrative workflows, contact form states
+├── motion.js           # Reveals, animation pause control, scroll progress
+├── faq/index.html
 ├── services/
-│   ├── enterprise-applications/
-│   ├── ai-machine-learning/
-│   └── websites-apps/
-├── privacy/
-│   └── index.html      # Privacy policy page
-├── robots.txt          # Search engine directives
-├── sitemap.xml         # XML sitemap with trailing-slash URLs
-├── og-image.png        # 1200x630 Open Graph / Twitter image
+│   ├── enterprise-applications/index.html
+│   ├── ai-machine-learning/index.html
+│   └── websites-apps/index.html
+├── privacy/index.html
+├── assets/
+│   ├── brand/          # Existing logo and mark assets
+│   └── images/
+│       └── coastline-hero.webp
+├── robots.txt
+├── sitemap.xml
+├── og-image.png        # 1200 × 630 Open Graph / Twitter image
 ├── favicon.svg, favicon-32.png, apple-touch-icon.png
-├── assets/brand/       # Mark (1024) and header lockup
-├── llms.txt, ai.txt    # LLM/AEO discoverability
+├── llms.txt, ai.txt     # Machine-readable company and service descriptions
 ├── render.yaml         # Render Static Site configuration
-└── README.md           # This file
+└── README.md
 ```
 
-## Tech Stack
+## Technology and visual design
 
-- Static HTML, CSS, and vanilla JavaScript
-- Google Fonts: Playfair Display (display) + DM Sans (body)
-- FormSubmit for contact form handling
-- No build step, no framework, no third-party runtime dependencies
+The site uses static HTML, CSS, and vanilla JavaScript, with no framework or build step. Manrope is loaded from Google Fonts, with system sans-serif fallbacks. FormSubmit handles contact submissions.
 
-## Design system
+`tokens.css` loads before `styles.css` on every page. It supplies shared type and layout values and retains legacy token aliases. `styles.css` defines the current component styles, responsive breakpoints, and animation. Service, FAQ, and privacy pages share the `.page`, `.panel`, `.checklist`, `.steps`, `.prose`, `.qa-list`, and `.page-cta` patterns.
 
-`tokens.css` is the single source of truth for colour, the fluid type scale,
-the 4px space scale, radii, elevation, motion durations/easings and layout
-widths. Component CSS should only reference tokens, never raw values. The
-variable names used before the token layer existed (`--color-navy`,
-`--space-md`, `--shadow-sm`, `--transition-base`, …) are kept at the bottom of
-the file as aliases onto the new scale.
-
-`styles.css` builds on those tokens: base and primitives, then motion
-classes, then chrome (nav, footer), then the homepage sections, then the
-inner-page shell (`.page`, `.panel`, `.checklist`, `.steps`, `.prose`,
-`.qa-list`, `.page-cta`) that every subpage shares.
-
-One gotcha worth knowing: headings default to the dark ink colour, so any
-section on a dark background needs `section--inverse` or its title will
-disappear into the background.
-
-## Motion primitives
-
-`motion.js` implements the site's motion with no dependencies. Each primitive
-is opt-in through a data attribute:
-
-| Primitive | Attribute | Behaviour |
+| Colour | Value | Purpose |
 |---|---|---|
-| In view | `data-reveal` | IntersectionObserver reveal with a per-sibling stagger |
-| Text effect | `data-text-effect` | Splits a heading into words and floats them up |
-| Shimmer | `.shimmer` | CSS highlight sweep for small accent text |
-| Spotlight | `data-spotlight` | Pointer-tracked highlight on buttons and cards |
-| Magnetic | `data-magnetic` | Element leans up to 6px toward the pointer |
-| Scroll progress | `data-scroll-progress` | Rail on the bottom edge of the header |
+| Ocean | `#123d3a` | Deep coastal green and primary accents |
+| Cream | `#f9faf7` | Main page background |
+| Sage | `#6c8171` | Supporting colour and softer accents |
+| Gold | Existing logo artwork | Brand detail and warm highlights |
 
-Rules these primitives follow, and that new ones should too:
+The homepage combines a responsive coastal hero image, CSS and SVG service illustrations, an interactive workflow example, and clear contact calls to action. The service illustrations are built directly in the page and do not require an external graphics library.
 
-- `prefers-reduced-motion: reduce` disables everything. CSS neutralises the
-  animations and reveal offsets, and `motion.js` refuses to attach listeners
-  and settles any applied state if the preference changes mid-session.
-- Spotlight and magnetic also require `(hover: hover) and (pointer: fine)`, so
-  touch devices never attach those listeners.
-- Reveal targets are hidden only under the `.has-js` class, which a tiny inline
-  script in each `<head>` adds. If a script fails or is blocked, the page stays
-  fully readable rather than invisible.
-- `data-text-effect` sets `aria-label` to the original string so assistive tech
-  reads one phrase rather than a list of words.
+## Hero image and brand assets
 
-## Cache busting
+`assets/images/coastline-hero.webp` is an AI-generated illustration created with the built-in imagegen tool and optimized as WebP for the site. Generation prompt summary:
 
-`render.yaml` serves `*.css` and `*.js` with
-`Cache-Control: public, max-age=31536000, immutable`. Filenames are not
-fingerprinted, so asset links carry a `?v=YYYYMMDD` query string. **Bump that
-value in every HTML file whenever you edit a CSS or JS file** (add a `.2`,
-`.3` suffix for a second change on the same day), otherwise
-returning visitors keep the old asset. Alternatively, lower the `max-age` in
-`render.yaml` and drop the query strings.
+> Cinematic aerial Southern California coast, deep teal water, white surf, golden sandstone, warm sunlight, no people or text.
 
-## Deploying to Render
+The image provides coastal atmosphere and is not presented as a photograph of a specific location or project.
 
-### Option 1: Blueprint (recommended)
+- `assets/brand/coastline-lockup-dark.svg` is the supplied logo for light backgrounds. `coastline-lockup-dark-header.svg` uses a cropped viewBox so the header can size the artwork without its original padding.
+- `assets/brand/coastline-mark-1024.png` is the organization logo in the homepage JSON-LD. `apple-touch-icon.png` uses the same mark at 180 pixels.
+- Every page links to the absolute URL of `og-image.png` for Open Graph and Twitter previews, with `summary_large_image` cards.
 
-1. Push this repo to GitHub
-2. Go to Render Dashboard > Blueprints
-3. Connect your GitHub account and select this repo
-4. Render will auto-detect the `render.yaml` and deploy
+## Interactive workflow examples
 
-### Option 2: Manual Static Site
+The homepage explorer offers operations, documents, and customer-experience scenarios. Selecting a tab changes the example; “Run example” moves its three steps through loading and completed states with status text and spinners. These are local, illustrative interactions. They do not call an AI model, connect to business systems, process user documents, or send data to a backend.
 
-1. Go to Render Dashboard > New > Static Site
-2. Connect your GitHub repo
-3. Configure:
-   - **Name:** coastline-digital
-   - **Build Command:** (leave empty)
-   - **Publish Directory:** `.` (root)
-4. Click Create Static Site
+Tabs support arrow keys, Home, and End, with a single active tab stop and associated tab panels. Running an example announces progress through a status region. Switching scenarios clears pending timers and resets the example.
 
-### Redirects
+## Motion and accessibility
 
-`/services/local-websites/` and `/services/google-business/` were folded into
-`/services/websites-apps/`, and `/services/listing-tour-video/` redirects to
-`/`. `render.yaml` redirects the old paths. Render only
-applies redirect rules when no file exists at the path, so do not recreate
-those directories.
+- `data-reveal` elements use IntersectionObserver for a small entrance transition. Content starts visible and only becomes eligible for a reveal after observation is available.
+- `data-scroll-progress` updates the thin progress rail below the navigation.
+- CSS provides the orbit animations, subtle Ken Burns movement on the hero image, hover transitions, and loading spinners.
+- The hero includes a labelled pause/resume button for decorative animations. Pausing also makes reveal content visible; functional submission and example indicators remain available.
+- `prefers-reduced-motion: reduce` removes CSS animation and transitions, makes reveals visible, and disables smooth scrolling. The pause control reflects the device preference.
+- Pages include skip links and visible focus styles. The mobile menu reports its expanded state, closes on Escape or outside clicks, and returns focus to its toggle when dismissed with Escape.
 
-### Trailing Slash Handling
+## Contact form
 
-Render static sites handle trailing slashes automatically. The `/privacy` path will serve `/privacy/index.html`. If you need explicit redirects from non-trailing to trailing slash URLs:
+The form retains a native `POST` to `https://formsubmit.co/hello@coastlinedigital.net`; JavaScript adds feedback without replacing the submission with an AJAX request. It collects a name, email address, optional company, and message. A honeypot and FormSubmit CAPTCHA remain enabled.
 
-1. Go to your site settings in Render Dashboard
-2. Navigate to Redirects/Rewrites
-3. Add redirect rules as needed (e.g., `/privacy` -> `/privacy/`)
+On submission, the button shows a spinner, the form reports a busy state, and a status message explains the next verification step. Duplicate submissions are temporarily blocked. A timeout restores the button if navigation has not completed, and returning through the browser's back/forward cache clears the pending state.
 
-## DNS Configuration for coastlinedigital.net
+The configured return URL is `https://coastlinedigital.net/?sent=1#contact`. On return, the page displays its confirmation message and removes the `sent` parameter from the address bar.
 
-After deploying to Render:
-
-1. Go to your Render static site > Settings > Custom Domains
-2. Add `coastlinedigital.net` and `www.coastlinedigital.net`
-3. Render will provide DNS records to add
-
-At your domain registrar (e.g., Namecheap, Cloudflare, Google Domains):
-
-**For root domain (coastlinedigital.net):**
-- Add an `A` record pointing to Render's IP (provided in dashboard)
-- Or use `ALIAS`/`ANAME` if your registrar supports it
-
-**For www subdomain:**
-- Add a `CNAME` record: `www` -> `[your-site].onrender.com`
-
-**SSL:** Render automatically provisions and renews SSL certificates via Let's Encrypt once DNS is verified.
+**Hosted verification:** FormSubmit requires activation through the recipient's email for a new form. Verify activation, CAPTCHA, delivery to `hello@coastlinedigital.net`, and the return URL from the deployed domain before relying on production inquiries. Local interaction checks do not verify email delivery.
 
 ## Development
 
-No build step needed. Open `index.html` in a browser or use any local server:
+Serve the repository root so absolute asset URLs and subpage links work:
 
 ```bash
-# Python 3
-python -m http.server 8000
-
-# Node.js (if npx available)
-npx serve .
-
-# PHP
-php -S localhost:8000
+python3 -m http.server 8000
 ```
 
-## Contact Form
+Open `http://localhost:8000`. No package installation or build command is required. Review the homepage and supporting pages at desktop and mobile sizes, test the menu and workflow tabs with a keyboard, and check the reduced-motion preference. The form's hosted verification steps are separate from local UI checks.
 
-The contact form uses FormSubmit (formsubmit.co) to handle submissions. Form data is sent to the configured email address. On successful submission, users are redirected to `/?sent=1` which displays a success message.
+## Cache busting
 
-**Note:** The first form submission will require email verification through FormSubmit. After verification, submissions will be delivered normally.
+The current shared CSS and JavaScript asset version is **`20261022.4`**. Every HTML page loads `tokens.css`, `styles.css`, `main.js`, and `motion.js` with that `?v=` suffix.
 
-## Analytics Placeholders
+`render.yaml` serves CSS and JavaScript with `Cache-Control: public, max-age=31536000, immutable`. Whenever a shared stylesheet or script changes, bump the version in every HTML file. Use a date-based value with an incrementing suffix for multiple updates on one day, so returning visitors receive the new assets.
 
-GA4 and Meta Pixel code blocks are included in `index.html` as commented-out placeholders. To enable:
+## Deploying to Render
 
-1. Get your GA4 Measurement ID (G-XXXXXXXXXX)
-2. Uncomment the GA4 script block and replace the placeholder ID
-3. For Meta Pixel, uncomment and add your Pixel ID
+Deployment remains a Render Static Site using the existing `render.yaml`. It publishes the repository root with an empty build command.
 
-## Brand Colors
+### Blueprint
 
-Defined as primitives in `tokens.css` and consumed through the semantic
-aliases (`--surface-page`, `--text-strong`, `--accent`, …).
+1. Push the repository to GitHub.
+2. In Render, create a Blueprint and select this repository.
+3. Use the checked-in `render.yaml` configuration.
 
-| Name   | Hex       | Usage                    |
-|--------|-----------|--------------------------|
-| Navy   | `#0F2744` | Primary, headings        |
-| Sand   | `#D4C4A8` | Accent, highlights       |
-| Cream  | `#F7F3EC` | Background               |
-| Slate  | `#1C2430` | Body text                |
+### Manual Static Site
+
+1. In Render, create a Static Site connected to this repository.
+2. Set the name to `coastline-digital`.
+3. Leave the build command empty and set the publish directory to `.`.
+4. Deploy the site.
+
+### Domain and routes
+
+Add `coastlinedigital.net` and `www.coastlinedigital.net` under the site's custom domains, then apply the DNS records shown in Render's dashboard. Confirm domain verification and HTTPS after the records are in place.
+
+`render.yaml` retains the `/privacy` rewrite and redirects the older `/services/local-websites/` and `/services/google-business/` routes to `/services/websites-apps/`. The retired `/services/listing-tour-video/` route redirects to `/`. Keep these redirect paths free of new page directories so old links continue to reach their intended destinations.
 
 ## License
 
 Private. All rights reserved by Coastline Digital.
-
-## Brand assets
-
-- `assets/brand/coastline-lockup-dark.svg` is the lockup as delivered (dark ink
-  for light backgrounds). `coastline-lockup-dark-header.svg` is the same
-  artwork with the `viewBox` cropped to the artwork, so the header can size it
-  by height without the built-in padding.
-- `assets/brand/coastline-mark-1024.png` is the Organization `logo` in the
-  home page JSON-LD. `apple-touch-icon.png` is the same mark resized to 180.
-- Every page sets `og:image` and `twitter:image` to the absolute URL of
-  `og-image.png`, with `twitter:card` set to `summary_large_image`.

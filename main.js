@@ -1,169 +1,223 @@
-/**
- * Coastline Digital - site behaviour
- *
- * Navigation, anchor scrolling, and contact form handling. Visual motion
- * lives in motion.js so this file stays useful even when motion is off.
- */
-
+/** Coastline Digital — accessible navigation, illustrative workflows, contact. */
 (function () {
-  'use strict';
-
-  var reduceQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  "use strict";
+  var reduceQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var nav = document.querySelector(".nav");
+  var navToggle = document.querySelector(".nav__toggle");
+  var navMenu = document.querySelector(".nav__menu");
+  var mobileQuery = window.matchMedia("(max-width: 700px)");
 
   function scrollBehavior() {
-    return reduceQuery.matches ? 'auto' : 'smooth';
+    return reduceQuery.matches ? "auto" : "smooth";
   }
-
-  /* --- Mobile navigation ------------------------------------------------- */
-
-  var navToggle = document.querySelector('.nav__toggle');
-  var navMenu = document.querySelector('.nav__menu');
-
   function closeMenu() {
     if (!navToggle || !navMenu) return;
-    navToggle.setAttribute('aria-expanded', 'false');
-    navMenu.classList.remove('nav__menu--open');
+    navToggle.setAttribute("aria-expanded", "false");
+    navMenu.classList.remove("nav__menu--open");
   }
-
   if (navToggle && navMenu) {
-    navToggle.addEventListener('click', function () {
-      var expanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!expanded));
-      navMenu.classList.toggle('nav__menu--open');
+    navToggle.addEventListener("click", function () {
+      var open = navToggle.getAttribute("aria-expanded") !== "true";
+      navToggle.setAttribute("aria-expanded", String(open));
+      navMenu.classList.toggle("nav__menu--open", open);
     });
-
-    navMenu.addEventListener('click', function (event) {
-      if (event.target.closest('a')) closeMenu();
+    navMenu.addEventListener("click", function (event) {
+      if (event.target.closest("a")) closeMenu();
     });
-
-    document.addEventListener('keydown', function (event) {
-      if (event.key !== 'Escape') return;
-      if (!navMenu.classList.contains('nav__menu--open')) return;
-      closeMenu();
-      navToggle.focus();
+    document.addEventListener("keydown", function (event) {
+      if (
+        event.key === "Escape" &&
+        navToggle.getAttribute("aria-expanded") === "true"
+      ) {
+        closeMenu();
+        navToggle.focus();
+      }
     });
-
-    document.addEventListener('click', function (event) {
-      if (!navMenu.classList.contains('nav__menu--open')) return;
-      if (navMenu.contains(event.target) || navToggle.contains(event.target)) return;
-      closeMenu();
+    document.addEventListener("click", function (event) {
+      if (!nav.contains(event.target)) closeMenu();
     });
+    if (mobileQuery.addEventListener)
+      mobileQuery.addEventListener("change", closeMenu);
   }
-
-  /* --- Header state on scroll -------------------------------------------- */
-
-  var nav = document.querySelector('.nav');
-
-  if (nav) {
-    var navTicking = false;
-
-    var updateNav = function () {
-      nav.classList.toggle('nav--scrolled', window.scrollY > 16);
-      navTicking = false;
-    };
-
-    window.addEventListener(
-      'scroll',
-      function () {
-        if (navTicking) return;
-        navTicking = true;
-        window.requestAnimationFrame(updateNav);
-      },
-      { passive: true }
-    );
-
-    updateNav();
-  }
-
-  /* --- Anchor links, offset for the fixed header ------------------------- */
 
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
-    anchor.addEventListener('click', function (event) {
-      var targetId = anchor.getAttribute('href');
-      if (!targetId || targetId === '#') return;
-
-      var target = document.querySelector(targetId);
+    anchor.addEventListener("click", function (event) {
+      var target = document.getElementById(
+        anchor.getAttribute("href").slice(1),
+      );
       if (!target) return;
-
       event.preventDefault();
-
-      var offset = (nav ? nav.offsetHeight : 0) + 20;
-      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-
-      window.scrollTo({ top: top, behavior: scrollBehavior() });
-
-      if (window.history && window.history.pushState) {
-        window.history.pushState(null, '', targetId);
-      }
-
-      target.setAttribute('tabindex', '-1');
+      closeMenu();
+      var top =
+        target.getBoundingClientRect().top +
+        window.scrollY -
+        (nav ? nav.offsetHeight : 0) -
+        20;
+      window.scrollTo({ top: Math.max(0, top), behavior: scrollBehavior() });
+      window.history.pushState(null, "", anchor.getAttribute("href"));
+      if (!target.hasAttribute("tabindex"))
+        target.setAttribute("tabindex", "-1");
       target.focus({ preventScroll: true });
     });
   });
 
-  /* --- Contact form ------------------------------------------------------ */
-
-  var contactForm = document.getElementById('contact-form');
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', function () {
-      var submit = contactForm.querySelector('button[type="submit"]');
-      if (!submit) return;
-      submit.disabled = true;
-      submit.textContent = 'Sending...';
+  // This local demonstration illustrates a possible workflow; it does not process data.
+  var tabs = Array.from(document.querySelectorAll("[data-scenario]"));
+  var runButton = document.getElementById("run-demo");
+  var demoStatus = document.getElementById("demo-status");
+  var demoTimers = [];
+  var running = false;
+  var scenarioNotes = {
+    operations: "Your systems. A more connected workflow.",
+    documents: "Your documents. Useful context for your team.",
+    experiences: "Your customers. A more connected experience.",
+  };
+  function activePanel() {
+    return document.querySelector(".workflow-panel:not([hidden])");
+  }
+  function resetDemo() {
+    demoTimers.forEach(window.clearTimeout);
+    demoTimers = [];
+    running = false;
+    document.querySelectorAll(".demo-step").forEach(function (step) {
+      step.classList.remove("is-running", "is-complete");
+    });
+    if (runButton) {
+      runButton.disabled = false;
+      runButton.removeAttribute("aria-busy");
+      runButton.querySelector("span").textContent = "Run example";
+    }
+  }
+  function activateTab(tab, focus) {
+    resetDemo();
+    tabs.forEach(function (item) {
+      var selected = item === tab;
+      item.setAttribute("aria-selected", String(selected));
+      item.tabIndex = selected ? 0 : -1;
+      var panel = document.getElementById(item.getAttribute("aria-controls"));
+      if (panel) panel.hidden = !selected;
+    });
+    if (demoStatus)
+      demoStatus.textContent = scenarioNotes[tab.dataset.scenario];
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () {
+      activateTab(tab, false);
+    });
+    tab.addEventListener("keydown", function (event) {
+      var next;
+      if (event.key === "ArrowDown" || event.key === "ArrowRight")
+        next = (index + 1) % tabs.length;
+      if (event.key === "ArrowUp" || event.key === "ArrowLeft")
+        next = (index + tabs.length - 1) % tabs.length;
+      if (event.key === "Home") next = 0;
+      if (event.key === "End") next = tabs.length - 1;
+      if (next !== undefined) {
+        event.preventDefault();
+        activateTab(tabs[next], true);
+      }
+    });
+  });
+  if (runButton) {
+    runButton.addEventListener("click", function () {
+      if (running || !activePanel()) return;
+      resetDemo();
+      running = true;
+      runButton.disabled = true;
+      runButton.setAttribute("aria-busy", "true");
+      runButton.querySelector("span").textContent = "Running…";
+      var steps = Array.from(activePanel().querySelectorAll(".demo-step"));
+      var duration = reduceQuery.matches ? 350 : 850;
+      function advance(index) {
+        if (index > 0) {
+          steps[index - 1].classList.remove("is-running");
+          steps[index - 1].classList.add("is-complete");
+        }
+        if (index < steps.length) {
+          steps[index].classList.add("is-running");
+          demoStatus.textContent =
+            "Example: " +
+            steps[index].querySelector("strong").textContent.toLowerCase() +
+            "…";
+          demoTimers.push(
+            window.setTimeout(function () {
+              advance(index + 1);
+            }, duration),
+          );
+        } else {
+          running = false;
+          runButton.disabled = false;
+          runButton.removeAttribute("aria-busy");
+          runButton.querySelector("span").textContent = "Run again";
+          demoStatus.textContent =
+            "Example complete. Ready for your team’s review.";
+        }
+      }
+      advance(0);
     });
   }
 
-  /* FormSubmit returns to /?sent=1 - confirm, lock the form, tidy the URL. */
-  if (new URLSearchParams(window.location.search).get('sent') === '1') {
-    var success = document.getElementById('success-message');
-    var contactSection = document.getElementById('contact');
-
+  // Keep the existing FormSubmit handoff, including its verification challenge.
+  var contactForm = document.getElementById("contact-form");
+  var formStatus = document.getElementById("form-status");
+  var submitTimer;
+  function restoreSubmit() {
+    if (!contactForm) return;
+    window.clearTimeout(submitTimer);
+    contactForm.classList.remove("is-submitting");
+    contactForm.removeAttribute("aria-busy");
+    var button = contactForm.querySelector('button[type="submit"]');
+    if (button) button.disabled = false;
+    var label = contactForm.querySelector(".submit-label");
+    if (label) label.textContent = "Start the conversation";
+  }
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+      if (contactForm.classList.contains("is-submitting")) {
+        event.preventDefault();
+        return;
+      }
+      var submit = contactForm.querySelector('button[type="submit"]');
+      contactForm.classList.add("is-submitting");
+      contactForm.setAttribute("aria-busy", "true");
+      submit.disabled = true;
+      contactForm.querySelector(".submit-label").textContent =
+        "Opening secure form…";
+      formStatus.textContent =
+        "Continue on the next screen to verify and send your message.";
+      formStatus.hidden = false;
+      submitTimer = window.setTimeout(function () {
+        restoreSubmit();
+        formStatus.textContent =
+          "Still here? Try again, or email hello@coastlinedigital.net directly.";
+      }, 15000);
+    });
+    window.addEventListener("pageshow", function (event) {
+      if (!event.persisted) return;
+      restoreSubmit();
+      if (formStatus) formStatus.hidden = true;
+    });
+  }
+  if (new URLSearchParams(window.location.search).get("sent") === "1") {
+    var success = document.getElementById("success-message");
     if (success) {
       success.hidden = false;
-
-      if (contactSection) {
-        window.setTimeout(function () {
-          contactSection.scrollIntoView({ behavior: scrollBehavior(), block: 'start' });
-        }, 100);
-      }
-
-      if (contactForm) {
-        contactForm.setAttribute('aria-disabled', 'true');
-        contactForm.style.opacity = '0.55';
-        contactForm.style.pointerEvents = 'none';
-        contactForm.querySelectorAll('input, textarea, button').forEach(function (field) {
-          field.disabled = true;
-        });
-      }
-    }
-
-    if (window.history && window.history.replaceState) {
-      window.history.replaceState({}, document.title, window.location.pathname);
+      window.setTimeout(function () {
+        document
+          .getElementById("contact")
+          .scrollIntoView({ behavior: scrollBehavior(), block: "start" });
+      }, 100);
+      var cleanURL = new URL(window.location.href);
+      cleanURL.searchParams.delete("sent");
+      window.history.replaceState(
+        null,
+        "",
+        cleanURL.pathname + cleanURL.search + "#contact",
+      );
     }
   }
-
-  /* --- A small nod to anyone who goes looking ---------------------------- */
-
-  var konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
-  var konamiIndex = 0;
-
-  document.addEventListener('keydown', function (event) {
-    if (event.keyCode !== konami[konamiIndex]) {
-      konamiIndex = 0;
-      return;
-    }
-    konamiIndex += 1;
-    if (konamiIndex < konami.length) return;
-    konamiIndex = 0;
-    console.log('%c 🌊 ', 'font-size: 48px;');
-    console.log(
-      '%cYou found the hidden wave! Thanks for exploring.',
-      'color: #0F2744; font-family: Georgia, serif; font-size: 14px;'
-    );
-    console.log(
-      '%cCoastline Digital - forward-deployed AI for enterprise applications',
-      'color: #D4C4A8; font-size: 12px;'
-    );
+  document.querySelectorAll("[data-year]").forEach(function (el) {
+    el.textContent = String(new Date().getFullYear());
   });
 })();

@@ -1,671 +1,1742 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coastline Digital | Forward-Deployed AI for Enterprise Applications</title>
-  <meta name="description" content="Coastline Digital is a forward-deployed AI firm. We work alongside your team, learn the real workflow, and build internal tools, automation, and AI systems meant for daily use.">
-  
-  <!-- Canonical -->
-  <link rel="canonical" href="https://coastlinedigital.net/">
-  
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Coastline Digital | Forward-Deployed AI for Enterprise Applications">
-  <meta property="og:description" content="Coastline Digital is a forward-deployed AI firm. We work alongside your team, learn the real workflow, and build internal tools, automation, and AI systems meant for daily use.">
-  <meta property="og:url" content="https://coastlinedigital.net/">
-  <meta property="og:site_name" content="Coastline Digital">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:image" content="https://coastlinedigital.net/og-image.png">
-  <meta property="og:image:secure_url" content="https://coastlinedigital.net/og-image.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Coastline Digital | Forward-Deployed AI for Enterprise Applications">
-  <meta name="twitter:description" content="Coastline Digital is a forward-deployed AI firm. We work alongside your team, learn the real workflow, and build internal tools, automation, and AI systems meant for daily use.">
-  <meta name="twitter:image" content="https://coastlinedigital.net/og-image.png">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="/tokens.css?v=20261022.2">
-  <link rel="stylesheet" href="/styles.css?v=20261022.2">
-  <script>document.documentElement.classList.add('has-js');</script>
-  
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://coastlinedigital.net/#organization",
-    "name": "Coastline Digital",
-    "url": "https://coastlinedigital.net/",
-    "email": "hello@coastlinedigital.net",
-    "logo": "https://coastlinedigital.net/assets/brand/coastline-mark-1024.png",
-    "slogan": "Built inside your workflow. Made for daily use.",
-    "description": "Coastline Digital is a forward-deployed AI firm that specializes in enterprise application solutions. We work alongside the client's team, learn the actual workflow, and build custom internal tools, workflow automation, integrations, applied AI and machine learning, and websites and apps.",
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Southern California"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "San Diego County"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Orange County"
-      },
-      {
-        "@type": "City",
-        "name": "Los Angeles"
-      },
-      {
-        "@type": "Place",
-        "name": "Inland Empire"
-      },
-      "Remote"
-    ],
-    "knowsAbout": [
-      "Enterprise application solutions",
-      "Custom internal tools",
-      "Workflow automation",
-      "Integrations with existing systems",
-      "AI and machine learning solutions",
-      "Applied AI",
-      "LLM-powered assistants and agents",
-      "Document and data pipelines",
-      "Predictive and machine learning models",
-      "AI evaluation and deployment",
-      "Websites and apps",
-      "Web and mobile app development",
-      "Marketing sites"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Coastline Digital services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@id": "https://coastlinedigital.net/#service-enterprise-applications" } },
-        { "@type": "Offer", "itemOffered": { "@id": "https://coastlinedigital.net/#service-ai-machine-learning" } },
-        { "@type": "Offer", "itemOffered": { "@id": "https://coastlinedigital.net/#service-websites-apps" } }
-      ]
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Coastline Digital",
-    "url": "https://coastlinedigital.net/",
-    "description": "Forward-deployed AI firm for enterprise application solutions."
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://coastlinedigital.net/#service-enterprise-applications",
-    "name": "Enterprise application solutions",
-    "serviceType": "Custom internal tools, workflow automation, and systems integration",
-    "url": "https://coastlinedigital.net/services/enterprise-applications/",
-    "provider": { "@id": "https://coastlinedigital.net/#organization" },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Southern California"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "San Diego County"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Orange County"
-      },
-      {
-        "@type": "City",
-        "name": "Los Angeles"
-      },
-      {
-        "@type": "Place",
-        "name": "Inland Empire"
-      },
-      "Remote"
-    ],
-    "description": "Custom internal tools, workflow automation, and integrations with the systems you already run, built alongside your team and deployed on your systems."
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://coastlinedigital.net/#service-ai-machine-learning",
-    "name": "AI and machine learning solutions",
-    "serviceType": "Applied AI, machine learning models, and evaluation and deployment",
-    "url": "https://coastlinedigital.net/services/ai-machine-learning/",
-    "provider": { "@id": "https://coastlinedigital.net/#organization" },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Southern California"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "San Diego County"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Orange County"
-      },
-      {
-        "@type": "City",
-        "name": "Los Angeles"
-      },
-      {
-        "@type": "Place",
-        "name": "Inland Empire"
-      },
-      "Remote"
-    ],
-    "description": "Applied AI including LLM-powered assistants and agents and document and data pipelines, predictive and machine learning models, and the evaluation and deployment work that puts them into production."
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://coastlinedigital.net/#service-websites-apps",
-    "name": "Websites and apps",
-    "serviceType": "Web and mobile app development and marketing sites",
-    "url": "https://coastlinedigital.net/services/websites-apps/",
-    "provider": { "@id": "https://coastlinedigital.net/#organization" },
-    "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Southern California"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "San Diego County"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Orange County"
-      },
-      {
-        "@type": "City",
-        "name": "Los Angeles"
-      },
-      {
-        "@type": "Place",
-        "name": "Inland Empire"
-      },
-      "Remote"
-    ],
-    "description": "Web and mobile app builds and marketing sites from Coastline Digital."
-  }
-  </script>
-  
-  <!-- GA4 placeholder (uncomment and add your ID when ready)
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-  -->
-  
-  <!-- Meta Pixel placeholder (uncomment and add your ID when ready)
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'XXXXXXXXXXXXXXX');
-    fbq('track', 'PageView');
-  </script>
-  -->
-</head>
-<body>
-  <!-- Navigation -->
-  <header class="nav" id="nav">
-    <div class="nav__container">
-      <a href="/" class="nav__logo" title="Coastline Digital"><img class="nav__logo-img" src="/assets/brand/coastline-lockup-dark-header.svg" alt="Coastline Digital" width="429" height="56"></a>
-      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-      </button>
-      <nav class="nav__menu" id="nav-menu" role="navigation" aria-label="Main navigation">
-        <a href="#services" class="nav__link">Services</a>
-        <a href="#approach" class="nav__link">Forward-deployed</a>
-        <a href="#how" class="nav__link">How we work</a>
-        <a href="/faq/" class="nav__link">FAQ</a>
-        <a href="#contact" class="btn btn--primary nav__cta" data-spotlight>Start a project</a>
-      </nav>
-    </div>
-    <div class="progress" role="progressbar" aria-label="Page scroll progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-scroll-progress>
-      <div class="progress__bar"></div>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coastline Digital | AI & Software Built for Real Work</title>
+    <meta
+      name="description"
+      content="Coastline Digital is a forward-deployed AI and software firm. We work alongside your team, learn the real workflow, and build internal tools, automation, and AI systems meant for daily use."
+    />
 
-  <main>
-    <!-- Hero -->
-    <section class="hero" id="hero">
-      <div class="hero__visual" aria-hidden="true">
-        <div class="hero__orb"></div>
-        <div class="hero__orb hero__orb--alt"></div>
-        
-        <div class="hero__wave hero__wave--back">
-          <svg viewBox="0 0 1440 320" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#D4C4A8"/>
-          </svg>
-        </div>
-        <div class="hero__wave hero__wave--front">
-          <svg viewBox="0 0 1440 320" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,90.7C672,85,768,107,864,144C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" fill="#0F2744"/>
-          </svg>
-        </div>
-      </div>
-      
-      <div class="container">
-        <div class="hero__content">
-          <span class="hero__eyebrow">
-            <svg class="hero__eyebrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="16 18 22 12 16 6"/>
-              <polyline points="8 6 2 12 8 18"/>
-            </svg>
-            <span class="shimmer">Forward-deployed AI firm</span>
-          </span>
-          <h1 class="hero__title" data-text-effect>Built inside your workflow. Made for daily use.</h1>
-          <p class="hero__subtitle">Coastline Digital builds enterprise applications and AI systems alongside your team. We learn how the work actually gets done, then build tools people use every day.</p>
-          <div class="hero__actions">
-            <a href="#contact" class="btn btn--primary" data-spotlight data-magnetic>Start a project</a>
-            <a href="#how" class="btn btn--secondary" data-spotlight>See how we work</a>
-          </div>
-          <p class="hero__note">Prefer email? <a href="mailto:hello@coastlinedigital.net" class="link-underline">hello@coastlinedigital.net</a></p>
-          <ul class="hero__chips">
-            <li><a href="/services/enterprise-applications/" class="chip">Enterprise applications</a></li>
-            <li><a href="/services/ai-machine-learning/" class="chip">AI and machine learning</a></li>
-            <li><a href="/services/websites-apps/" class="chip">Websites and apps</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <!-- Canonical -->
+    <link rel="canonical" href="https://coastlinedigital.net/" />
 
-    <!-- Principles -->
-    <section class="proof" aria-labelledby="proof-heading">
-      <div class="container">
-        <p class="eyebrow" id="proof-heading">How we operate</p>
-        <div class="proof__grid">
-          <div class="proof__item" data-reveal>
-            <p class="proof__label">
-              <svg class="proof__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              Embedded
-            </p>
-            <p class="proof__text">We work inside your team, next to the people who will use what we build.</p>
-          </div>
-          <div class="proof__item" data-reveal>
-            <p class="proof__label">
-              <svg class="proof__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-              In production
-            </p>
-            <p class="proof__text">The goal is software your team uses every day, not a prototype.</p>
-          </div>
-          <div class="proof__item" data-reveal>
-            <p class="proof__label">
-              <svg class="proof__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-              Your systems
-            </p>
-            <p class="proof__text">We build on the tools you already run instead of asking you to replace them.</p>
-          </div>
-          <div class="proof__item" data-reveal>
-            <p class="proof__label">
-              <svg class="proof__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
-              Honest numbers
-            </p>
-            <p class="proof__text">We do not promise savings or percentages up front. We measure once it is live.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Coastline Digital | AI & Software Built for Real Work"
+    />
+    <meta
+      property="og:description"
+      content="Coastline Digital is a forward-deployed AI and software firm. We work alongside your team, learn the real workflow, and build internal tools, automation, and AI systems meant for daily use."
+    />
+    <meta property="og:url" content="https://coastlinedigital.net/" />
+    <meta property="og:site_name" content="Coastline Digital" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:image"
+      content="https://coastlinedigital.net/og-image.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://coastlinedigital.net/og-image.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
-    <!-- Services -->
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">Services</p>
-          <h2 class="section__title">What we build</h2>
-          <p class="section__lede">Three kinds of work, one way of doing it: built alongside your team and meant for real use.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card spotlight-surface" data-reveal data-spotlight>
-            <div class="service-card__head">
-              <span class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
-              </span>
-              <span class="service-card__index" aria-hidden="true">01</span>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Coastline Digital | AI & Software Built for Real Work"
+    />
+    <meta
+      name="twitter:description"
+      content="Coastline Digital is a forward-deployed AI and software firm. We work alongside your team, learn the real workflow, and build internal tools, automation, and AI systems meant for daily use."
+    />
+    <meta
+      name="twitter:image"
+      content="https://coastlinedigital.net/og-image.png"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;450;500;550;600;650;700;750;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/tokens.css?v=20261022.4" />
+    <link rel="stylesheet" href="/styles.css?v=20261022.4" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/coastline-hero.webp"
+      fetchpriority="high"
+    />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://coastlinedigital.net/#organization",
+        "name": "Coastline Digital",
+        "url": "https://coastlinedigital.net/",
+        "email": "hello@coastlinedigital.net",
+        "logo": "https://coastlinedigital.net/assets/brand/coastline-mark-1024.png",
+        "slogan": "Software for the way you actually work.",
+        "description": "Coastline Digital is a forward-deployed AI and software firm that specializes in enterprise application solutions. We work alongside the client's team, learn the actual workflow, and build custom internal tools, workflow automation, integrations, applied AI and machine learning, and websites and apps.",
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Southern California"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "San Diego County"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Orange County"
+          },
+          {
+            "@type": "City",
+            "name": "Los Angeles"
+          },
+          {
+            "@type": "Place",
+            "name": "Inland Empire"
+          },
+          "Remote"
+        ],
+        "knowsAbout": [
+          "Enterprise application solutions",
+          "Custom internal tools",
+          "Workflow automation",
+          "Integrations with existing systems",
+          "AI and machine learning solutions",
+          "Applied AI",
+          "LLM-powered assistants and agents",
+          "Document and data pipelines",
+          "Predictive and machine learning models",
+          "AI evaluation and deployment",
+          "Websites and apps",
+          "Web and mobile app development",
+          "Marketing sites"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Coastline Digital services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://coastlinedigital.net/#service-enterprise-applications"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://coastlinedigital.net/#service-ai-machine-learning"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@id": "https://coastlinedigital.net/#service-websites-apps"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Coastline Digital",
+        "url": "https://coastlinedigital.net/",
+        "description": "Forward-deployed AI firm for enterprise application solutions."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://coastlinedigital.net/#service-enterprise-applications",
+        "name": "Enterprise application solutions",
+        "serviceType": "Custom internal tools, workflow automation, and systems integration",
+        "url": "https://coastlinedigital.net/services/enterprise-applications/",
+        "provider": { "@id": "https://coastlinedigital.net/#organization" },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Southern California"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "San Diego County"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Orange County"
+          },
+          {
+            "@type": "City",
+            "name": "Los Angeles"
+          },
+          {
+            "@type": "Place",
+            "name": "Inland Empire"
+          },
+          "Remote"
+        ],
+        "description": "Custom internal tools, workflow automation, and integrations with the systems you already run, built alongside your team and deployed on your systems."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://coastlinedigital.net/#service-ai-machine-learning",
+        "name": "AI and machine learning solutions",
+        "serviceType": "Applied AI, machine learning models, and evaluation and deployment",
+        "url": "https://coastlinedigital.net/services/ai-machine-learning/",
+        "provider": { "@id": "https://coastlinedigital.net/#organization" },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Southern California"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "San Diego County"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Orange County"
+          },
+          {
+            "@type": "City",
+            "name": "Los Angeles"
+          },
+          {
+            "@type": "Place",
+            "name": "Inland Empire"
+          },
+          "Remote"
+        ],
+        "description": "Applied AI including LLM-powered assistants and agents and document and data pipelines, predictive and machine learning models, and the evaluation and deployment work that puts them into production."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://coastlinedigital.net/#service-websites-apps",
+        "name": "Websites and apps",
+        "serviceType": "Web and mobile app development and marketing sites",
+        "url": "https://coastlinedigital.net/services/websites-apps/",
+        "provider": { "@id": "https://coastlinedigital.net/#organization" },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Southern California"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "San Diego County"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Orange County"
+          },
+          {
+            "@type": "City",
+            "name": "Los Angeles"
+          },
+          {
+            "@type": "Place",
+            "name": "Inland Empire"
+          },
+          "Remote"
+        ],
+        "description": "Web and mobile app builds and marketing sites from Coastline Digital."
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="nav" id="nav">
+      <div class="nav__container">
+        <a href="/" class="nav__logo" aria-label="Coastline Digital home"
+          ><img
+            class="nav__logo-img"
+            src="/assets/brand/coastline-lockup-dark-header.svg"
+            alt="Coastline Digital"
+            width="429"
+            height="56"
+        /></a>
+        <button
+          class="nav__toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="nav__toggle-bar"></span
+          ><span class="nav__toggle-bar"></span
+          ><span class="nav__toggle-bar"></span>
+        </button>
+        <nav class="nav__menu" id="nav-menu" aria-label="Main navigation">
+          <a href="#services" class="nav__link">Services</a
+          ><a href="#approach" class="nav__link">Our approach</a
+          ><a href="#how" class="nav__link">How we work</a
+          ><a href="/faq/" class="nav__link">FAQ</a>
+          <a href="#contact" class="btn btn--primary nav__cta"
+            >Let’s talk
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M6 18 18 6M6 6h12v12" /></svg
+          ></a>
+        </nav>
+      </div>
+      <div class="progress" aria-hidden="true" data-scroll-progress>
+        <div class="progress__bar"></div>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">
+              <span class="status-dot"></span> Forward-deployed AI &amp;
+              software
+            </p>
+            <h1 id="hero-title">
+              Software for<br />the way you<br /><em>actually work.</em>
+            </h1>
+            <p class="hero__description">
+              We work alongside your team to build enterprise applications,
+              applied AI, and digital experiences that hold up in the real
+              world.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary"
+                >Let’s build something
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M6 18 18 6M6 6h12v12" /></svg></a
+              ><a href="#services" class="text-link"
+                >Explore our work
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" /></svg
+              ></a>
             </div>
-            <h3 class="service-card__title">Enterprise application solutions</h3>
-            <p class="service-card__text">Software built around the way your team actually works. We replace spreadsheets, copy-paste, and manual handoffs with tools that fit the job.</p>
-            <ul class="service-card__list">
-              <li>Custom internal tools</li>
-              <li>Workflow automation</li>
-              <li>Integrations with your existing systems</li>
-            </ul>
-            <a href="/services/enterprise-applications/" class="service-card__link">
+            <div class="hero__location">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" />
+                <circle cx="12" cy="10" r="2.5" /></svg
+              ><span
+                >San Diego, California
+                <span class="muted">/ Working everywhere</span></span
+              >
+            </div>
+          </div>
+          <div class="hero__visual">
+            <img
+              src="/assets/images/coastline-hero.webp"
+              alt="Pacific surf meeting the sunlit sandstone of a Southern California coastline"
+              width="1178"
+              height="1335"
+              fetchpriority="high"
+              class="hero__image"
+            />
+            <div class="hero__image-shade"></div>
+            <div class="hero__visual-top">
+              <span>GROUNDED IN THE REAL WORLD.</span
+              ><span class="visual-cross" aria-hidden="true">+</span>
+            </div>
+            <div class="hero__orbit" aria-hidden="true">
+              <div class="orbit-ring orbit-ring--one"></div>
+              <div class="orbit-ring orbit-ring--two"></div>
+              <div class="orbit-ring orbit-ring--three"></div>
+              <span class="orbit-core">c<span>·</span></span
+              ><span class="orbit-satellite"></span>
+            </div>
+            <div class="hero__glass">
+              <div class="hero__glass-heading">
+                <span class="hero__glass-icon"
+                  ><svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"
+                    /></svg></span
+                ><span
+                  >Good software starts<br /><strong
+                    >with your people.</strong
+                  ></span
+                ><span class="glass-spark" aria-hidden="true">✳</span>
+              </div>
+              <div class="hero__glass-footer">
+                <span
+                  ><span class="status-dot status-dot--light"></span> Embedded
+                  with your team</span
+                ><span
+                  >Built to last
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg
+                ></span>
+              </div>
+            </div>
+            <div class="hero__visual-bottom">
+              <span>LOCAL PERSPECTIVE. LASTING IMPACT.</span
+              ><button
+                class="motion-toggle"
+                type="button"
+                aria-label="Pause decorative animations"
+                aria-pressed="false"
+                title="Pause decorative animations"
+              >
+                <span class="pause-symbol" aria-hidden="true">Ⅱ</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="capability-strip">
+            <span class="capability-strip__label"
+              >FROM COMPLEXITY TO CLARITY</span
+            ><a href="/services/enterprise-applications/"
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5" />
+              </svg>
               Enterprise applications
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </article>
-          <article class="service-card service-card--feature spotlight-surface" data-reveal data-spotlight>
-            <div class="service-card__head">
-              <span class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
-              </span>
-              <span class="service-card__index" aria-hidden="true">02</span>
-            </div>
-            <h3 class="service-card__title">AI and machine learning solutions</h3>
-            <p class="service-card__text">Applied AI with a specific job inside a real workflow, and an evaluation in place so you can see whether it works before and after launch.</p>
-            <ul class="service-card__list">
-              <li>LLM-powered assistants and agents</li>
-              <li>Document and data pipelines</li>
-              <li>Predictive and machine learning models</li>
-              <li>Evaluation and deployment</li>
-            </ul>
-            <a href="/services/ai-machine-learning/" class="service-card__link">
-              AI and machine learning
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </article>
-          <article class="service-card spotlight-surface" data-reveal data-spotlight>
-            <div class="service-card__head">
-              <span class="service-card__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
-              </span>
-              <span class="service-card__index" aria-hidden="true">03</span>
-            </div>
-            <h3 class="service-card__title">Websites and apps</h3>
-            <p class="service-card__text">The public side of the business, built with the same care: apps people can use and sites that say clearly what you do.</p>
-            <ul class="service-card__list">
-              <li>Web and mobile app builds</li>
-              <li>Marketing sites</li>
-            </ul>
-            <a href="/services/websites-apps/" class="service-card__link">
-              Websites and apps
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Forward-deployed -->
-    <section class="section section--lg section--inverse offers" id="approach">
-      <div class="container">
-        <div class="approach">
-          <div class="approach__intro">
-            <div class="section__head section__head--start">
-              <p class="eyebrow">Forward-deployed</p>
-              <h2 class="section__title">We work where the work happens</h2>
-            </div>
-            <p class="approach__text">A lot of business software is built from a requirements document by people who never see the job it is meant to support. The result looks right in a demo and falls apart on a Tuesday afternoon.</p>
-            <p class="approach__text">Forward-deployed means we work inside your team for the engagement. We sit in on the real workflow, learn the edge cases, and build against what we see. The goal is working software your team uses, not a deck of recommendations.</p>
-          </div>
-          <div class="contrast" data-reveal>
-            <div class="contrast__col contrast__col--yes">
-              <p class="contrast__label">What you get</p>
-              <ul class="contrast__list">
-                <li>Hands-on work inside your team</li>
-                <li>Software deployed on your systems</li>
-                <li>Evaluations for anything that uses AI</li>
-                <li>Code and documentation your team can maintain</li>
-              </ul>
-            </div>
-            <div class="contrast__col contrast__col--no">
-              <p class="contrast__label">What you do not get</p>
-              <ul class="contrast__list">
-                <li>A slide deck and a list of recommendations</li>
-                <li>A prototype that never ships</li>
-                <li>Promised savings or made-up metrics</li>
-              </ul>
-            </div>
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg></a
+            ><a href="/services/ai-machine-learning/"
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"
+                />
+              </svg>
+              AI &amp; machine learning
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg></a
+            ><a href="/services/websites-apps/"
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="3" y="4" width="18" height="16" rx="3" />
+                <path d="M3 9h18M7 6.5h.01M10 6.5h.01" />
+              </svg>
+              Websites &amp; apps
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg
+            ></a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- How we work -->
-    <section class="section how" id="how">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">How we work</p>
-          <h2 class="section__title">Embed, build, ship</h2>
-          <p class="section__lede">Every engagement follows the same three steps, whether it is an internal tool, an AI assistant, or a new app.</p>
+      <section
+        class="section services"
+        id="services"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">01 /</span> What we build
+              </p>
+              <h2 id="services-title">
+                Big challenges.<br />Practical solutions.
+              </h2>
+            </div>
+            <p class="section-heading__aside">
+              Built around your business. Connected to your systems. Designed
+              for the people who use them every day.
+            </p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card" data-reveal>
+              <div class="service-art service-art--workflow" aria-hidden="true">
+                <div class="mini-window">
+                  <div class="mini-window__bar">
+                    <span class="mini-dots">● ● ●</span
+                    ><span>Operations workspace</span><span>↗</span>
+                  </div>
+                  <div class="mini-window__body">
+                    <div class="mini-sidebar"><i></i><i></i><i></i><i></i></div>
+                    <div class="mini-tasks">
+                      <div class="mini-task">
+                        <span class="mini-task__icon"
+                          ><svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6ZM14 3v6h6M8 13h8M8 17h5"
+                            /></svg></span
+                        ><span
+                          >Review incoming request<small
+                            >Operations · Intake</small
+                          ></span
+                        ><b class="mini-check">✓</b>
+                      </div>
+                      <div class="mini-task">
+                        <span class="mini-task__icon"
+                          ><svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"
+                            /></svg></span
+                        ><span
+                          >Connect the right systems<small
+                            >Data · Integration</small
+                          ></span
+                        ><b class="mini-check">✓</b>
+                      </div>
+                      <div class="mini-task">
+                        <span class="mini-task__icon"
+                          ><svg
+                            class="icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                          >
+                            <circle cx="9" cy="8" r="3" />
+                            <path
+                              d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 5"
+                            /></svg></span
+                        ><span
+                          >Keep your team moving<small
+                            >Workflow · Automation</small
+                          ></span
+                        ><span class="mini-progress"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span class="art-chip"
+                  ><span class="status-dot"></span> Everything, connected.</span
+                >
+              </div>
+              <div class="service-card__body">
+                <span class="service-card__number">01</span>
+                <h3>
+                  <a href="/services/enterprise-applications/"
+                    >Enterprise applications</a
+                  >
+                </h3>
+                <p>
+                  Bring your systems and people together with software built
+                  around the way your business runs.
+                </p>
+                <ul class="service-tags">
+                  <li>Internal tools</li>
+                  <li>Automation</li>
+                  <li>Integrations</li>
+                </ul>
+                <a
+                  href="/services/enterprise-applications/"
+                  class="service-card__link"
+                  >Build a better workflow
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="service-card" data-reveal>
+              <div class="service-art service-art--ai" aria-hidden="true">
+                <span class="ai-grid"></span>
+                <div class="ai-orbit">
+                  <span class="ai-orbit__ring"></span
+                  ><span class="ai-orbit__core"
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"
+                      /></svg
+                  ></span>
+                </div>
+                <span class="ai-label ai-label--one">Your context</span
+                ><span class="ai-label ai-label--two">Applied intelligence</span
+                ><span class="ai-label ai-label--three">Human oversight</span
+                ><span class="art-caption">PURPOSE-BUILT. TESTED. READY.</span>
+              </div>
+              <div class="service-card__body">
+                <span class="service-card__number">02</span>
+                <h3>
+                  <a href="/services/ai-machine-learning/"
+                    >AI &amp; machine learning</a
+                  >
+                </h3>
+                <p>
+                  Give AI a real job to do. Thoughtfully scoped to a business
+                  problem and tested before it goes live.
+                </p>
+                <ul class="service-tags">
+                  <li>Assistants &amp; agents</li>
+                  <li>Data pipelines</li>
+                  <li>Models</li>
+                </ul>
+                <a
+                  href="/services/ai-machine-learning/"
+                  class="service-card__link"
+                  >Put intelligence to work
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="service-card" data-reveal>
+              <div class="service-art service-art--web" aria-hidden="true">
+                <div class="mini-browser">
+                  <div class="mini-browser__bar">
+                    <span class="mini-dots">● ● ●</span
+                    ><span>your next chapter</span>
+                  </div>
+                  <div class="mini-browser__content">
+                    <span>BUILT FOR WHAT’S NEXT</span
+                    ><strong>A better<br />digital experience.</strong
+                    ><i>Explore →</i>
+                  </div>
+                  <div class="mini-browser__tiles">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="mini-phone">
+                  <span class="mini-phone__notch"></span
+                  ><span class="mini-phone__icon"
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"
+                      /></svg></span
+                  ><b>Made<br />to move.</b><i>Get started ↗</i>
+                </div>
+              </div>
+              <div class="service-card__body">
+                <span class="service-card__number">03</span>
+                <h3>
+                  <a href="/services/websites-apps/">Websites &amp; apps</a>
+                </h3>
+                <p>
+                  Make every interaction count with intuitive web and mobile
+                  apps, and marketing sites that mean business.
+                </p>
+                <ul class="service-tags">
+                  <li>Web apps</li>
+                  <li>Mobile apps</li>
+                  <li>Marketing sites</li>
+                </ul>
+                <a href="/services/websites-apps/" class="service-card__link"
+                  >Create a better experience
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M6 18 18 6M6 6h12v12" /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
         </div>
-        <ol class="how__steps">
-          <li class="how__step" data-reveal>
-            <span class="how__number" aria-hidden="true">1</span>
-            <div class="how__step-content">
-              <h3 class="how__title">Embed</h3>
-              <p class="how__text">We join your team and learn the workflow first-hand: the tools, the exceptions, and the steps that only live in someone's head.</p>
-            </div>
-          </li>
-          <li class="how__step" data-reveal>
-            <span class="how__number" aria-hidden="true">2</span>
-            <div class="how__step-content">
-              <h3 class="how__title">Build</h3>
-              <p class="how__text">We build in short cycles inside your environment and put working versions in front of the people who will use them. For AI work, we set up evaluations early so quality is measured, not guessed.</p>
-            </div>
-          </li>
-          <li class="how__step" data-reveal>
-            <span class="how__number" aria-hidden="true">3</span>
-            <div class="how__step-content">
-              <h3 class="how__title">Ship</h3>
-              <p class="how__text">We deploy to production, watch how it holds up under real use, fix what needs fixing, and hand over code and documentation your team can run.</p>
-            </div>
-          </li>
-        </ol>
-        <p class="how__note">A good first engagement is a single workflow. Tell us which one costs your team the most time.</p>
-      </div>
-    </section>
+      </section>
 
-    <!-- Common questions -->
-    <section class="section qa" id="questions">
-      <div class="container">
-        <div class="section__head">
-          <p class="eyebrow">FAQ</p>
-          <h2 class="section__title">Common questions</h2>
-          <p class="section__lede">Short answers about forward-deployed work, enterprise applications, AI and machine learning, and websites and apps.</p>
+      <section
+        class="section approach-section"
+        id="approach"
+        aria-labelledby="approach-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">02 /</span> Our approach
+              </p>
+              <h2 id="approach-title">
+                Close to your team.<br />Closer to the problem.
+              </h2>
+            </div>
+            <p class="section-heading__aside">
+              Forward-deployed means we work alongside you. We learn how the
+              work actually gets done, find the problems worth solving, and
+              build from there.
+            </p>
+          </div>
+          <div class="workflow-explorer" data-reveal>
+            <div class="workflow-explorer__intro">
+              <span class="small-label">REAL WORK. REAL POSSIBILITIES.</span>
+              <h3>Start with the work.<br />See what could change.</h3>
+              <p>
+                Every engagement is different. Explore a few examples of the
+                workflows we can help your team improve.
+              </p>
+              <div
+                class="workflow-tabs"
+                role="tablist"
+                aria-label="Example workflows"
+                aria-orientation="vertical"
+              >
+                <button
+                  type="button"
+                  role="tab"
+                  id="tab-operations"
+                  aria-selected="true"
+                  aria-controls="panel-operations"
+                  tabindex="0"
+                  data-scenario="operations"
+                >
+                  <span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"
+                      />
+                    </svg>
+                    Connected operations</span
+                  ><svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg></button
+                ><button
+                  type="button"
+                  role="tab"
+                  id="tab-documents"
+                  aria-selected="false"
+                  aria-controls="panel-documents"
+                  tabindex="-1"
+                  data-scenario="documents"
+                >
+                  <span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"
+                      />
+                    </svg>
+                    Document intelligence</span
+                  ><svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg></button
+                ><button
+                  type="button"
+                  role="tab"
+                  id="tab-experiences"
+                  aria-selected="false"
+                  aria-controls="panel-experiences"
+                  tabindex="-1"
+                  data-scenario="experiences"
+                >
+                  <span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect x="3" y="4" width="18" height="16" rx="3" />
+                      <path d="M3 9h18M7 6.5h.01M10 6.5h.01" />
+                    </svg>
+                    Customer experiences</span
+                  ><svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="workflow-stage">
+              <div class="workflow-stage__top">
+                <span
+                  ><span class="status-dot status-dot--light"></span> THE
+                  POSSIBILITIES IN PRACTICE</span
+                ><span>ILLUSTRATIVE EXAMPLE</span>
+              </div>
+              <div
+                class="workflow-panel"
+                role="tabpanel"
+                id="panel-operations"
+                aria-labelledby="tab-operations"
+                tabindex="0"
+              >
+                <h4>One request. A connected workflow.</h4>
+                <p>
+                  Turn a manual handoff into a clear path from intake to action.
+                </p>
+                <ol class="demo-steps">
+                  <li class="demo-step">
+                    <span class="demo-step__icon"
+                      ><svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6ZM14 3v6h6M8 13h8M8 17h5"
+                        /></svg></span
+                    ><span
+                      ><strong>Capture the request</strong
+                      ><small>A single place for incoming work</small></span
+                    ><span class="demo-step__state" aria-hidden="true"></span>
+                  </li>
+                  <li class="demo-step">
+                    <span class="demo-step__icon"
+                      ><svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"
+                        /></svg></span
+                    ><span
+                      ><strong>Connect your systems</strong
+                      ><small
+                        >Move the right data to the right tools</small
+                      ></span
+                    ><span class="demo-step__state" aria-hidden="true"></span>
+                  </li>
+                  <li class="demo-step">
+                    <span class="demo-step__icon"
+                      ><svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <circle cx="9" cy="8" r="3" />
+                        <path
+                          d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 5"
+                        /></svg></span
+                    ><span
+                      ><strong>Give your team clarity</strong
+                      ><small>A shared queue, ready for review</small></span
+                    ><span class="demo-step__state" aria-hidden="true"></span>
+                  </li>
+                </ol>
+              </div>
+              <div
+                class="workflow-panel"
+                role="tabpanel"
+                id="panel-documents"
+                aria-labelledby="tab-documents"
+                tabindex="0"
+                hidden
+              >
+                <h4>From documents to decisions.</h4>
+                <p>
+                  Help your team find the useful information in everyday
+                  documents.
+                </p>
+                <ol class="demo-steps">
+                  <li class="demo-step">
+                    <span class="demo-step__icon"
+                      ><svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6ZM14 3v6h6M8 13h8M8 17h5"
+                        /></svg></span
+                    ><span
+                      ><strong>Bring documents together</strong
+                      ><small>Use the sources your team relies on</small></span
+                    ><span class="demo-step__state" aria-hidden="true"></span>
+                  </li>
+                  <li class="demo-step">
+                    <span class="demo-step__icon"
+                      ><svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"
+                        /></svg></span
+                    ><span
+                      ><strong>Extract and organize</strong
+                      ><small>Structure the information with AI</small></span
+                    ><span class="demo-step__state" aria-hidden="true"></span>
+                  </li>
+                  <li class="demo-step">
+                    <span class="demo-step__icon"
+                      ><svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" />
+                        <path d="m8 12 3 3 5-6" /></svg></span
+                    ><span
+                      ><strong>Review with confidence</strong
+                      ><small>Keep a person in the loop</small></span
+                    ><span class="demo-step__state" aria-hidden="true"></span>
+                  </li>
+                </ol>
+              </div>
+              <div
+                class="workflow-panel"
+                role="tabpanel"
+                id="panel-experiences"
+                aria-labelledby="tab-experiences"
+                tabindex="0"
+                hidden
+              >
+                <h4>A smoother path for your customers.</h4>
+                <p>
+                  Connect a clear digital experience to the work happening
+                  behind it.
+                </p>
+                <ol class="demo-steps">
+                  <li class="demo-step">
+                    <span class="demo-step__icon"
+                      ><svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <rect x="3" y="4" width="18" height="16" rx="3" />
+                        <path d="M3 9h18M7 6.5h.01M10 6.5h.01" /></svg></span
+                    ><span
+                      ><strong>Make the first step easy</strong
+                      ><small>An intuitive website or application</small></span
+                    ><span class="demo-step__state" aria-hidden="true"></span>
+                  </li>
+                  <li class="demo-step">
+                    <span class="demo-step__icon"
+                      ><svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5"
+                        /></svg></span
+                    ><span
+                      ><strong>Connect the experience</strong
+                      ><small
+                        >Send requests into your existing tools</small
+                      ></span
+                    ><span class="demo-step__state" aria-hidden="true"></span>
+                  </li>
+                  <li class="demo-step">
+                    <span class="demo-step__icon"
+                      ><svg
+                        class="icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <circle cx="9" cy="8" r="3" />
+                        <path
+                          d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 5"
+                        /></svg></span
+                    ><span
+                      ><strong>Keep the handoff clear</strong
+                      ><small>Give your team the context to act</small></span
+                    ><span class="demo-step__state" aria-hidden="true"></span>
+                  </li>
+                </ol>
+              </div>
+              <div class="workflow-stage__bottom">
+                <p id="demo-status" role="status" aria-live="polite">
+                  Your systems. A more connected workflow.
+                </p>
+                <button class="btn btn--demo" type="button" id="run-demo">
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m9 5 11 7-11 7V5Z" /></svg
+                  ><span>Run example</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="approach-principles">
+            <span
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="9" cy="8" r="3" />
+                <path
+                  d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 5"
+                />
+              </svg>
+              Embedded with your people</span
+            ><span
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m12 3 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 16l9 5 9-5" />
+              </svg>
+              Built into your existing systems</span
+            ><span
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" />
+                <path d="m8 12 3 3 5-6" />
+              </svg>
+              Tested for daily production</span
+            >
+          </div>
         </div>
-        <div class="qa__list">
-          <details class="qa__item" data-reveal>
-            <summary class="qa__summary">
-              What does Coastline Digital do?
-              <span class="qa__marker" aria-hidden="true"></span>
-            </summary>
-            <div class="qa__answer">
-              <p>We are a forward-deployed AI firm that specializes in enterprise application solutions. We work alongside your team to build internal tools, workflow automation, integrations, and AI and machine learning systems. We also build websites and apps.</p>
-            </div>
-          </details>
-          <details class="qa__item" data-reveal>
-            <summary class="qa__summary">
-              What does forward-deployed mean?
-              <span class="qa__marker" aria-hidden="true"></span>
-            </summary>
-            <div class="qa__answer">
-              <p>We work inside your team instead of handing over a plan from the outside. We learn the real workflow, build against it, and stay through deployment and rollout.</p>
-            </div>
-          </details>
-          <details class="qa__item" data-reveal>
-            <summary class="qa__summary">
-              What kinds of AI work do you take on?
-              <span class="qa__marker" aria-hidden="true"></span>
-            </summary>
-            <div class="qa__answer">
-              <p>Applied AI with a clear job to do: LLM-powered assistants and agents, document and data pipelines, and predictive or machine learning models. We set up evaluations so you can see how well it works, then deploy it.</p>
-            </div>
-          </details>
-          <details class="qa__item" data-reveal>
-            <summary class="qa__summary">
-              Do we have to replace our existing systems?
-              <span class="qa__marker" aria-hidden="true"></span>
-            </summary>
-            <div class="qa__answer">
-              <p>No. We would rather connect to the systems you already run and fill the gaps between them. If something does need replacing, we will say so and explain why.</p>
-            </div>
-          </details>
-          <details class="qa__item" data-reveal>
-            <summary class="qa__summary">
-              How much does it cost?
-              <span class="qa__marker" aria-hidden="true"></span>
-            </summary>
-            <div class="qa__answer">
-              <p>We do not publish fixed prices here. Tell us what you need and we will talk through options.</p>
-            </div>
-          </details>
-        </div>
-        <p class="qa__more">More answers on the <a href="/faq/" class="link-underline">FAQ page</a>.</p>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact -->
-    <section class="section section--lg contact" id="contact">
-      <div class="container">
-        <!-- Success message (shown when ?sent=1) -->
-        <div class="contact__success" id="success-message" hidden>
-          <p>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Thanks for reaching out. We will reply soon.
-          </p>
+      <section class="section how" id="how" aria-labelledby="how-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">03 /</span> How we work
+              </p>
+              <h2 id="how-title">A shared team.<br />A clear path forward.</h2>
+            </div>
+            <p class="section-heading__aside">
+              Start small. Learn quickly. Ship often.<br />You see working
+              results early, with your team involved at every step.
+            </p>
+          </div>
+          <ol class="process-grid">
+            <li data-reveal>
+              <div class="process-number">
+                <span>01</span
+                ><svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="9" cy="8" r="3" />
+                  <path
+                    d="M3 21v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M18 15a5 5 0 0 1 3 5"
+                  />
+                </svg>
+              </div>
+              <h3>Get close.</h3>
+              <p>
+                We spend time with the people doing the work. We learn your
+                systems, your edge cases, and where things slow down.
+              </p>
+              <span class="process-output"
+                >THE RESULT <b>A shared understanding</b></span
+              >
+            </li>
+            <li data-reveal>
+              <div class="process-number">
+                <span>02</span
+                ><svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
+                </svg>
+              </div>
+              <h3>Build what matters.</h3>
+              <p>
+                We pick the few problems worth solving first, then build in
+                short cycles. Your team gets working software and a real say in
+                what comes next.
+              </p>
+              <span class="process-output"
+                >THE RESULT <b>Working software, early</b></span
+              >
+            </li>
+            <li data-reveal>
+              <div class="process-number">
+                <span>03</span
+                ><svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M6 18 18 6M6 6h12v12" />
+                </svg>
+              </div>
+              <h3>Make it hold up.</h3>
+              <p>
+                We test, deploy, and refine in real use. For AI, that includes
+                evaluating performance before it goes live and as the workflow
+                evolves.
+              </p>
+              <span class="process-output"
+                >THE RESULT <b>Ready for daily production</b></span
+              >
+            </li>
+          </ol>
+          <div class="how-note">
+            <span class="how-note__icon"
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"
+                /></svg
+            ></span>
+            <p>
+              A good place to start?
+              <strong>One workflow that could work better.</strong>
+            </p>
+            <a href="#contact" class="text-link"
+              >Let’s find it together
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg
+            ></a>
+          </div>
         </div>
-        
-        <div class="contact__layout">
+      </section>
+
+      <section
+        class="section qa"
+        id="questions"
+        aria-labelledby="questions-title"
+      >
+        <div class="container faq-layout">
+          <div>
+            <p class="eyebrow">
+              <span class="section-index">04 /</span> A little more clarity
+            </p>
+            <h2 id="questions-title">Good questions.<br />Straight answers.</h2>
+            <p>Have something else in mind?</p>
+            <a href="/faq/" class="text-link"
+              >Explore all FAQs
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg
+            ></a>
+          </div>
+          <div class="qa__list">
+            <details class="qa__item">
+              <summary class="qa__summary">
+                What does “forward-deployed” mean?<span
+                  class="qa__marker"
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <div class="qa__answer">
+                <p>
+                  We work alongside your team, learning the real workflow from
+                  the people doing the work. That understanding guides what we
+                  build, how we test it, and how we put it into production.
+                </p>
+              </div>
+            </details>
+            <details class="qa__item">
+              <summary class="qa__summary">
+                Do we need to know exactly what to build?<span
+                  class="qa__marker"
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <div class="qa__answer">
+                <p>
+                  No. Start with a problem, a slow workflow, or a goal. We work
+                  with your team to understand it, decide what is worth solving
+                  first, and define a practical first step.
+                </p>
+              </div>
+            </details>
+            <details class="qa__item">
+              <summary class="qa__summary">
+                Can you work with our existing systems?<span
+                  class="qa__marker"
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <div class="qa__answer">
+                <p>
+                  Yes. Integrations are a core part of our work. We look at the
+                  APIs, data, and access your systems provide, then design a
+                  solution that connects what you already use.
+                </p>
+              </div>
+            </details>
+            <details class="qa__item">
+              <summary class="qa__summary">
+                How do you approach AI projects?<span
+                  class="qa__marker"
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <div class="qa__answer">
+                <p>
+                  We start with a specific business problem. Whether it calls
+                  for an assistant, an agent, a document pipeline, or a
+                  predictive model, we scope the work, set up evaluations, and
+                  test it before it goes live.
+                </p>
+              </div>
+            </details>
+            <details class="qa__item">
+              <summary class="qa__summary">
+                Where do you work?<span
+                  class="qa__marker"
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <div class="qa__answer">
+                <p>
+                  We are based in San Diego and work with teams across Southern
+                  California and remotely. We shape the collaboration around the
+                  people and the work.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact__layout">
           <div class="contact__pitch">
-            <div class="section__head section__head--start">
-              <p class="eyebrow">Contact</p>
-              <h2 class="section__title">Tell us about the workflow</h2>
-            </div>
-            <p class="contact__lede">Tell us what your team is working on and where it gets stuck. We will reply by email with honest next steps, including when we are not the right fit.</p>
-            <ul class="contact__points">
-              <li class="contact__point">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                <span>We do not publish personal phone numbers or home addresses on this site.</span>
-              </li>
-              <li class="contact__point">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                <span>We do not collect information automatically through cookies or tracking scripts at this time. <a href="/privacy/" class="link-underline">Privacy</a></span>
-              </li>
-            </ul>
-            <div class="contact__direct">
-              <p class="contact__direct-label">Direct</p>
-              <p class="contact__email-note">Prefer email? <a href="mailto:hello@coastlinedigital.net" class="link-underline">hello@coastlinedigital.net</a></p>
+            <p class="eyebrow">
+              <span class="section-index">05 /</span> Let’s build something
+            </p>
+            <h2 id="contact-title">What could<br />work <em>better?</em></h2>
+            <p class="contact__lede">
+              Tell us what your team is working on and where it gets stuck.
+              We’ll figure out the right next step together.
+            </p>
+            <a href="mailto:hello@coastlinedigital.net" class="contact__email"
+              >hello@coastlinedigital.net
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg
+            ></a>
+            <div class="contact__location">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+              <p>
+                <strong>Rooted in San Diego.</strong><br />Working across
+                Southern California and remotely.
+              </p>
             </div>
           </div>
-          
-          <form 
-            class="contact__form" 
-            action="https://formsubmit.co/hello@coastlinedigital.net" 
-            method="POST"
-            id="contact-form"
-          >
-            <!-- FormSubmit config -->
-            <input type="hidden" name="_next" value="https://coastlinedigital.net/?sent=1">
-            <input type="hidden" name="_subject" value="New inquiry from Coastline Digital site">
-            <input type="hidden" name="_captcha" value="true">
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-            
-            <div class="form__row form__row--2">
-              <div class="form__group">
-                <label for="name" class="form__label">Name</label>
-                <input type="text" id="name" name="name" class="form__input" required autocomplete="name">
-              </div>
-              
-              <div class="form__group">
-                <label for="business" class="form__label">Company</label>
-                <input type="text" id="business" name="business" class="form__input" autocomplete="organization">
-              </div>
+          <div class="contact__form-wrap">
+            <div
+              class="contact__success"
+              id="success-message"
+              role="status"
+              hidden
+            >
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m5 12 4 4L19 6" />
+              </svg>
+              <p>
+                Thanks for reaching out.<br /><strong
+                  >We’ll be in touch by email.</strong
+                >
+              </p>
             </div>
-            
-            <div class="form__row form__row--2">
-              <div class="form__group">
-                <label for="email" class="form__label">Work email</label>
-                <input type="email" id="email" name="email" class="form__input" required autocomplete="email">
+            <form
+              class="contact__form"
+              action="https://formsubmit.co/hello@coastlinedigital.net"
+              method="POST"
+              id="contact-form"
+            >
+              <h3>A conversation starts here.</h3>
+              <p class="form__intro">
+                A little context helps us make it a useful one.
+              </p>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://coastlinedigital.net/?sent=1#contact"
+              /><input
+                type="hidden"
+                name="_subject"
+                value="New project inquiry — Coastline Digital"
+              /><input type="hidden" name="_captcha" value="true" /><input
+                type="text"
+                name="_honey"
+                class="honeypot"
+                aria-hidden="true"
+                tabindex="-1"
+                autocomplete="off"
+              />
+              <div class="form__row form__row--2">
+                <div class="form__group">
+                  <label for="name" class="form__label"
+                    >Your name <span>*</span></label
+                  ><input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form__input"
+                    placeholder="Alex Morgan"
+                    required
+                    autocomplete="name"
+                    maxlength="120"
+                  />
+                </div>
+                <div class="form__group">
+                  <label for="email" class="form__label"
+                    >Work email <span>*</span></label
+                  ><input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form__input"
+                    placeholder="alex@company.com"
+                    required
+                    autocomplete="email"
+                    maxlength="254"
+                  />
+                </div>
               </div>
-              
               <div class="form__group">
-                <label for="role" class="form__label">Role (optional)</label>
-                <input type="text" id="role" name="role" class="form__input" autocomplete="organization-title">
+                <label for="business" class="form__label"
+                  >Company <span class="optional">(optional)</span></label
+                ><input
+                  type="text"
+                  id="business"
+                  name="business"
+                  class="form__input"
+                  placeholder="Your company"
+                  autocomplete="organization"
+                  maxlength="160"
+                />
               </div>
-            </div>
-            
-            <div class="form__group">
-              <label for="message" class="form__label">What are you trying to build or fix?</label>
-              <textarea id="message" name="message" class="form__input form__textarea" rows="4" required></textarea>
-            </div>
-            
-            <div class="form__group">
-              <label for="phone" class="form__label">Phone (optional)</label>
-              <input type="tel" id="phone" name="phone" class="form__input" autocomplete="tel">
-            </div>
-            
-            <button type="submit" class="btn btn--primary btn--full" data-spotlight>Send message</button>
-          </form>
+              <div class="form__group">
+                <label for="message" class="form__label"
+                  >What would you like to build or improve?
+                  <span>*</span></label
+                ><textarea
+                  id="message"
+                  name="message"
+                  class="form__input form__textarea"
+                  rows="3"
+                  placeholder="Tell us about your team, your workflow, or your idea…"
+                  required
+                  maxlength="6000"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                <span class="button-spinner" aria-hidden="true"></span
+                ><span class="submit-label">Start the conversation</span
+                ><svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M6 18 18 6M6 6h12v12" />
+                </svg>
+              </button>
+              <p class="form__privacy">
+                By submitting, you agree to our
+                <a href="/privacy/">privacy policy</a>.
+                <span>Fields marked * are required.</span>
+              </p>
+              <p class="form__status" role="status" id="form-status" hidden></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__brand">
+            <a href="/" class="footer__brand-link"
+              ><img
+                src="/assets/brand/coastline-lockup-dark-header.svg"
+                alt="Coastline Digital"
+                width="429"
+                height="56"
+            /></a>
+            <p class="footer__tagline">
+              Thoughtful software. Real-world impact.
+            </p>
+          </div>
+          <div class="footer__links">
+            <a href="#services" class="footer__link">Services</a
+            ><a href="#approach" class="footer__link">Our approach</a
+            ><a href="/faq/" class="footer__link">FAQ</a
+            ><a href="#contact" class="footer__link"
+              >Let’s talk
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>
+            © <span data-year>2026</span> Coastline Digital. All rights
+            reserved.
+          </p>
+          <span
+            >San Diego, CA <span class="footer-dot">·</span> Built for
+            everywhere.</span
+          ><a href="/privacy/">Privacy policy</a>
         </div>
       </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__content">
-        <div class="footer__brand">
-          <p class="footer__logo">Coastline Digital</p>
-          <p class="footer__tagline">Forward-deployed AI for enterprise applications</p>
-          <a href="mailto:hello@coastlinedigital.net" class="footer__email">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            hello@coastlinedigital.net
-          </a>
-          <p class="footer__location">Southern California</p>
-        </div>
-        <div class="footer__links">
-          <a href="/services/enterprise-applications/" class="footer__link">Enterprise Applications</a>
-          <a href="/services/ai-machine-learning/" class="footer__link">AI and Machine Learning</a>
-          <a href="/services/websites-apps/" class="footer__link">Websites and Apps</a>
-          <a href="/#how" class="footer__link">How We Work</a>
-          <a href="/faq/" class="footer__link">FAQ</a>
-          <a href="/privacy/" class="footer__link">Privacy</a>
-        </div>
-      </div>
-      <div class="footer__disclosure">
-        <p>We do not publish personal phone numbers or home addresses on this site.</p>
-      </div>
-      <div class="footer__copyright">
-        <!-- A tiny nod to the craft, only visible to those who look -->
-        <p title="Handcrafted with care in Southern California">Coastline Digital</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="/main.js?v=20261022.2"></script>
-  <script src="/motion.js?v=20261022.2"></script>
-</body>
+    </footer>
+    <script src="/main.js?v=20261022.4" defer></script>
+    <script src="/motion.js?v=20261022.4" defer></script>
+  </body>
 </html>

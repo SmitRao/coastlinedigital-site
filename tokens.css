@@ -6,29 +6,29 @@
 
 :root {
   /* ----- Palette primitives ------------------------------------------- */
-  --cd-navy-900: #0A1B30;
-  --cd-navy-800: #0F2744;
+  --cd-navy-900: #0a1b30;
+  --cd-navy-800: #0f2744;
   --cd-navy-700: #163455;
-  --cd-navy-600: #1A3A5C;
-  --cd-navy-500: #24507C;
+  --cd-navy-600: #1a3a5c;
+  --cd-navy-500: #24507c;
 
-  --cd-sand-500: #C3AE85;
-  --cd-sand-400: #D4C4A8;
-  --cd-sand-300: #E2D6C2;
-  --cd-sand-200: #EFE7D9;
+  --cd-sand-500: #c3ae85;
+  --cd-sand-400: #d4c4a8;
+  --cd-sand-300: #e2d6c2;
+  --cd-sand-200: #efe7d9;
 
-  --cd-cream-50: #FDFBF7;
-  --cd-cream-100: #F7F3EC;
-  --cd-cream-200: #EBE5DA;
-  --cd-cream-300: #DED6C7;
+  --cd-cream-50: #fdfbf7;
+  --cd-cream-100: #f7f3ec;
+  --cd-cream-200: #ebe5da;
+  --cd-cream-300: #ded6c7;
 
-  --cd-slate-900: #1C2430;
+  --cd-slate-900: #1c2430;
   --cd-slate-700: #384252;
-  --cd-slate-500: #5B6574;
-  --cd-white: #FFFFFF;
+  --cd-slate-500: #5b6574;
+  --cd-white: #ffffff;
 
   /* ----- Semantic surfaces -------------------------------------------- */
-  --surface-page: var(--cd-cream-100);
+  --surface-page: #f9faf7;
   --surface-page-soft: var(--cd-cream-50);
   --surface-raised: var(--cd-white);
   --surface-sunken: var(--cd-cream-200);
@@ -37,9 +37,9 @@
   --surface-inverse-raised: rgba(255, 255, 255, 0.045);
 
   /* ----- Semantic text ------------------------------------------------ */
-  --text-strong: var(--cd-navy-800);
-  --text-body: var(--cd-slate-900);
-  --text-muted: var(--cd-slate-500);
+  --text-strong: #223c30;
+  --text-body: #344b3c;
+  --text-muted: #5e6e5c;
   --text-on-inverse: var(--cd-cream-100);
   --text-on-inverse-muted: rgba(247, 243, 236, 0.72);
   --text-on-inverse-faint: rgba(247, 243, 236, 0.46);
@@ -56,8 +56,10 @@
   --focus-ring: var(--cd-navy-800);
 
   /* ----- Type families ------------------------------------------------ */
-  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display:
+    "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body:
+    "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   /* ----- Type scale (fluid, mobile-first) ----------------------------- */
   --text-2xs: 0.75rem;
@@ -111,8 +113,10 @@
 
   /* ----- Elevation ---------------------------------------------------- */
   --elev-1: 0 1px 2px rgba(10, 27, 48, 0.04), 0 2px 8px rgba(10, 27, 48, 0.05);
-  --elev-2: 0 2px 4px rgba(10, 27, 48, 0.04), 0 10px 28px rgba(10, 27, 48, 0.07);
-  --elev-3: 0 4px 10px rgba(10, 27, 48, 0.05), 0 22px 56px rgba(10, 27, 48, 0.1);
+  --elev-2:
+    0 2px 4px rgba(10, 27, 48, 0.04), 0 10px 28px rgba(10, 27, 48, 0.07);
+  --elev-3:
+    0 4px 10px rgba(10, 27, 48, 0.05), 0 22px 56px rgba(10, 27, 48, 0.1);
   --elev-glow: 0 0 48px rgba(212, 196, 168, 0.22);
 
   /* ----- Motion ------------------------------------------------------- */
@@ -128,7 +132,7 @@
   --stagger: 70ms;
 
   /* ----- Layout ------------------------------------------------------- */
-  --container: 1160px;
+  --container: 1240px;
   --container-narrow: 720px;
   --gutter: clamp(1.25rem, 4vw, 2.5rem);
   --nav-h: 62px;
