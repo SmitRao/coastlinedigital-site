@@ -16,6 +16,9 @@ Static marketing site for Coastline Digital, a forward-deployed AI and software 
 ├── main.js             # Navigation, illustrative workflows, contact form states
 ├── motion.js           # Reveals, animation pause control, scroll progress
 ├── faq/index.html
+├── careers/
+│   ├── index.html       # Senior AI/ML Engineer job posting
+│   └── careers.css      # Careers page layout and responsive styling
 ├── services/
 │   ├── enterprise-applications/index.html
 │   ├── ai-machine-learning/index.html
@@ -85,6 +88,12 @@ On submission, the button shows a spinner, the form reports a busy state, and a 
 The configured return URL is `https://coastlinedigital.net/?sent=1#contact`. On return, the page displays its confirmation message and removes the `sent` parameter from the address bar.
 
 **Hosted verification:** FormSubmit requires activation through the recipient's email for a new form. Verify activation, CAPTCHA, delivery to `hello@coastlinedigital.net`, and the return URL from the deployed domain before relying on production inquiries. Local interaction checks do not verify email delivery.
+
+## Careers
+
+`/careers/index.html` publishes the Senior AI/ML Engineer contract role, with its page-specific styling in `/careers/careers.css`. The position is fully remote and open worldwide; only senior AI/ML engineers are considered. The page includes the company description, responsibilities, qualifications, and application instructions, and is linked from the navigation, footer, and sitemap.
+
+Applicants send a proposal to one of `evan@coastlinedigital.net`, `derek@coastlinedigital.net`, or `jack@coastlinedigital.net` using the page's email links. These `mailto:` links open the applicant's email client; there is no application form or submission backend.
 
 ## Development
 
