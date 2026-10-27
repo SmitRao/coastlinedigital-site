@@ -1,0 +1,67 @@
+{
+  "brand": "Coastline Digital",
+  "audience": "Southern California business owners across all industries",
+  "status": "Creative drafts; not launched",
+  "disclosure": "Fictional demonstrations. No client work, endorsements, or measured results represented.",
+  "destination": "https://coastlinedigital.net/examples/",
+  "cta": "Let's talk",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "durationSeconds": 15,
+    "videoCodec": "H.264",
+    "pixelFormat": "yuv420p",
+    "audioCodec": "AAC",
+    "audioSampleRate": 48000,
+    "soundtrack": "Original synthesized instrumental; no voice-over",
+    "burnedInCopy": true,
+    "fastStart": true
+  },
+  "posters": {
+    "story": { "width": 1080, "height": 1920, "format": "PNG" },
+    "feed": { "width": 1080, "height": 1350, "format": "PNG" }
+  },
+  "concepts": [
+    {
+      "id": "real-estate",
+      "industry": "Real estate",
+      "fictionalCompany": "Seabright Realty Studio",
+      "hook": "Your next lead is buried in a DM.",
+      "video": "/media/ads/real-estate.mp4",
+      "captions": "/media/ads/real-estate.vtt",
+      "storyPoster": "/assets/ads/real-estate-story.png",
+      "feedPoster": "/assets/ads/real-estate-feed.png"
+    },
+    {
+      "id": "restaurant",
+      "industry": "Restaurants",
+      "fictionalCompany": "Juniper Table",
+      "hook": "Dinner rush. Not spreadsheet rush.",
+      "video": "/media/ads/restaurant.mp4",
+      "captions": "/media/ads/restaurant.vtt",
+      "storyPoster": "/assets/ads/restaurant-story.png",
+      "feedPoster": "/assets/ads/restaurant-feed.png"
+    },
+    {
+      "id": "retail",
+      "industry": "Shops and retail",
+      "fictionalCompany": "Tide & Thread",
+      "hook": "Three versions of “in stock”. One shop.",
+      "video": "/media/ads/retail.mp4",
+      "captions": "/media/ads/retail.vtt",
+      "storyPoster": "/assets/ads/retail-story.png",
+      "feedPoster": "/assets/ads/retail-feed.png"
+    },
+    {
+      "id": "healthcare",
+      "industry": "Healthcare administration",
+      "fictionalCompany": "Harborlight Care Studio",
+      "hook": "Less inbox ping-pong. More time for people.",
+      "video": "/media/ads/healthcare.mp4",
+      "captions": "/media/ads/healthcare.vtt",
+      "storyPoster": "/assets/ads/healthcare-story.png",
+      "feedPoster": "/assets/ads/healthcare-feed.png"
+    }
+  ]
+}

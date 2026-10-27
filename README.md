@@ -16,6 +16,13 @@ Static marketing site for Coastline Digital, a forward-deployed AI and software 
 ├── main.js             # Navigation, illustrative workflows, contact form states
 ├── motion.js           # Reveals, animation pause control, scroll progress
 ├── faq/index.html
+├── examples/           # Fictional industry concepts and sample testimonials
+│   ├── index.html
+│   ├── examples.css
+│   └── examples.js
+├── campaigns/          # Social campaign copy and production notes
+├── media/ads/          # Vertical MP4 ads and WebVTT captions
+├── assets/ads/         # Story and feed campaign posters
 ├── careers/
 │   ├── index.html       # Open roles listing
 │   ├── careers.css      # Shared careers layout and responsive styling
@@ -98,6 +105,14 @@ The configured return URL is `https://coastlinedigital.net/?sent=1#contact`. On 
 
 Applicants send a proposal to one of `evan@coastlinedigital.net`, `derek@coastlinedigital.net`, or `jack@coastlinedigital.net` using the page's email links. These `mailto:` links open the applicant's email client; there is no application form or submission backend.
 
+## Examples and social creative
+
+`/examples/` presents four fictional business concepts for real estate, restaurants, retail, and healthcare administration. The AI-created company names, proposed projects, interface mockups, and sample testimonials are labeled as illustrative; they are not client references, completed engagements, verified endorsements, or measured results. Healthcare examples focus on administrative coordination rather than clinical decisions.
+
+The page links to four vertical motion-graphic ads, caption files, and matching story and feed posters. The ads target Southern California business owners and use fictional workflow demonstrations with visible labels. They are creative assets, not active advertising campaigns. See [the campaign guide](campaigns/README.md) for scripts, captions, export details, and production instructions.
+
+AI-generated industry images live in `assets/images/examples/`. Their subjects are fictional settings, not photographs of Coastline Digital clients or facilities. The Examples page has industry filters and native video controls; visitors choose when to play media.
+
 ## Development
 
 Serve the repository root so absolute asset URLs and subpage links work:
@@ -110,7 +125,7 @@ Open `http://localhost:8000`. No package installation or build command is requir
 
 ## Cache busting
 
-Every HTML page loads `styles.css` with **`?v=20261023.1`**. The unchanged shared assets `tokens.css`, `main.js`, and `motion.js` retain **`?v=20261022.4`**. Both careers pages load `careers/careers.css` with **`?v=20261023.2`**.
+Every HTML page loads `styles.css` with **`?v=20261027.1`**. The unchanged shared assets `tokens.css`, `main.js`, and `motion.js` retain **`?v=20261022.4`**. Both careers pages load `careers/careers.css` with **`?v=20261023.2`**. The Examples page loads its own stylesheet and script with **`?v=20261027.1`**.
 
 `render.yaml` serves CSS and JavaScript with `Cache-Control: public, max-age=31536000, immutable`. Whenever a stylesheet or script changes, bump that asset's version in every HTML file that loads it. Use a date-based value with an incrementing suffix for multiple updates on one day, so returning visitors receive the new assets.
 

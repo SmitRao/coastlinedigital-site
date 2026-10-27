@@ -18,6 +18,7 @@ Based in San Diego, working with teams across Southern California and remotely.
 - Website: https://coastlinedigital.net/
 - Email: hello@coastlinedigital.net
 - Contact: https://coastlinedigital.net/#contact
+- Examples: https://coastlinedigital.net/examples/
 - Careers: https://coastlinedigital.net/careers/
 - FAQ: https://coastlinedigital.net/faq/
 - Privacy: https://coastlinedigital.net/privacy/
@@ -26,6 +27,11 @@ Based in San Diego, working with teams across Southern California and remotely.
 - Senior AI/ML Engineer: fully remote, worldwide contract role designing, building, and deploying production AI/ML systems for enterprise clients. Senior AI/ML engineers only.
 - Send a proposal to one of evan@coastlinedigital.net, derek@coastlinedigital.net, or jack@coastlinedigital.net.
 - Full role description and qualifications: https://coastlinedigital.net/careers/senior-ai-ml-engineer/
+
+## Illustrative examples
+- The Examples page presents four AI-created fictional businesses in real estate, restaurants, retail, and healthcare administration.
+- All projects, interface mockups, and sample testimonials on that page are illustrative concepts, not actual clients, endorsements, completed work, or measured results.
+- The page also includes downloadable concept videos and posters for Coastline Digital.
 
 ## Company information
 - Brand name: Coastline Digital
