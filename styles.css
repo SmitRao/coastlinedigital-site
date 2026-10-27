@@ -1964,7 +1964,7 @@ button {
     width: calc(100% - 64px);
   }
   .nav__menu {
-    gap: 21px;
+    gap: 17px;
   }
   .nav__logo-img {
     width: 185px;
@@ -2060,7 +2060,7 @@ button {
     height: 76px;
   }
   .nav__menu {
-    gap: 16px;
+    gap: 13px;
   }
   .nav__link {
     font-size: 10px;
