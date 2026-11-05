@@ -93,9 +93,9 @@ const roles = [
     ],
     qualificationsTitle: "What you’ll bring",
     qualifications: [
+      "Strong, production-level proficiency in both Python and .NET (C#), the most important skills for this role. Experience with Go, TypeScript/JavaScript, or Java is a plus.",
       "Strong software engineering fundamentals and experience shipping and operating production-quality internal platforms or developer tooling.",
       "Experience leveraging modern agentic coding tools such as Codex and Claude Code.",
-      "Proficiency in one or more programming languages such as Go, TypeScript/JavaScript, Python, or Java.",
       "Experience building workflow automation or internal tools (CLI tools, services, GitHub automation, cloud automation, or similar).",
       "Strong judgment about when to standardize versus when to enable flexibility, and how to remove friction without compromising reliability.",
       "Comfort working cross-functionally, including partnering with non-traditional developers and translating needs into usable solutions.",
@@ -120,7 +120,7 @@ const roles = [
     ],
     subject: "Senior Full Stack Engineer — Contract proposal",
     employmentType: "CONTRACTOR",
-    experienceRequirements: "Senior software engineering experience building and operating internal platforms or developer tooling.",
+    experienceRequirements: "Senior software engineering experience with Python and .NET (C#), building and operating internal platforms or developer tooling.",
     seoSummary: "Remote, worldwide contract role building our agent platform, AI infrastructure, and developer tooling.",
     headline: "Fully remote. Worldwide. Contract. Senior level.",
     applyText:
