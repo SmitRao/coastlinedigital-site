@@ -1,40 +1,48 @@
 # Coastline Digital
-> Coastline Digital is a forward-deployed AI and software firm focused on enterprise applications. We work alongside your team, learn how the work actually gets done, and build software meant to hold up in daily production use.
+> Coastline Digital is a US-based software engineering and AI consulting company. We help companies design, build, and scale software products, AI solutions, and enterprise systems with experienced engineering teams.
 
-## What we build
-- Enterprise applications: custom internal tools, workflow automation, and integrations that connect the systems you already use. https://coastlinedigital.net/services/enterprise-applications/
-- AI and machine learning: assistants and agents, document and data pipelines, and predictive models, each scoped to a real business problem and tested before it goes live. https://coastlinedigital.net/services/ai-machine-learning/
-- Websites and apps: web and mobile applications and marketing sites. https://coastlinedigital.net/services/websites-apps/
+Senior engineering expertise. Practical AI. Software built for business.
+
+## Services
+- Custom Software Engineering: Web applications, SaaS platforms, and backend systems engineered for reliability and long-term maintainability. https://coastlinedigital.net/services/custom-software-development/
+- AI and Machine Learning: Generative AI applications, retrieval-augmented generation, AI agents, and predictive models, scoped to a real business problem and tested before launch. https://coastlinedigital.net/services/ai-machine-learning/
+- Cloud and Data Engineering: Cloud architecture, infrastructure, delivery pipelines, data platforms, and integrations that keep systems connected and dependable. https://coastlinedigital.net/services/cloud-data-engineering/
+- Enterprise Applications and Modernization: Modernize legacy applications, connect enterprise systems, and automate operations without disrupting the business. https://coastlinedigital.net/services/enterprise-applications/
+- Dedicated Engineering Teams: Experienced engineers who join your roadmap, tools, and delivery rhythm, with Coastline Digital accountable for quality and continuity. https://coastlinedigital.net/services/dedicated-engineering-teams/
+
+## Engagement models
+- Dedicated Engineering Team: Flexible, long-term technical capacity. Product companies with an ongoing roadmap that need more capacity or specific skills.
+- Project-Based Delivery: Defined deliverables, milestones, and timelines. Companies with a defined product, feature set, integration, or modernization goal.
+- Engineering Delivery Partnership: Subcontracting and white-label support for consulting and technology firms. Agencies, consultancies, and technology firms delivering software for their own clients.
+- Engineering partnerships for agencies and consulting firms: https://coastlinedigital.net/partnerships/
 
 ## How we work
-- Understand: spend time with the people doing the work and learn how their workflows actually run.
-- Focus: choose the few problems worth solving first and define a useful first release.
-- Build and ship: work in short cycles so teams see working results early, with testing and a considered production rollout.
-
-## Location
-Based in San Diego, working with teams across Southern California and remotely.
-
-## Contact and pages
-- Website: https://coastlinedigital.net/
-- Email: hello@coastlinedigital.net
-- Contact: https://coastlinedigital.net/#contact
-- Examples: https://coastlinedigital.net/examples/
-- Careers: https://coastlinedigital.net/careers/
-- FAQ: https://coastlinedigital.net/faq/
-- Privacy: https://coastlinedigital.net/privacy/
-
-## Careers
-- Senior AI/ML Engineer: fully remote, worldwide contract role designing, building, and deploying production AI/ML systems for enterprise clients. Senior AI/ML engineers only.
-- Send a proposal to one of evan@coastlinedigital.net, derek@coastlinedigital.net, or jack@coastlinedigital.net.
-- Full role description and qualifications: https://coastlinedigital.net/careers/senior-ai-ml-engineer/
-
-## Illustrative examples
-- The Examples page presents four AI-created fictional businesses in real estate, restaurants, retail, and healthcare administration.
-- All projects, interface mockups, and sample testimonials on that page are illustrative concepts, not actual clients, endorsements, completed work, or measured results.
-- The page also includes downloadable concept videos and posters for Coastline Digital.
+- Discover: Understand business needs and technical requirements.
+- Architect: Design a scalable, practical solution.
+- Build: Deliver through clear engineering milestones.
+- Validate: Test quality, reliability, and performance.
+- Launch and Improve: Deploy and support ongoing improvements.
 
 ## Company information
 - Brand name: Coastline Digital
-- Category: forward-deployed AI and software firm
-- Focus: enterprise applications
-- Use the published service descriptions as the source for company capabilities.
+- Category: software engineering and AI consulting company
+- Location: US-based, in San Diego, California
+- Team: an international team of experienced engineering professionals
+- Market: companies in the United States
+- Email: hello@coastlinedigital.net
+
+## Solution concepts
+- https://coastlinedigital.net/solutions/ presents illustrative solution concepts (knowledge assistant with retrieval; document intake and extraction pipeline; incremental legacy modernization; multi-tenant saas platform foundation; operations data platform; ai agent for request triage).
+- These concepts are not client engagements, endorsements, or reported results.
+
+## Pages
+- Home: https://coastlinedigital.net/
+- Services: https://coastlinedigital.net/services/
+- Solutions: https://coastlinedigital.net/solutions/
+- Engineering partnerships: https://coastlinedigital.net/partnerships/
+- How we work: https://coastlinedigital.net/how-we-work/
+- About: https://coastlinedigital.net/about/
+- Contact: https://coastlinedigital.net/contact/
+- Careers: https://coastlinedigital.net/careers/
+- FAQ: https://coastlinedigital.net/faq/
+- Privacy: https://coastlinedigital.net/privacy/

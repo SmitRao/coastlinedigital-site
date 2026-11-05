@@ -1,0 +1,15 @@
+{
+  "name": "coastline-digital-site",
+  "private": true,
+  "description": "Coastline Digital marketing site. Static HTML generated from src/ with no runtime dependencies.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs",
+    "serve": "python3 -m http.server 8000"
+  }
+}

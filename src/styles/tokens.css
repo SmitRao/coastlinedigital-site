@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Design tokens. Single source of truth for colour, type, space, radius,
+   elevation, and motion. Components reference semantic tokens only.
+   Brand: navy #06273a and teal #15afa5 from the Coastline Digital logo.
+   ========================================================================== */
+/* Self-hosted variable fonts (Latin subset). See assets/fonts/README.md. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/assets/fonts/inter-latin-var.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Instrument Sans";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("/assets/fonts/instrument-sans-latin-var.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* Palette primitives */
+  --ink-950: #040c16;
+  --ink-900: #071a2b;
+  --ink-850: #0a2135;
+  --ink-800: #0d2840;
+  --ink-700: #163652;
+  --ink-600: #24486a;
+  --brand-navy: #06273a;
+
+  --paper-0: #ffffff;
+  --paper-50: #fafaf8;
+  --paper-100: #f4f5f2;
+  --paper-200: #eaece8;
+  --paper-300: #dcdfda;
+
+  --slate-900: #0a1b2a;
+  --slate-700: #3a4756;
+  --slate-500: #5b6878;
+  --slate-400: #8794a3;
+
+  --teal-700: #0a6a64;
+  --teal-600: #0b7a73;
+  --teal-500: #15afa5;
+  --teal-300: #5ed6cb;
+  --teal-100: #d9f3f0;
+  --teal-50: #eef9f7;
+
+  --blue-600: #2450d8;
+  --blue-500: #2f5bea;
+  --blue-300: #7fb2ff;
+
+  --red-600: #b42318;
+  --red-50: #fef3f2;
+  --green-600: #0b7a55;
+
+  /* Semantic: light surfaces */
+  --bg: var(--paper-50);
+  --bg-muted: var(--paper-100);
+  --surface: var(--paper-0);
+  --surface-sunken: var(--paper-200);
+  --text: var(--slate-900);
+  --text-2: var(--slate-700);
+  --text-3: var(--slate-500);
+  --line: rgba(10, 27, 42, 0.1);
+  --line-2: rgba(10, 27, 42, 0.17);
+  --accent: var(--teal-600);
+  --accent-strong: var(--teal-700);
+  --accent-soft: var(--teal-50);
+  --accent-brand: var(--teal-500);
+  --link: var(--blue-600);
+  --focus: var(--blue-500);
+
+  /* Semantic: dark surfaces */
+  --dark-bg: var(--ink-900);
+  --dark-bg-2: var(--ink-850);
+  --dark-surface: rgba(255, 255, 255, 0.04);
+  --dark-surface-2: rgba(255, 255, 255, 0.07);
+  --on-dark: #eaf0f5;
+  --on-dark-2: #a9b6c3;
+  --on-dark-3: #8494a6;
+  --dark-line: rgba(169, 190, 210, 0.14);
+  --dark-line-2: rgba(169, 190, 210, 0.24);
+  --dark-accent: var(--teal-300);
+  --dark-focus: var(--teal-300);
+
+  /* Type */
+  --font-display: "Instrument Sans", "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo, Consolas, monospace;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: clamp(1.0625rem, 0.3vw + 1rem, 1.1875rem);
+  --fs-xl: clamp(1.1875rem, 0.5vw + 1.05rem, 1.375rem);
+  --fs-2xl: clamp(1.375rem, 1vw + 1.1rem, 1.75rem);
+  --fs-3xl: clamp(1.875rem, 2.2vw + 1.1rem, 2.875rem);
+  --fs-4xl: clamp(2.375rem, 3.6vw + 1.2rem, 4rem);
+
+  --lh-tight: 1.08;
+  --lh-snug: 1.22;
+  --lh-normal: 1.6;
+  --tracking-display: -0.025em;
+  --tracking-heading: -0.015em;
+  --tracking-label: 0.08em;
+
+  /* Space (4px base) */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.25rem;
+  --s-6: 1.5rem;
+  --s-8: 2rem;
+  --s-10: 2.5rem;
+  --s-12: 3rem;
+  --s-16: 4rem;
+  --s-20: 5rem;
+  --s-24: 6rem;
+  --section-y: clamp(4rem, 8vw, 7.5rem);
+  --section-y-tight: clamp(2.5rem, 5vw, 4rem);
+
+  /* Layout */
+  --container: 1200px;
+  --container-narrow: 760px;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --header-h: 68px;
+
+  /* Radius */
+  --r-xs: 6px;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 24px;
+  --r-pill: 999px;
+
+  /* Elevation */
+  --shadow-1: 0 1px 2px rgba(7, 26, 43, 0.05), 0 1px 1px rgba(7, 26, 43, 0.03);
+  --shadow-2: 0 1px 2px rgba(7, 26, 43, 0.05), 0 8px 24px -6px rgba(7, 26, 43, 0.1);
+  --shadow-3: 0 2px 4px rgba(7, 26, 43, 0.05), 0 24px 48px -12px rgba(7, 26, 43, 0.18);
+
+  /* Motion */
+  --dur-1: 150ms;
+  --dur-2: 250ms;
+  --dur-3: 450ms;
+  --dur-4: 700ms;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 76px;
+  }
+}
