@@ -9,7 +9,7 @@ import { button, pageHero, sectionHead } from "../components/ui.mjs";
  * there is no application form or backend.
  */
 const companyDescription =
-  "Coastline Digital is a US-based software engineering and AI consulting company in San Diego, working with an international team of experienced engineering professionals. We help companies design, build, and scale custom software, AI and machine learning systems, cloud and data platforms, and enterprise applications built to perform reliably in daily production use. Our engineers work directly with client stakeholders to understand real workflows, and we deliver in short, iterative cycles so clients see working results early.";
+  "Coastline Digital is a software engineering and AI consulting company based in San Diego, CA, working with an international team of experienced engineering professionals. We help companies design, build, and scale custom software, AI and machine learning systems, cloud and data platforms, and enterprise applications built to perform reliably in daily production use. Our engineers work directly with client stakeholders to understand real workflows, and we deliver in short, iterative cycles so clients see working results early.";
 
 const roles = [
   {
@@ -137,7 +137,7 @@ const listing = {
   path: "/careers/",
   title: "Careers and Open Roles | Coastline Digital",
   description:
-    "Open roles at Coastline Digital. Build production software and AI systems for US companies with an international engineering team. Remote roles worldwide.",
+    "Open roles at Coastline Digital. Build production software and AI systems with an international engineering team. Remote roles worldwide.",
   priority: 0.7,
   jsonld: [careersCrumbs.data],
   body: html`
@@ -145,7 +145,7 @@ ${pageHero({
   crumbs: careersCrumbs.markup,
   eyebrow: "Careers",
   title: "Build software and AI that holds up in production.",
-  lede: "Coastline Digital is a US-based company working with an international team of experienced engineers. We look for people who like working close to the problem and taking it all the way to production.",
+  lede: "Coastline Digital is based in San Diego, CA, and works with an international team of experienced engineers. We look for people who like working close to the problem and taking it all the way to production.",
 })}
 <section class="section section--flush-top" aria-labelledby="roles-title">
   <div class="container">

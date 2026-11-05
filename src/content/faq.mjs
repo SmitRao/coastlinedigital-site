@@ -6,15 +6,15 @@ export const faqGroups = [
     items: [
       {
         q: "What does Coastline Digital do?",
-        a: "We are a US-based software engineering and AI consulting company. We design, build, and modernize custom software, AI and machine learning systems, cloud and data platforms, and enterprise applications, and we provide dedicated engineering teams and delivery partnerships.",
+        a: "We are a software engineering and AI consulting company based in San Diego, CA. We design, build, and modernize custom software, AI and machine learning systems, cloud and data platforms, and enterprise applications, and we provide dedicated engineering teams and delivery partnerships.",
       },
       {
         q: "Who do you work with?",
-        a: "US startups and SaaS companies, growing and established businesses modernizing their systems, technology companies that need engineering capacity, and software consulting firms that need a reliable delivery partner.",
+        a: "Startups and SaaS companies, growing and established businesses modernizing their systems, technology companies that need engineering capacity, and software consulting firms that need a reliable delivery partner.",
       },
       {
         q: "Where is your team located?",
-        a: "Coastline Digital is based in San Diego, California, and works with an international team of experienced engineering professionals. For every engagement, we tell you who is working on your project, where they are located, and how working hours will overlap with your team.",
+        a: "Coastline Digital is based in San Diego, CA, and works with an international team of experienced engineering professionals. For every engagement, we tell you who is working on your project, where they are located, and how working hours will overlap with your team.",
       },
       {
         q: "How does an engagement start?",

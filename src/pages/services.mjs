@@ -30,7 +30,7 @@ const overview = {
   path: "/services/",
   title: "Software Engineering and AI Consulting Services | Coastline Digital",
   description:
-    "Custom software engineering, AI and machine learning, cloud and data engineering, enterprise modernization, and dedicated engineering teams for US companies.",
+    "Custom software engineering, AI and machine learning, cloud and data engineering, enterprise modernization, and dedicated engineering teams.",
   priority: 0.9,
   jsonld: [overviewCrumbs.data],
   body: html`

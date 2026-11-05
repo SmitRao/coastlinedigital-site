@@ -1,6 +1,6 @@
 # Coastline Digital
 
-Marketing site for Coastline Digital, a US-based software engineering and AI consulting company in San Diego that works with an international team of engineering professionals.
+Marketing site for Coastline Digital, a software engineering and AI consulting company based in San Diego, CA, that works with an international team of engineering professionals.
 
 **Domain:** https://coastlinedigital.net · **Contact:** hello@coastlinedigital.net
 
@@ -147,7 +147,7 @@ Nothing loads until the visitor accepts the consent prompt, and the choice is re
 
 - Every page has a unique title and description, a canonical URL, Open Graph and Twitter tags, and a single `h1`.
 - BreadcrumbList data is on every subpage.
-- Organization JSON-LD (verified facts only: name, email, logo, and San Diego address, with the United States as area served) is on the home and about pages.
+- Organization JSON-LD (verified facts only: name, email, logo, and San Diego address) is on the home and about pages.
 - Each service page has Service data, the partnerships page has its own Service entry, the FAQ has FAQPage data, and the role page has JobPosting data.
 - `sitemap.xml` is generated from page priorities; bump `SITE_UPDATED` in `scripts/build.mjs` for meaningful content changes.
 - `llms.txt` and `ai.txt` are generated from the same content.

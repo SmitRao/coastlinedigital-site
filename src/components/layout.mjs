@@ -131,7 +131,7 @@ function footer() {
       <div class="site-footer__brand">
         <a class="brand" href="/" aria-label="Coastline Digital home">${logo({ variant: "light" })}</a>
         <p class="site-footer__positioning">${site.positioning}</p>
-        <p class="site-footer__meta">${icon("pin")}<span>US-based in ${site.locality}, California. Working with an international engineering team.</span></p>
+        <p class="site-footer__meta">${icon("pin")}<span>Based in ${site.locality}, ${site.region}. Working with an international engineering team.</span></p>
         <p class="site-footer__meta">${icon("mail")}<a href="mailto:${site.email}">${site.email}</a></p>
       </div>
       ${footerNav.map(

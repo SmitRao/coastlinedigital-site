@@ -29,7 +29,7 @@ const body = html`
     <div class="hero__copy">
       <p class="hero__eyebrow"><span class="hero__eyebrow-dot" aria-hidden="true"></span>Software engineering and AI consulting</p>
       <h1 class="hero__title" id="hero-title">Engineering better software. <span class="hero__title-accent">Building what’s next.</span></h1>
-      <p class="hero__lede">We help US companies design, build, and scale software products, AI solutions, and enterprise systems with experienced engineering teams.</p>
+      <p class="hero__lede">We help companies design, build, and scale software products, AI solutions, and enterprise systems with experienced engineering teams.</p>
       <div class="actions">
         ${button({ label: "Discuss Your Project", href: "/contact/", variant: "light", size: "lg", track: "cta_hero_contact" })}
         ${button({ label: "Explore Our Expertise", href: "#expertise", variant: "outline-light", size: "lg", arrow: false, track: "cta_hero_expertise" })}
@@ -107,7 +107,7 @@ const body = html`
     <div class="why__intro">
       ${sectionHead({ eyebrow: "Why Coastline Digital", id: "why-title", title: "An engineering partner, not a vendor.", lede: "What working with us looks like in practice, explained rather than claimed." })}
       <div class="why__note" data-reveal>
-        <p>Coastline Digital is a US-based company in ${site.locality}, California, working with an international team of experienced engineering professionals. You know who is on your project and where they work.</p>
+        <p>Coastline Digital is based in ${site.locality}, ${site.region}, and works with an international team of experienced engineering professionals. You know who is on your project and where they work.</p>
         <a class="link-arrow" href="/about/">About Coastline Digital ${icon("arrow-right")}</a>
       </div>
     </div>
@@ -129,7 +129,7 @@ export default {
   path: "/",
   title: "Coastline Digital | Software Engineering and AI Consulting",
   description:
-    "US-based software engineering and AI consulting. We design, build, and scale custom software, AI solutions, and enterprise systems with experienced engineers.",
+    "Software engineering and AI consulting in San Diego, CA. We design, build, and scale custom software, AI solutions, and enterprise systems.",
   headerTheme: "dark",
   pageClass: "page-home",
   priority: 1.0,

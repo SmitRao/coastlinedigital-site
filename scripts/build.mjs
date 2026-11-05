@@ -105,9 +105,8 @@ ${process.map((p) => `- ${p.name}: ${p.summary}`).join("\n")}
 ## Company information
 - Brand name: ${site.name}
 - Category: software engineering and AI consulting company
-- Location: US-based, in ${site.locality}, California
+- Location: ${site.locality}, ${site.region}
 - Team: an international team of experienced engineering professionals
-- Market: companies in the United States
 - Email: ${site.email}
 
 ## Solution concepts

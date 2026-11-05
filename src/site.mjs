@@ -14,9 +14,9 @@ export const site = {
   country: "US",
   positioning: "Senior engineering expertise. Practical AI. Software built for business.",
   description:
-    "Coastline Digital is a US-based software engineering and AI consulting company. We help companies design, build, and scale software products, AI solutions, and enterprise systems with experienced engineering teams.",
+    "Coastline Digital is a software engineering and AI consulting company based in San Diego, CA. We help companies design, build, and scale software products, AI solutions, and enterprise systems with experienced engineering teams.",
   logo: "/assets/brand/NewLogos/coastline-mark.png",
-  ogImage: "/og-image.png?v=20261105",
+  ogImage: "/og-image.png?v=20261105.2",
 
   /**
    * Contact forms post natively to FormSubmit, which emails each submission

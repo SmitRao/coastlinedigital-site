@@ -25,9 +25,9 @@ const aboutCrumbs = breadcrumbs([
 
 const about = {
   path: "/about/",
-  title: "About Coastline Digital | US-Based Software Engineering Company",
+  title: "About Coastline Digital | Software Engineering Company in San Diego",
   description:
-    "Coastline Digital is a US-based software engineering and AI consulting company in San Diego, working with an international team of experienced engineers.",
+    "Coastline Digital is a software engineering and AI consulting company in San Diego, CA, working with an international team of experienced engineers.",
   priority: 0.7,
   jsonld: [aboutCrumbs.data, { ...organizationSchema(), "@context": "https://schema.org" }],
   body: html`
@@ -35,7 +35,7 @@ ${pageHero({
   crumbs: aboutCrumbs.markup,
   eyebrow: "About us",
   title: "A software engineering company built around the work.",
-  lede: `${site.name} is a US-based software engineering and AI consulting company. We help companies design, build, and modernize the software their business depends on.`,
+  lede: `${site.name} is a software engineering and AI consulting company based in ${site.locality}, ${site.region}. We help companies design, build, and modernize the software their business depends on.`,
 })}
 
 <section class="section section--flush-top" aria-labelledby="background-title">
@@ -45,7 +45,7 @@ ${pageHero({
       <h2 class="section-title" id="background-title">Engineering partner to product teams, businesses, and consultancies.</h2>
     </div>
     <div class="prose" data-reveal>
-      <p>Coastline Digital is based in ${site.locality}, California, and works with US companies on custom software, AI and machine learning, cloud and data engineering, and enterprise modernization.</p>
+      <p>Coastline Digital is based in ${site.locality}, ${site.region}, and works with companies on custom software, AI and machine learning, cloud and data engineering, and enterprise modernization.</p>
       <p>We serve startups and SaaS companies building their core products, growing and established businesses modernizing how they operate, and software consulting firms that need a dependable engineering delivery partner for their own clients.</p>
       <p>Our engagements take three forms: dedicated engineering teams, project-based delivery, and engineering delivery partnerships. Each is structured around clear ownership, visible progress, and software that your team can maintain long after the first release.</p>
     </div>
@@ -83,10 +83,10 @@ ${pageHero({
   <div class="section__bg" aria-hidden="true"></div>
   <div class="container two-col">
     <div>
-      ${sectionHead({ eyebrow: "Distributed team model", id: "distributed-title", title: "US-based company. International engineering team." })}
+      ${sectionHead({ eyebrow: "Distributed team model", id: "distributed-title", title: "Based in San Diego. International engineering team." })}
     </div>
     <div class="prose prose--on-dark" data-reveal>
-      <p>Coastline Digital is a US company, and we work with an international team of experienced engineering professionals. That lets us match the right skills to each engagement rather than limiting ourselves to a single location.</p>
+      <p>Coastline Digital is based in San Diego, CA, and we work with an international team of experienced engineering professionals. That lets us match the right skills to each engagement rather than limiting ourselves to a single location.</p>
       <p>Distributed delivery only works when it is transparent. For every engagement, we tell you who is working on your project, where they are located, and how their working hours overlap with your team. Communication cadence, documentation, and access are agreed at kickoff.</p>
     </div>
   </div>

@@ -19,7 +19,7 @@ export const services = [
     seo: {
       title: "Custom Software Development Consulting | Coastline Digital",
       description:
-        "Custom software development for US companies: full-stack web applications, SaaS platforms, backend systems, and APIs, built to be maintained for years.",
+        "Custom software development: full-stack web applications, SaaS platforms, backend systems, and APIs, built to be maintained for years.",
     },
     serviceType: "Custom software development",
     hero: {
@@ -74,7 +74,7 @@ export const services = [
     seo: {
       title: "AI Development Consulting: Generative AI, RAG, and Agents | Coastline Digital",
       description:
-        "AI development consulting for US companies: generative AI, retrieval-augmented generation (RAG), AI agents, document pipelines, and predictive models.",
+        "AI development consulting: generative AI, retrieval-augmented generation (RAG), AI agents, document pipelines, and predictive models.",
     },
     serviceType: "AI and machine learning engineering",
     hero: {
@@ -130,7 +130,7 @@ export const services = [
     seo: {
       title: "Cloud and Data Engineering Consulting | Coastline Digital",
       description:
-        "Cloud architecture, infrastructure as code, CI/CD, data pipelines, and system integrations for US companies that need dependable, well-documented platforms.",
+        "Cloud architecture, infrastructure as code, CI/CD, data pipelines, and system integrations for companies that need dependable, well-documented platforms.",
     },
     serviceType: "Cloud architecture and data engineering",
     hero: {
@@ -242,7 +242,7 @@ export const services = [
     seo: {
       title: "Dedicated Software Development Teams | Coastline Digital",
       description:
-        "Dedicated software development teams for US companies: experienced engineers working inside your roadmap, tools, and process, accountable for quality.",
+        "Dedicated software development teams: experienced engineers working inside your roadmap, tools, and process, accountable for quality.",
     },
     serviceType: "Dedicated software development teams",
     hero: {
@@ -276,7 +276,7 @@ export const services = [
     ],
     engagements: ["dedicated", "partnership"],
     faqs: [
-      { q: "Where are your engineers located?", a: "Coastline Digital is a US-based company that works with an international team of engineering professionals. We tell you where each engineer is located and agree on working-hour overlap with your team before work starts." },
+      { q: "Where are your engineers located?", a: "Coastline Digital is based in San Diego, CA, and works with an international team of engineering professionals. We tell you where each engineer is located and agree on working-hour overlap with your team before work starts." },
       { q: "How quickly can a team start?", a: "It depends on the skills and seniority you need. After an initial conversation, we will give you a realistic estimate rather than a generic promise." },
       { q: "Can the team size change over time?", a: "Yes. Team composition can be adjusted as your roadmap changes, within the notice terms of the agreement." },
     ],

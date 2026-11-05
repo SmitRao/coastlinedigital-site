@@ -46,7 +46,7 @@ d.text((80, 214), "Senior engineering expertise.", font=font(60), fill=(255, 255
 d.text((80, 288), "Practical AI.", font=font(60), fill=TEAL)
 d.text((80, 362), "Software built for business.", font=font(60), fill=BLUE)
 d.line([(80, 482), (1120, 482)], fill=(40, 62, 82), width=2)
-d.text((80, 512), "Software engineering and AI consulting for US companies", font=font(26, "Medium"), fill=MUTED)
+d.text((80, 512), "Software engineering and AI consulting · San Diego, CA", font=font(26, "Medium"), fill=MUTED)
 d.text((80, 552), "Custom software · AI and ML · Cloud and data · Modernization · Dedicated teams", font=font(22, "Regular"), fill=(132, 148, 166))
 url = "coastlinedigital.net"
 uf = font(26, "SemiBold")

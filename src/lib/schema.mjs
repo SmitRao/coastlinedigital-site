@@ -20,7 +20,6 @@ export function organizationSchema() {
       addressRegion: site.region,
       addressCountry: site.country,
     },
-    areaServed: { "@type": "Country", name: "United States" },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
@@ -63,6 +62,5 @@ export function serviceSchema(service) {
     description: service.seo.description,
     url: `${site.url}${service.href}`,
     provider: { "@id": organizationId },
-    areaServed: { "@type": "Country", name: "United States" },
   };
 }

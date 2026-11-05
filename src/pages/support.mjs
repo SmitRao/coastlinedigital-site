@@ -84,7 +84,7 @@ ${pageHero({ crumbs: privacyCrumbs.markup, eyebrow: "Legal", title: "Privacy pol
   <div class="container">
     <div class="prose prose--doc">
       <h2>Who we are</h2>
-      <p>${site.name} is a US-based software engineering and AI consulting company located in ${site.locality}, California. We provide custom software engineering, AI and machine learning, cloud and data engineering, enterprise modernization, dedicated engineering teams, and engineering delivery partnerships.</p>
+      <p>${site.name} is a software engineering and AI consulting company based in ${site.locality}, ${site.region}. We provide custom software engineering, AI and machine learning, cloud and data engineering, enterprise modernization, dedicated engineering teams, and engineering delivery partnerships.</p>
       <p>Contact: <a href="mailto:${site.email}">${site.email}</a></p>
 
       <h2>Information we collect</h2>

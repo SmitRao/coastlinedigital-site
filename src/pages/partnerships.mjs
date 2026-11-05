@@ -41,7 +41,7 @@ const audiences = ["Software agency founders", "Consulting firm owners", "Delive
 const faqs = [
   { q: "Can you work under our brand?", a: "Yes. In a white-label arrangement, our engineers work within your processes and communication channels, and your firm remains the client’s point of contact." },
   { q: "Will you contact our clients directly?", a: "Only in the ways you agree to. Client communication rules and non-solicitation terms are defined in the partnership agreement." },
-  { q: "Where are your engineers located?", a: "Coastline Digital is based in the United States and works with an international team of engineering professionals. We tell you where each engineer is located so you can make accurate commitments to your clients." },
+  { q: "Where are your engineers located?", a: "Coastline Digital is based in San Diego, CA, and works with an international team of engineering professionals. We tell you where each engineer is located so you can make accurate commitments to your clients." },
   { q: "Who owns the code and IP?", a: "IP ownership and assignment are set in the contract and can be structured to match what your own client agreement requires." },
   { q: "What size of engagement do you take on?", a: "Engagement size is agreed per partnership, from a defined piece of a single project to ongoing capacity. Tell us what you have in mind and we will be candid about fit." },
 ];
@@ -50,7 +50,7 @@ export default {
   path: "/partnerships/",
   title: "Software Development Subcontracting and White-Label Engineering | Coastline Digital",
   description:
-    "Engineering delivery partner for US agencies and consulting firms: white-label development, software subcontracting, and dedicated engineering capacity.",
+    "Engineering delivery partner for software agencies and consulting firms: white-label development, software subcontracting, and dedicated engineering capacity.",
   priority: 0.9,
   pageClass: "page-partnerships",
   jsonld: [
@@ -65,7 +65,6 @@ export default {
         "White-label development, technical subcontracting, and dedicated engineering capacity for software agencies and consulting firms.",
       url: `${site.url}/partnerships/`,
       provider: { "@id": organizationId },
-      areaServed: { "@type": "Country", name: "United States" },
       audience: { "@type": "BusinessAudience", audienceType: "Software consulting firms and agencies" },
     },
   ],
@@ -74,7 +73,7 @@ ${(() => {
   const aside = html`<div class="hero-card" data-reveal>
     <p class="hero-card__label">Built for</p>
     <ul class="hero-card__list" role="list">${audiences.map((a) => html`<li>${icon("check")}<span>${a}</span></li>`)}</ul>
-    <p class="hero-card__foot">Delivering custom software, AI, cloud, or data projects to US clients.</p>
+    <p class="hero-card__foot">Delivering custom software, AI, cloud, or data projects to clients.</p>
   </div>`;
   return pageHero({
     crumbs: crumbs.markup,

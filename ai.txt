@@ -1,5 +1,5 @@
 # Coastline Digital
-> Coastline Digital is a US-based software engineering and AI consulting company. We help companies design, build, and scale software products, AI solutions, and enterprise systems with experienced engineering teams.
+> Coastline Digital is a software engineering and AI consulting company based in San Diego, CA. We help companies design, build, and scale software products, AI solutions, and enterprise systems with experienced engineering teams.
 
 Senior engineering expertise. Practical AI. Software built for business.
 
@@ -26,9 +26,8 @@ Senior engineering expertise. Practical AI. Software built for business.
 ## Company information
 - Brand name: Coastline Digital
 - Category: software engineering and AI consulting company
-- Location: US-based, in San Diego, California
+- Location: San Diego, CA
 - Team: an international team of experienced engineering professionals
-- Market: companies in the United States
 - Email: hello@coastlinedigital.net
 
 ## Solution concepts
