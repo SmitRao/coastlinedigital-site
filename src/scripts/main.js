@@ -108,7 +108,7 @@
   var header = doc.querySelector("[data-header]");
   var navToggle = doc.querySelector("[data-nav-toggle]");
   var mobileNav = doc.getElementById("mobile-nav");
-  var desktop = window.matchMedia("(min-width: 1080px)");
+  var desktop = window.matchMedia("(min-width: 1160px)");
 
   function onScroll() {
     if (header) header.classList.toggle("is-scrolled", window.scrollY > 8);

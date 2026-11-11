@@ -112,7 +112,6 @@ function header({ path, theme }) {
       <p class="mobile-nav__heading">Company</p>
       <ul class="mobile-nav__list" role="list">
         ${nav.filter((n) => !n.menu).map((n) => html`<li><a href="${n.href}">${n.label}</a></li>`)}
-        <li><a href="/careers/">Careers</a></li>
         <li><a href="/faq/">FAQ</a></li>
       </ul>
       <div class="mobile-nav__actions">

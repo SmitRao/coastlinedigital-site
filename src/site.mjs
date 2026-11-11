@@ -48,6 +48,7 @@ export const nav = [
   { label: "Partnerships", href: "/partnerships/" },
   { label: "How We Work", href: "/how-we-work/" },
   { label: "About", href: "/about/" },
+  { label: "Careers", href: "/careers/" },
 ];
 
 export const footerNav = [

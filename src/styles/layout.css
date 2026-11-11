@@ -265,6 +265,7 @@ main {
   font-size: 0.9375rem;
   font-weight: 500;
   text-decoration: none;
+  white-space: nowrap;
   transition: color var(--dur-1), background-color var(--dur-1);
 }
 
@@ -378,7 +379,7 @@ main {
   }
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1160px) {
   .primary-nav {
     display: block;
   }

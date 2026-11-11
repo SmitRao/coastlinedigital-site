@@ -7,7 +7,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "build": "node scripts/build.mjs",
+    "build": "node init && node scripts/build.mjs",
     "check": "node scripts/check.mjs",
     "test": "node scripts/check.mjs",
     "serve": "python3 -m http.server 8000"

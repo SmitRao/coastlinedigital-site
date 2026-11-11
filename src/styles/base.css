@@ -198,7 +198,8 @@ main:focus {
   color: var(--text-2);
 }
 
-.prose > * + * {
+.prose > * + *,
+.prose section > * + * {
   margin-top: 1em;
 }
 
