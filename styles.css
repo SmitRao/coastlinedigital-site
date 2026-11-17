@@ -3473,9 +3473,9 @@ html.motion-paused .hx-flow {
   display: grid;
   gap: var(--s-3);
 }
-@media (min-width: 760px) {
+@media (min-width: 640px) {
   .contacts {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 .contact-card {
