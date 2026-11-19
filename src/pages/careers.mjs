@@ -316,6 +316,7 @@ const roles = [
       { name: "Derek", email: "derek@coastlinedigital.net" },
       { name: "Jack", email: "jack@coastlinedigital.net" },
       { name: "Henry", email: "henry@coastlinedigital.net" },
+      { name: "Dohn", email: "dohn.galzote@coastlinedigital.net" },
     ],
     subject: "Virtual Assistant — Application",
     applicantCountry: "United States",
