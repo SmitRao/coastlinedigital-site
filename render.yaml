@@ -75,6 +75,13 @@ services:
       - type: redirect
         source: /services/google-business/*
         destination: /services/custom-software-development/
+      # Document Services Specialist role replaced by the Virtual Assistant role
+      - type: redirect
+        source: /careers/document-services-specialist
+        destination: /careers/
+      - type: redirect
+        source: /careers/document-services-specialist/*
+        destination: /careers/
       # Listing video offer retired; send old links to the home page
       - type: redirect
         source: /services/listing-tour-video
