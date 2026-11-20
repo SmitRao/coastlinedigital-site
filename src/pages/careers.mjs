@@ -311,13 +311,7 @@ const roles = [
       ["Location", "United States"],
     ],
     note: { strong: "US-based candidates only.", text: "You must be based in the United States." },
-    contacts: [
-      { name: "Evan", email: "evan@coastlinedigital.net" },
-      { name: "Derek", email: "derek@coastlinedigital.net" },
-      { name: "Jack", email: "jack@coastlinedigital.net" },
-      { name: "Henry", email: "henry@coastlinedigital.net" },
-      { name: "Dohn", email: "dohn.galzote@coastlinedigital.net" },
-    ],
+    contacts: [{ name: "Dohn", email: "dohn.galzote@coastlinedigital.net" }],
     subject: "Virtual Assistant — Application",
     applicantCountry: "United States",
     experienceRequirements: "Experience in virtual assistance or business operations.",
@@ -326,7 +320,7 @@ const roles = [
     ctaLabel: "Apply by email",
     applyTitle: "Interested? Send your application.",
     applyText:
-      "This is a fully remote role open to US-based candidates only. Please email your resume to <strong>one</strong> of the contacts below.",
+      "This is a fully remote role open to US-based candidates only. Please email your resume to Dohn at the address below.",
   },
 ];
 
