@@ -6,3 +6,5 @@ Allow: /
 
 # Sitemap
 Sitemap: https://coastlinedigital.net/sitemap.xml
+
+# Job feed for job boards and aggregators: https://coastlinedigital.net/jobs.xml

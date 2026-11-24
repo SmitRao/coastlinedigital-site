@@ -69,10 +69,19 @@ for (const [path, { file, html }] of pages) {
     if (!/\swidth="\d+"/.test(img) || !/\sheight="\d+"/.test(img)) fail(file, `image without dimensions: ${img.slice(0, 80)}`);
   }
   for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    let data;
     try {
-      JSON.parse(m[1]);
+      data = JSON.parse(m[1]);
     } catch {
       fail(file, "invalid JSON-LD");
+      continue;
+    }
+    // Fields Google for Jobs and job board crawlers rely on.
+    if (data["@type"] === "JobPosting") {
+      for (const key of ["title", "description", "datePosted", "hiringOrganization", "jobLocationType", "identifier", "url"]) {
+        if (!data[key]) fail(file, `JobPosting missing ${key}`);
+      }
+      if (data.url !== SITE + path) fail(file, `JobPosting url ${data.url} does not match page`);
     }
   }
   if (/href="#"/.test(html)) fail(file, 'placeholder link href="#"');
@@ -99,6 +108,14 @@ const sitemap = readFileSync(join(ROOT, "sitemap.xml"), "utf8");
 for (const m of sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)) {
   const path = m[1].replace(SITE, "");
   if (!pages.has(path)) fail("sitemap.xml", `no page for ${m[1]}`);
+}
+
+// Job feed entries must resolve to job pages.
+const feed = readFileSync(join(ROOT, "jobs.xml"), "utf8");
+const feedUrls = [...feed.matchAll(/<url><!\[CDATA\[([^\]]+)\]\]><\/url>/g)].map((m) => m[1]);
+if (!feedUrls.length) fail("jobs.xml", "no jobs in feed");
+for (const url of feedUrls) {
+  if (!pages.get(url.replace(SITE, ""))?.html.includes('"@type":"JobPosting"')) fail("jobs.xml", `no job page for ${url}`);
 }
 
 if (errors.length) {

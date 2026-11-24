@@ -2,7 +2,7 @@
 /**
  * Static site build. No dependencies.
  *
- *   node scripts/build.mjs          Render pages, CSS, JS, sitemap, llms.txt
+ *   node scripts/build.mjs          Render pages, CSS, JS, sitemap, job feed, llms.txt
  *   node scripts/build.mjs --check  Exit 1 if committed output is out of date
  *
  * Output is written to the repository root, which Render publishes as-is, so
@@ -140,6 +140,8 @@ async function main() {
   const pages = await loadPages();
   for (const p of pages) outputs.set(outputPath(p), renderPage(p));
   outputs.set("sitemap.xml", sitemap(pages, site));
+  const { jobFeed } = await import(pathToFileURL(join(SRC, "pages", "careers.mjs")).href);
+  outputs.set("jobs.xml", jobFeed());
   const llms = await llmsTxt(site);
   outputs.set("llms.txt", llms);
   outputs.set("ai.txt", llms);

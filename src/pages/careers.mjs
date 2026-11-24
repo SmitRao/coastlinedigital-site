@@ -23,6 +23,7 @@ const roles = [
       { icon: "spark", label: "Senior level only" },
     ],
     datePosted: "2026-10-23",
+    updated: "2026-11-17",
     lede: "Build AI that holds up in the real world. Work close to the problem and take it all the way to production.",
     summary:
       "The Senior AI/ML Engineer contract role is a remote position focused on designing, building, and deploying robust machine learning and AI solutions for enterprise clients.",
@@ -79,6 +80,7 @@ const roles = [
       { icon: "spark", label: "Senior level" },
     ],
     datePosted: "2026-11-05",
+    updated: "2026-11-17",
     lede: "Build and operate the agent platform, AI infrastructure, and developer tooling that help our teams ship faster.",
     summary:
       "The Senior Full Stack Engineer contract role is a fully remote position focused on building and operating our agent platform, the AI infrastructure agents depend on, and the developer tooling our builders use every day.",
@@ -141,6 +143,7 @@ const roles = [
       { icon: "target", label: "Commission, then retainer" },
     ],
     datePosted: "2026-11-11",
+    updated: "2026-11-18",
     lede: "We’re looking for a closer, not just a lead generator.",
     summary: [
       "We’re looking for an experienced, results-driven Sales Lead who can help us expand our presence in the US market, establish long-term client relationships, and secure high-value software consulting contracts.",
@@ -288,6 +291,7 @@ const roles = [
       { icon: "briefcase", label: "Operations & finance" },
     ],
     datePosted: "2026-11-19",
+    updated: "2026-11-20",
     lede: "Keep our business operations, client communications, and financial administration organized and on track.",
     summary:
       "We are looking for a reliable, proactive, and well-organized Virtual Assistant based in the United States to support our business operations, client communications, and financial administration.",
@@ -322,6 +326,188 @@ const roles = [
     applyText:
       "This is a fully remote role open to US-based candidates only. Please email your resume to Dohn at the address below.",
   },
+  {
+    slug: "data-entry-specialist",
+    title: "Data Entry Specialist",
+    seoTitle: "Data Entry Specialist, Remote Argentina, Contract",
+    team: "Operations · Data entry",
+    teaser: "Enter, update, and verify business data accurately in spreadsheets and business systems.",
+    tags: [
+      { icon: "pin", label: "Remote · Argentina" },
+      { icon: "briefcase", label: "Contract" },
+      { icon: "doc", label: "$10–$15 USD per hour" },
+    ],
+    datePosted: "2026-11-24",
+    lede: "Keep our records accurate and up to date by entering, checking, and organizing business data.",
+    summary:
+      "The Data Entry Specialist is a fully remote contract role, open to candidates based in Argentina. You will enter, update, and verify information across spreadsheets, databases, and business systems with a high level of accuracy.",
+    responsibilitiesTitle: "Responsibilities",
+    responsibilities: [
+      "Enter and update data in spreadsheets, databases, and business systems accurately and on time.",
+      "Review source documents and records for missing or inconsistent information, and flag issues.",
+      "Verify and cross-check data to keep records accurate and complete.",
+      "Clean up and organize existing data, including removing duplicates and standardizing formats.",
+      "Handle confidential information with care.",
+      "Follow documented procedures and communicate progress and questions clearly with the team.",
+    ],
+    qualificationsTitle: "Requirements",
+    qualifications: [
+      "Must be based in Argentina.",
+      "Good written English communication.",
+      "Fast, accurate typing and strong attention to detail.",
+      "Working knowledge of Microsoft Excel or Google Sheets.",
+      "Previous data entry or administrative experience preferred.",
+      "Reliable computer and internet connection.",
+      "Ability to work independently and meet deadlines.",
+    ],
+    extraSections: [
+      {
+        id: "compensation",
+        title: "Compensation",
+        paragraphs: [
+          "The rate for this role is $10.00 to $15.00 USD per hour. The actual rate within that range depends on skills, experience, and qualifications.",
+        ],
+      },
+      {
+        id: "resumen",
+        lang: "es",
+        title: "Resumen en español",
+        paragraphs: [
+          "Buscamos un/a Especialista en Carga de Datos (Data Entry) para trabajar de forma 100&nbsp;% remota desde Argentina, bajo modalidad de contrato. Tarifa: USD 10 a 15 por hora, según experiencia.",
+          "Tareas: carga, actualización y verificación de datos en planillas de cálculo, bases de datos y sistemas de gestión. Requisitos: residir en Argentina, buen nivel de inglés escrito, precisión y atención al detalle, y manejo de Excel o Google Sheets.",
+          "Para postularte, enviá tu CV a evan@coastlinedigital.net.",
+        ],
+      },
+    ],
+    facts: [
+      ["Position", "Data Entry Specialist"],
+      ["Engagement", "Contract"],
+      ["Workplace", "Fully remote"],
+      ["Location", "Argentina"],
+      ["Compensation", "$10.00–$15.00 USD per hour"],
+    ],
+    note: { strong: "Candidates must be based in Argentina.", text: "This is a remote contract role." },
+    contacts: [{ name: "Evan", email: "evan@coastlinedigital.net" }],
+    subject: "Data Entry Specialist — Application",
+    employmentType: "CONTRACTOR",
+    applicantCountry: "Argentina",
+    salary: { min: 10, max: 15, unit: "HOUR" },
+    experienceRequirements: "Previous data entry or administrative experience preferred.",
+    seoSummary: "Remote contract data entry role for candidates in Argentina. $10–$15 USD per hour.",
+    headline: "Fully remote, Argentina. Contract. $10.00–$15.00 USD per hour.",
+    ctaLabel: "Apply by email",
+    applyTitle: "Interested? Send your application.",
+    applyText:
+      "This is a remote contract role open to candidates based in Argentina. Please email your resume to Evan at the address below.",
+  },
+  {
+    slug: "ai-data-annotation-ai-training-contractors",
+    title: "Remote AI Data Annotation & AI Training Contractors",
+    seoTitle: "Remote AI Data Annotation & Training Contractors",
+    shortTitle: "AI Data Annotation & AI Training Contractor",
+    team: "AI · Data annotation and training",
+    teaser: "Develop practical AI-training and data-annotation skills through flexible, project-based remote work.",
+    tags: [
+      { icon: "globe", label: "Remote · 17 countries" },
+      { icon: "briefcase", label: "Independent contractor" },
+      { icon: "spark", label: "Flexible, project-based" },
+    ],
+    datePosted: "2026-11-24",
+    lede: "Build practical skills in AI training, data annotation, and data-quality evaluation with training and ongoing project guidance.",
+    companyDescription:
+      "We are a software development company with experienced AI trainers and data annotators. We are expanding our remote contractor network and helping motivated individuals develop practical skills in AI training, data annotation, and data-quality evaluation. We provide general training, practice materials, and ongoing project guidance. Contractors must create their own accounts, complete their own identity verification and assessments.",
+    summary: "No prior AI experience is required; training and guidance are provided.",
+    responsibilities: [
+      "Register on supported AI-training platforms using your own accurate information.",
+      "Complete identity verification.",
+      "Communicate with our engineering team when you need general training or clarification.",
+    ],
+    qualificationsTitle: "Requirements",
+    qualifications: [
+      "A laptop with at least 16 GB RAM and 300 GB of available storage.",
+      "A reliable internet connection.",
+      "Strong attention to detail and the ability to follow written instructions.",
+      "Good English reading and writing skills; additional language skills are welcome.",
+      "A valid payment method supported by the relevant platform, such as PayPal.",
+      "Eligibility to work as an independent contractor in your jurisdiction.",
+      "Willingness to complete all verification, assessments, and tasks personally.",
+    ],
+    extraSections: [
+      {
+        id: "provide",
+        title: "What we provide",
+        items: [
+          "Introductory training and practice resources.",
+          "Guidance on common annotation and AI-evaluation concepts.",
+          "Perform data annotation, content evaluation, AI-response review, and related tasks personally.",
+          "Project coordination and contractor support.",
+          "Transparent compensation terms before you accept a project.",
+        ],
+        outro: "We will never ask you to share your passwords, identity documents, verification codes, or financial-account credentials. We will not access your personal platform accounts.",
+      },
+      {
+        id: "compensation",
+        title: "Compensation",
+        paragraphs: [
+          "Compensation is project- and performance-based. You will receive 10%–30% of the net earnings generated by tasks you personally complete, with the exact rate and any applicable fees disclosed before you begin.",
+          "Task availability and earnings are not guaranteed. Your income will depend on platform acceptance, available projects, task volume, quality scores, and completion speed. We do not promise a fixed monthly income.",
+        ],
+      },
+      {
+        id: "why",
+        title: "Why join us?",
+        items: [
+          "Work remotely with a flexible schedule.",
+          "Learn in-demand AI-training and data-annotation skills.",
+          "Receive structured guidance without paying an upfront recruitment fee.",
+          "Choose available projects that fit your schedule.",
+          "Work with clear expectations and transparent payment terms.",
+        ],
+      },
+    ],
+    facts: [
+      ["Position", "AI Data Annotation & AI Training Contractor"],
+      ["Engagement", "Independent contractor"],
+      ["Workplace", "Fully remote"],
+      ["Schedule", "Flexible, project-based"],
+      ["Experience", "No prior AI experience required"],
+      ["Compensation", "10%–30% of net earnings from tasks you personally complete"],
+    ],
+    note: { strong: "Remote contractor opportunity.", text: "Open to eligible candidates in the 17 listed countries." },
+    contacts: [{ name: "Evan", email: "evan@coastlinedigital.net" }],
+    subject: "AI Data Annotation & AI Training Contractor — Application",
+    employmentType: "CONTRACTOR",
+    applicantCountry: [
+      "United States",
+      "Canada",
+      "United Kingdom",
+      "Ireland",
+      "Australia",
+      "New Zealand",
+      "Argentina",
+      "Brazil",
+      "Poland",
+      "Romania",
+      "Ukraine",
+      "Netherlands",
+      "Germany",
+      "Denmark",
+      "Norway",
+      "Sweden",
+      "Philippines",
+    ],
+    experienceRequirements: "No prior AI experience required; training and guidance provided.",
+    seoSummary: "Flexible remote projects with training provided in 17 eligible countries.",
+    headline: "Remote independent contractor role. Flexible, project-based schedule. No prior AI experience required; training and guidance provided.",
+    ctaLabel: "Apply by email",
+    applyTitle: "Interested? Send your application.",
+    applyText: "Please email the following information to Evan at the address below.",
+    applyQuestions: [
+      "Your name and country of residence.",
+      "A short summary of your relevant skills or experience.",
+      "Your languages and weekly availability.",
+    ],
+  },
 ];
 
 const careersCrumbs = breadcrumbs([
@@ -335,6 +521,8 @@ const listing = {
   description:
     "Open roles at Coastline Digital in engineering, business development, and operations. Remote contract and fractional positions.",
   priority: 0.7,
+  lastmod: roles.map((r) => r.updated ?? r.datePosted).sort().at(-1),
+  changefreq: "weekly",
   jsonld: [careersCrumbs.data],
   body: html`
 ${pageHero({
@@ -396,6 +584,44 @@ function listOr(emails) {
   return emails.join(", ").replace(/, ([^,]*)$/, ", or $1");
 }
 
+/** ISO 3166-1 codes for applicant countries, used in titles and the job feed. */
+const COUNTRY_CODES = {
+  "United States": "US",
+  Canada: "CA",
+  "United Kingdom": "GB",
+  Ireland: "IE",
+  Australia: "AU",
+  "New Zealand": "NZ",
+  Argentina: "AR",
+  Brazil: "BR",
+  Poland: "PL",
+  Romania: "RO",
+  Ukraine: "UA",
+  Netherlands: "NL",
+  Germany: "DE",
+  Denmark: "DK",
+  Norway: "NO",
+  Sweden: "SE",
+  Philippines: "PH",
+};
+const countryCode = (name) => {
+  if (!COUNTRY_CODES[name]) throw new Error(`Add ${name} to COUNTRY_CODES in careers.mjs`);
+  return COUNTRY_CODES[name];
+};
+const applicantCountries = (role) => asList(role.applicantCountry);
+
+/** Full job description as HTML, shared by the JobPosting data and the job feed. */
+function jobDescription(role) {
+  return (
+    `<h2>Company description</h2><p>${role.companyDescription ?? companyDescription}</p>` +
+    `<p>${role.headline}</p>` +
+    roleSections(role).map((sec) => sectionHtml(sec)).join("") +
+    `<h2>How to apply</h2><p>${role.applyText.replace(/<[^>]+>/g, "")}</p>` +
+    (role.applyQuestions ? `<ol>${role.applyQuestions.map((q) => `<li>${q}</li>`).join("")}</ol>` : "") +
+    `<p>Contact: ${listOr(role.contacts.map((c) => c.email))}.</p>`
+  );
+}
+
 function rolePage(role) {
   const path = `/careers/${role.slug}/`;
   const crumbs = breadcrumbs([
@@ -406,33 +632,29 @@ function rolePage(role) {
   const sections = roleSections(role);
   const ctaLabel = role.ctaLabel ?? "Send a proposal";
   const mailto = (email) => `mailto:${email}?subject=${encodeURIComponent(role.subject)}`;
-  const emails = role.contacts.map((c) => c.email);
-  const descriptionHtml =
-    `<h2>Company description</h2><p>${companyDescription}</p>` +
-    `<p>${role.headline}</p>` +
-    sections.map((sec) => sectionHtml(sec)).join("") +
-    `<h2>How to apply</h2><p>${role.applyText.replace(/<[^>]+>/g, "")}</p>` +
-    (role.applyQuestions ? `<ol>${role.applyQuestions.map((q) => `<li>${q}</li>`).join("")}</ol>` : "") +
-    `<p>Contact: ${listOr(emails)}.</p>`;
   const contract = asList(role.employmentType).includes("CONTRACTOR");
-  const location = role.applicantCountry ? "Remote, US" : "Remote";
+  const countries = applicantCountries(role);
+  const location = countries.length === 1 ? `Remote, ${countryCode(countries[0])}` : "Remote";
 
   return {
     path,
     title: `${role.seoTitle ?? `${role.title}, ${location}${contract ? " Contract" : ""}`} | Coastline Digital Careers`,
     description: `Join Coastline Digital as a ${role.shortTitle ?? role.title}. ${role.seoSummary}`,
     priority: 0.6,
+    lastmod: role.updated ?? role.datePosted,
+    changefreq: "weekly",
     pageClass: "page-role",
     jsonld: [
       {
         "@context": "https://schema.org",
         "@type": "JobPosting",
         title: role.title,
-        description: descriptionHtml,
+        description: jobDescription(role),
+        identifier: { "@type": "PropertyValue", name: site.name, value: role.slug },
         datePosted: role.datePosted,
         ...(role.employmentType ? { employmentType: role.employmentType } : {}),
         jobLocationType: "TELECOMMUTE",
-        ...(role.applicantCountry ? { applicantLocationRequirements: { "@type": "Country", name: role.applicantCountry } } : {}),
+        ...(countries.length ? { applicantLocationRequirements: countries.map((name) => ({ "@type": "Country", name })) } : {}),
         ...(role.salary
           ? {
               baseSalary: {
@@ -453,6 +675,7 @@ function rolePage(role) {
         ...(role.educationRequirements ? { educationRequirements: role.educationRequirements } : {}),
         qualifications: role.qualifications.join("\n"),
         applicationContact: role.contacts.map((c) => ({ "@type": "ContactPoint", email: c.email })),
+        directApply: false,
       },
       crumbs.data,
     ],
@@ -473,10 +696,10 @@ function rolePage(role) {
       <div class="job__content prose">
         <section aria-labelledby="company-title">
           <h2 id="company-title">The company</h2>
-          <p>${companyDescription}</p>
+          <p>${role.companyDescription ?? companyDescription}</p>
         </section>
         ${sections.map(
-          (sec) => html`<section aria-labelledby="${sec.id}-title">
+          (sec) => html`<section aria-labelledby="${sec.id}-title"${sec.lang ? ` lang="${sec.lang}"` : ""}>
           ${sectionHtml(sec).replace(/^<h2>/, `<h2 id="${sec.id}-title">`)}
         </section>`,
         )}
@@ -512,3 +735,49 @@ function rolePage(role) {
 }
 
 export default [listing, ...roles.map(rolePage)];
+
+const cdata = (value) => `<![CDATA[${String(value).replace(/]]>/g, "]]]]><![CDATA[>")}]]>`;
+const JOB_TYPES = { FULL_TIME: "fulltime", PART_TIME: "parttime", CONTRACTOR: "contract", TEMPORARY: "temporary", INTERN: "internship" };
+const UNITS = { HOUR: "hour", DAY: "day", WEEK: "week", MONTH: "month", YEAR: "year" };
+
+/**
+ * XML job feed at /jobs.xml in the widely used Indeed-style format, for job
+ * aggregators that ingest feeds (for example Jooble, Talent.com, Careerjet).
+ */
+export function jobFeed() {
+  const rfc822 = (date) => new Date(`${date}T12:00:00Z`).toUTCString();
+  const latest = roles.map((r) => r.updated ?? r.datePosted).sort().at(-1);
+  const field = (name, value) => (value ? `    <${name}>${cdata(value)}</${name}>\n` : "");
+  const jobs = roles
+    .map((role) => {
+      const types = asList(role.employmentType).map((t) => JOB_TYPES[t]).filter(Boolean);
+      const countries = applicantCountries(role);
+      const salary = role.salary ? `$${role.salary.min}–$${role.salary.max} USD per ${UNITS[role.salary.unit]}` : "";
+      return (
+        "  <job>\n" +
+        field("title", role.title) +
+        field("date", rfc822(role.datePosted)) +
+        field("referencenumber", role.slug) +
+        field("url", `${site.url}/careers/${role.slug}/`) +
+        field("company", site.name) +
+        field("sourcename", site.name) +
+        field("country", countries.map(countryCode).join(", ")) +
+        field("remotetype", countries.length ? `Fully remote (${countries.join(", ")} only)` : "Fully remote (worldwide)") +
+        field("jobtype", types.join(", ")) +
+        field("salary", salary) +
+        field("experience", role.experienceRequirements) +
+        field("education", role.educationRequirements) +
+        field("category", role.team.split(" · ")[0]) +
+        field("email", role.contacts.map((c) => c.email).join(", ")) +
+        field("description", jobDescription(role)) +
+        "  </job>"
+      );
+    })
+    .join("\n");
+  return (
+    `<?xml version="1.0" encoding="UTF-8"?>\n<source>\n` +
+    `  <publisher>${site.name}</publisher>\n  <publisherurl>${site.url}/careers/</publisherurl>\n` +
+    `  <lastBuildDate>${rfc822(latest)}</lastBuildDate>\n${jobs}\n</source>\n`
+  );
+}
+

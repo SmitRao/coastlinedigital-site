@@ -74,8 +74,8 @@
   </url>
   <url>
     <loc>https://coastlinedigital.net/careers/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -85,27 +85,39 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://coastlinedigital.net/careers/ai-data-annotation-ai-training-contractors/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://coastlinedigital.net/careers/data-entry-specialist/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://coastlinedigital.net/careers/fractional-sales-lead/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://coastlinedigital.net/careers/senior-ai-ml-engineer/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://coastlinedigital.net/careers/senior-full-stack-engineer/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://coastlinedigital.net/careers/virtual-assistant/</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
